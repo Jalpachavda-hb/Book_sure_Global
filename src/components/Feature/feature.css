@@ -16,7 +16,6 @@
   }
   
   
-  
   .sec-title-3 h2 {
     position: relative;
     display: block;
@@ -74,10 +73,10 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-   
+/*    
   .advertisers-service-sec span {
     color: rgb(82 112 26);
-  }
+  } */
    
   .advertisers-service-sec .col {
     padding: 0 1em 1em 1em;
@@ -152,11 +151,15 @@
   .advertisers-service-sec .service-card:hover:after {
     bottom: 0%;
   }
-   
+ 
+  
   .service-card .icon-wrapper {
     background-color: #ffffff;
-    color: rgb(82 112 26);
+    color: #0e423b;
+
   }
+ 
+
    
   .advertisers-service-sec .service-card:hover .icon-wrapper {
     color: #002e5a;
@@ -174,3 +177,5 @@
   img.card-img {
     padding: 9px;
 }
+
+

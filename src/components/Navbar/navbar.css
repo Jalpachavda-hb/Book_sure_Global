@@ -32,7 +32,7 @@ a.nav-link.text-nowrap {
   background: linear-gradient(to bottom, #148878, #11203c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight:900px;
+  /* font-weight:900px; */
 }
 .navbarbag {
   background-color: #106e61;
@@ -65,7 +65,7 @@ a.nav-link.text-nowrap {
   background: linear-gradient(to bottom, #148878, #11203c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
+  
 }
 
 .navbarbag {
@@ -149,7 +149,7 @@ a.nav-link.text-nowrap {
   background: linear-gradient(to bottom, #148878, #11203c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
+font-weight: 500;
   transition: all 0.4s ease;
 }
 
@@ -170,16 +170,13 @@ a.nav-link.text-nowrap {
 .navbarbag.scrolled .logo {
   transform: scale(0.9);
 }
-/* ==================== */
 
-
-/* Base navbar styles */
 .navbarbag {
   background-color: #106e61;
   position: sticky;
   top: 0;
   z-index: 1020;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: none !important;
   transition: background-color 0.4s ease, box-shadow 0.4s ease, padding-top 0.4s ease;
 }
 

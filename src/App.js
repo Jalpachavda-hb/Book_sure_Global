@@ -57,10 +57,10 @@ function App() {
               </section>
 
               <section>
-                <ScreenshotsSection />
+                <ScreenshotsSection id="screenshorts"/>
               </section>
                <section>
-                <Contact/>
+                <Contact id="contact"/>
               </section>
                <section>
                 <Fotter/>

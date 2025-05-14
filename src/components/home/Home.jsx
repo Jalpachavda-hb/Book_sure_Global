@@ -1,5 +1,4 @@
 import React from "react";
-// import './Home.css';
 import "./Hero.css";
 
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";

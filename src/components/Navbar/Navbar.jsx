@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+// import React, { useRef } from "react";
 import { useLocation } from "react-router-dom";
 import logo from "../../assets/Images/Smart-Box-File.png";
 import "./navbar.css";
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from "react-router-hash-link";
 function Navbar() {
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
@@ -17,6 +18,14 @@ function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const navbarCollapseRef = useRef(null);
+
+  const handleLinkClick = () => {
+    if (navbarCollapseRef.current && navbarCollapseRef.current.classList) {
+      navbarCollapseRef.current.classList.remove("show");
+    }
+  };
 
   // ✅ Combine all classes here
   const navbarClasses = [
@@ -45,29 +54,53 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          className="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          ref={navbarCollapseRef}
+        >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              {/* <a id="about-link" className="nav-link text-nowrap" href="#about">
+              <Link
+                id="about-link"
+                className="nav-link text-nowrap"
+                onClick={handleLinkClick}
+                smooth
+                to="#about"
+              >
+                {" "}
                 About Us
-              </a> */}
-              <Link id="about-link" className="nav-link text-nowrap"   smooth to="#about"> About Us</Link>
+              </Link>
             </li>
             <li className="nav-item">
-              {/* <a id="features-link" className="nav-link text-nowrap" href="#features">
+              <Link
+                onClick={handleLinkClick}
+                className="nav-link text-nowrap"
+                smooth
+                to="#features"
+              >
                 Features
-              </a> */}
-              <Link  className="nav-link text-nowrap" smooth to="#features">Features</Link>
-            </li>
-             <li className="nav-item">
-             
-              <Link id="features-link" className="nav-link text-nowrap" smooth to="#SS">ScreenShorts</Link>
+              </Link>
             </li>
             <li className="nav-item">
-              {/* <a id="contact-link" className="nav-link text-nowrap" href="#contact">
+              <Link
+                
+                  onClick={handleLinkClick}
+                className="nav-link text-nowrap"
+                smooth
+                to="#screenshorts"
+              >
+                ScreenShorts
+              </Link>
+            </li>
+            <li className="nav-item">
+            
+              <Link className="nav-link text-nowrap"
+                onClick={handleLinkClick}
+               smooth to="/#contact">
                 Contact Us
-              </a> */}
-                <Link id="contact-link" className="nav-link text-nowrap" smooth to="#contact">Contact Us</Link>
+              </Link>
+           
             </li>
           </ul>
         </div>

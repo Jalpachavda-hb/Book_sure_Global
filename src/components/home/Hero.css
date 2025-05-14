@@ -31,16 +31,26 @@
   border-radius: 30px !important;
 }
 
+/* .solid-white-btn {
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #11203c !important;
+} */
+
 .solid-white-btn {
   background: #ffffff !important;
   border-color: #ffffff !important;
   color: #11203c !important;
+  transition: all 0.3s ease; /* Smooth transition */
 }
 
 .solid-white-btn:hover {
-  background: transparent;
-  color: #ffffff;
+  background: #112c3c !important;
+  color: #ffffff !important;
+  border-color: #11203c !important;
 }
+
+
 
 .outline-white-btn {
   color: #ffffff;
@@ -94,12 +104,13 @@
 }
 
 .homecontain {
-  font-size: 16px;
-  font-weight: 400 !important;
+  /* font-size: 18px; */
+    font-weight: 400 !important;
 }
 
 .animated-content {
   animation: fadeInDown 1s ease-in-out !important;
+
 }
 
 .animated-down {
@@ -202,4 +213,7 @@
     padding: 10px !important;
     margin-bottom: 10px;
   }
+}
+h1.text-white.animated-content.text-start {
+    font-weight: bold;
 }
