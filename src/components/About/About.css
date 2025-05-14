@@ -1,0 +1,40 @@
+.page-tital {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background: linear-gradient(to bottom, #148878, #11203c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contain-colur {
+  color: #05221e !important;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  -webkit-animation-name: fadeInUp;
+ animation-name: fadeInUp;
+}
+.about-phone{
+ margin-top: -14% !important;
+  height: auto !important;
+  width: 100% !important;
+}
+.animated-down.paraabout {
+    color: #00000099;
+}
+img.about-phone {
+    vertical-align: top !important;
+}
+
+@media screen and (min-device-width: 200px) and (max-device-width: 1200px) {
+  .about-phone{
+ margin-top: 0% !important;
+
+}
+}
+
+
+

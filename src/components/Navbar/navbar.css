@@ -1,0 +1,211 @@
+.logo {
+    width: 18%;
+    margin-bottom: 12px;
+}
+
+@media screen and (min-device-width: 10px) and (max-device-width: 991px) {
+  .logo {
+   
+    width: 110px;
+  }
+}
+
+
+.navbarbag {
+  background-color: #106e61;
+}
+.navbar {
+ 
+}
+nav.navbar.navbar-light {
+  padding: 0px;
+}
+.bgwhite {
+  border-radius: 10px !important;
+  background-color: rgb(255, 255, 255);
+}
+/* nav.navbar.navbar-expand-lg.navbarbag.container-fluid {
+  padding-top: 25px !important;
+} */
+
+a.nav-link.text-nowrap {
+  background: linear-gradient(to bottom, #148878, #11203c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight:900px;
+}
+.navbarbag {
+  background-color: #106e61;
+  position: sticky;
+  top: 0;
+  z-index: 1020; 
+}
+.logo {
+  width: 18%;
+  margin-bottom: 12px;
+}
+
+.navbarbag {
+  background-color: #106e61;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.bgwhite {
+  border-radius: 10px !important;
+  background-color: rgb(255, 255, 255);
+}
+
+nav.navbar.navbar-light {
+  padding: 0px;
+}
+
+a.nav-link.text-nowrap {
+  background: linear-gradient(to bottom, #148878, #11203c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.navbarbag {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbarbag {
+  background-color: #106e61;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbarbag.scrolled {
+  background-color: white !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust link colors when navbar is scrolled */
+.navbarbag.scrolled .nav-link {
+  background: none;
+  color: #106e61;
+  transition: color 0.3s ease;
+}
+
+/* Optional: Adjust logo size or color on scroll */
+.navbarbag .logo {
+  transition: width 0.4s ease, transform 0.4s ease;
+}
+
+.navbarbag.scrolled .logo {
+  transform: scale(0.9);
+}
+
+
+
+/* Gradient Text for default nav links */
+.nav-link {
+  background: linear-gradient(to bottom, #148878, #11203c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+/* Make text solid when navbar is scrolled */
+.navbarbag.scrolled .nav-link {
+  background: none !important;
+  -webkit-text-fill-color: #106e61 !important;
+}
+
+
+
+
+.navbarbag {
+  background-color: #106e61;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, padding-top 0.4s ease;
+}
+
+
+/* .navbarbag.home-page {
+  padding-top: 25px !important;
+} */
+
+.navbarbag.other-page {
+  padding-top: 0px !important;
+}
+
+/* When scrolled */
+.navbarbag.scrolled {
+  background-color: white !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-link {
+  background: linear-gradient(to bottom, #148878, #11203c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.navbarbag.scrolled .nav-link,
+.navbarbag.other-page .nav-link {
+  background: none !important;
+  -webkit-text-fill-color: #106e61 !important;
+}
+
+
+
+@media screen and (max-width: 991px) {
+  .logo {
+    width: 110px;
+  }
+}
+
+.navbarbag.scrolled .logo {
+  transform: scale(0.9);
+}
+/* ==================== */
+
+
+/* Base navbar styles */
+.navbarbag {
+  background-color: #106e61;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, padding-top 0.4s ease;
+}
+
+
+
+
+
+.navbarbag.scrolled {
+  background-color: white !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+  width: 18%;
+  margin-bottom: 12px;
+  transition: width 0.4s ease, transform 0.4s ease;
+}
+
+@media screen and (max-width: 991px) {
+  .logo {
+    width: 110px;
+  }
+}
+
+.navbarbag.scrolled .logo {
+  transform: scale(0.9);
+}
+
