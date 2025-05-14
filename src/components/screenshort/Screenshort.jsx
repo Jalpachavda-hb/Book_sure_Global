@@ -131,7 +131,7 @@ const ScreenshotsSection = () => {
   };
 
   return (
-    <section>
+    <section  id="SS">
       <div className="container ">
         <div className="row align-items-center  ">
           <div className="hero-content-left  animated-content position-relative z-index text-white">

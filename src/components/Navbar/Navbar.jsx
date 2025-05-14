@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import logo from "../../assets/Images/Smart-Box-File.png";
 import "./navbar.css";
-
+import { HashLink as Link } from 'react-router-hash-link';
 function Navbar() {
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
@@ -48,19 +48,26 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a id="about-link" className="nav-link text-nowrap" href="#about">
+              {/* <a id="about-link" className="nav-link text-nowrap" href="#about">
                 About Us
-              </a>
+              </a> */}
+              <Link id="about-link" className="nav-link text-nowrap"   smooth to="#about"> About Us</Link>
             </li>
             <li className="nav-item">
-              <a id="features-link" className="nav-link text-nowrap" href="#features">
+              {/* <a id="features-link" className="nav-link text-nowrap" href="#features">
                 Features
-              </a>
+              </a> */}
+              <Link  className="nav-link text-nowrap" smooth to="#features">Features</Link>
+            </li>
+             <li className="nav-item">
+             
+              <Link id="features-link" className="nav-link text-nowrap" smooth to="#SS">ScreenShorts</Link>
             </li>
             <li className="nav-item">
-              <a id="contact-link" className="nav-link text-nowrap" href="#contact">
+              {/* <a id="contact-link" className="nav-link text-nowrap" href="#contact">
                 Contact Us
-              </a>
+              </a> */}
+                <Link id="contact-link" className="nav-link text-nowrap" smooth to="#contact">Contact Us</Link>
             </li>
           </ul>
         </div>
