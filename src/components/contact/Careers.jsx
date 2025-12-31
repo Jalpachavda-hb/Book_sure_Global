@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Contact.css";
+import "./contact.css";
 import PageBanner from "../PageBanner/PageBanner";
 import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
 const Career = () => {

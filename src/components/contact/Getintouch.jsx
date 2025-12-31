@@ -1,5 +1,5 @@
 import React from "react";
-import "./Contact.css";
+import "./contact.css";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 const GetInTouch = () => {

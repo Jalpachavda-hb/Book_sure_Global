@@ -12,13 +12,14 @@ import Services from "./components/Services/Services";
 import Team from "./components/Team/Team";
 import Pricing from "./components/Pricing/Pricing";
 import Data from "./components/Data/Data";
-import Contactus from "./components/Contact/Contact";
+import Contact from "./components/Contact/Contact";
+import Careers from "./components/Contact/Careers";
+
 import Teamdetailpage from "./components/Team/Teamdetailpage";
 import Servicesubpage from "./components/Services/Servicesubpage";
 import Gallery from "./components/Team/Gallery";
 import Notfound from "./components/PageBanner/Notdound";
 import BlogDetail from "./components/Blogs/Blogdetail";
-import Careers from "./components/Contact/Careers";
 function App() {
   return (
     <Routes>
@@ -34,7 +35,7 @@ function App() {
         <Route path="/team/:slug" element={<Teamdetailpage />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/data" element={<Data />} />
-        <Route path="/contact" element={<Contactus />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
          <Route path="/blog/blogdetail" element={<BlogDetail />} />
           <Route path="/careers" element={<Careers />} />
