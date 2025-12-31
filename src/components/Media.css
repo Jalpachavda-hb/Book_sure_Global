@@ -1,0 +1,89 @@
+/* navbar */
+/* Default logo size for large screens */
+.logo {
+  width: 209px; /* adjust as needed */
+  height: 55px; /* maintain aspect ratio */
+}
+@media (min-width: 992px) {
+  .logo {
+    width: 229px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+  .logo {
+    width: 203px;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media (max-width: 767px) {
+  .logo {
+    width: 166px;
+  }
+}
+
+/* Extra small devices (portrait phones) */
+@media (max-width: 575px) {
+  .logo {
+    width: 162px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1048px) {
+ .logo {
+    width: 176px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Hero */
+
+
+.hero-content h1 {
+  font-size: 44px; /* default for large screens */
+  font-weight: 700;
+  color: var(--primary-blue);
+  line-height: 1.2;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (max-width: 767px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .hero-content h1 {
+    font-size: 22px;
+  }
+}
+.hero-content h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  line-height: 1.2;
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    padding-top: 100px;
+  }
+}

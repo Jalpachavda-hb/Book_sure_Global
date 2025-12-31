@@ -1,112 +1,78 @@
-import React, { useEffect, useState, useRef } from "react";
-// import React, { useRef } from "react";
-import { useLocation } from "react-router-dom";
-import logo from "../../assets/Images/Smart-Box-File.png";
-import "./navbar.css";
-import { HashLink as Link } from "react-router-hash-link";
-function Navbar() {
-  const location = useLocation();
-  const [scrolled, setScrolled] = useState(false);
 
-  const isHomePage = location.pathname === "/";
+import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+import logo from "../../assets/Images/Hero/logo.png";
+import "./Navbar.css";
+import "../Media.css";
+import Topbar from "./Topbar";
+import { useState, useEffect } from "react";
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+export default function MainNavbar() {
+  const [show, setShow] = useState(false);
 
-  const navbarCollapseRef = useRef(null);
-
-  const handleLinkClick = () => {
-    if (navbarCollapseRef.current && navbarCollapseRef.current.classList) {
-      navbarCollapseRef.current.classList.remove("show");
-    }
+  const menuItems = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+     { name: "Team", path: "/team" },
+    { name: "Pricing Plan", path: "/pricing" },
+    { name: "Data Security", path: "/data" },
+    { name: "Contact Us", path: "/contact" },
+  ];
+const [scrolled, setScrolled] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 50);
   };
 
-  // ✅ Combine all classes here
-  const navbarClasses = [
-    "navbar",
-    "navbar-expand-lg",
-    "navbarbag",
-    "container-fluid",
-    scrolled ? "scrolled" : "",
-    isHomePage ? "home-page" : "other-page",
-  ].join(" ");
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
-    <nav className={navbarClasses}>
-      <div className="container bgwhite">
-        <a href="/" className="navbar-brand">
-          <img src={logo} alt="logo" className="logo" />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div
-          className="collapse navbar-collapse"
-          id="navbarSupportedContent"
-          ref={navbarCollapseRef}
-        >
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link
-                id="about-link"
-                className="nav-link text-nowrap"
-                onClick={handleLinkClick}
-                smooth
-                to="#about"
-              >
-                {" "}
-                About Us
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                onClick={handleLinkClick}
-                className="nav-link text-nowrap"
-                smooth
-                to="#features"
-              >
-                Features
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                
-                  onClick={handleLinkClick}
-                className="nav-link text-nowrap"
-                smooth
-                to="#screenshorts"
-              >
-                ScreenShorts
-              </Link>
-            </li>
-            <li className="nav-item">
-            
-              <Link className="nav-link text-nowrap"
-                onClick={handleLinkClick}
-               smooth to="/#contact">
-                Contact Us
-              </Link>
-           
-            </li>
-          </ul>
-        </div>
+    <>
+      <Topbar />
+
+      <div className="navbar-wrapper">
+        <Navbar expand="lg"   className={`main-navbar ${scrolled ? "scrolled" : ""}`}>
+          <Container>
+            <Navbar.Brand as={NavLink} to="/">
+              <img src={logo} alt="Book Sure Global" className="logo" />
+            </Navbar.Brand>
+
+            <Navbar.Toggle onClick={handleShow} />
+
+            <Navbar.Offcanvas
+              placement="end"
+              show={show}
+              onHide={handleClose}
+              className="mobile-offcanvas"
+            >
+              <Offcanvas.Header closeButton>
+                <img  alt="logo"src={logo} height="40" />
+              </Offcanvas.Header>
+
+              <Offcanvas.Body>
+                <Nav className="mobile-nav">
+                  {menuItems.map((item) => (
+                    <Nav.Link
+                      key={item.path}
+                      as={NavLink}
+                      to={item.path}
+                      onClick={handleClose}
+                    >
+                      {item.name}
+                    </Nav.Link>
+                  ))}
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
       </div>
-    </nav>
+    </>
   );
 }
-
-export default Navbar;

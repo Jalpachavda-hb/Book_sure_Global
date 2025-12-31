@@ -1,0 +1,233 @@
+.page-tital {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background: linear-gradient(#CC952B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contain-colur {
+  color: #0d2c66 !important;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  -webkit-animation-name: fadeInUp;
+ animation-name: fadeInUp;
+}
+/* 
+.about-phone{
+ margin-top: -14% !important;
+  height: auto !important;
+  width: 100% !important;
+}
+.animated-down.paraabout {
+    color: #00000099;
+}
+img.about-phone {
+    vertical-align: top !important;
+}
+
+@media screen and (min-device-width: 200px) and (max-device-width: 1200px) {
+  .about-phone{
+ margin-top: 0% !important;
+
+}
+} */
+/* =====================
+   GLOBAL
+===================== */
+/* =====================
+   GLOBAL
+===================== */
+.about-section {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.sub-title {
+  color: #243b9a !important;
+}
+
+/* =====================
+   FLOATING ANIMATION
+===================== */
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+/* =====================
+   BACKGROUND DECOR
+===================== */
+.about-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-float {
+  position: absolute;
+  bottom: 150px;
+  left: 20px;
+  width: 100px;
+}
+
+.bg-shape {
+  position: absolute;
+  top: 40px;
+  left: 450px;
+  width: 150px;
+}
+
+.bg-float img,
+.bg-shape img {
+  width: 100%;
+}
+
+/* =====================
+   IMAGES
+===================== */
+.about-main-img {
+  width: 450px;
+  max-width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 120px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+.about-main-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-laptop-img {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  width: 250px;
+  border: 10px solid #fff;
+  border-top-right-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.about-laptop-img img {
+  width: 100%;
+}
+.discover{
+  color: #CC952B !important;
+}
+/* =====================
+   EXPERIENCE BOX
+===================== */
+.about-exp-box {
+  position: absolute;
+  bottom: -100px;
+  left: -50px;
+  width: 450px;
+  max-width: 100%;
+  background: #243b9a;
+  color: #fff;
+  padding: 20px;
+  border-top-left-radius: 90px;
+  z-index: 5;
+}
+
+.about-exp-box h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* =====================
+   STATS
+===================== */
+.about-stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: #f8fbff;
+  border: 1px solid #e1e9f5;
+  border-radius: 12px;
+}
+
+.about-stat svg {
+  color: #2d5a87;
+}
+
+.about-stat h4 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.about-stat p {
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* =====================
+   MOBILE & TABLET
+===================== */
+@media (max-width: 991px) {
+
+  .about-laptop-img {
+    display: none;
+  }
+
+  .about-main-img {
+    width: 100%;
+    border-top-left-radius: 60px;
+  }
+
+  .about-exp-box {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: -2px;
+    border-radius: 0 0 16px 16px;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .about-exp-box h3 {
+    font-size: 28px;
+  }
+
+  .about-exp-box p {
+    font-size: 14px;
+  }
+}
+
+/* =====================
+   PHONE ONLY
+===================== */
+@media (max-width: 576px) {
+  .about-exp-box h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .position-absolute.text-white {
+    position: relative !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    margin-top: 10px;
+    border-radius: 0 0 16px 16px;
+  }
+}

@@ -1,0 +1,232 @@
+.team-card-wrapper {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Image Container */
+.team-image-box {
+  background: #e6f4fb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.team-image-box img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Info Card */
+.team-info-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  position: absolute;
+  left: 50%;
+  bottom: -45px;
+  transform: translateX(-50%);
+  width: 85%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.team-info-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a1f44;
+  margin-bottom: 4px;
+}
+
+.team-info-box p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #f5a623;
+  margin-bottom: 12px;
+}
+
+/* Social Icons */
+.team-social {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.team-social a {
+  color: #9aa3b2;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.team-social a:hover {
+  color: #CC952B;
+}
+
+/* Hover Effect */
+.team-card-wrapper:hover .team-info-box {
+  transform: translateX(-50%) translateY(-5px);
+}
+/* ===============================
+   SHINE / WAVE HOVER ANIMATION
+================================ */
+
+.shine-animate {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shine wave */
+.shine-animate::before {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.35) 100%
+  );
+  transform: skewX(-25deg);
+}
+
+/* Animate on hover */
+.team-card-wrapper:hover .shine-animate::before {
+  animation: shineWave 0.9s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes shineWave {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+.section-tag {
+  display: inline-block;
+  color: #CC952B;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #293C8F;
+}
+
+.section-subtitle {
+  max-width: 600px;
+  margin: 10px auto 0;
+  color: #6c757d;
+}
+.team-card-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+/* ==========teamdetail========== */
+.team-detail-page {
+  padding: 80px 0;
+  background: #f7f9fc;
+}
+
+/* Header */
+.team-detail-header {
+  text-align: center;
+}
+
+.team-detail-header h1 {
+  color: #293c8f;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.team-detail-header span {
+  display: block;
+  color: #cc952b;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* Image */
+.team-detail-img img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Content */
+.team-detail-content {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.team-detail-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 18px;
+}
+/* =====gallery======== */
+.gallery-section {
+  padding: 60px 0;
+  background: #fff;
+}
+
+/* Grid Layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Image Card */
+.gallery-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Hover Effect */
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item img {
+    height: 240px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    height: 220px;
+  }
+}

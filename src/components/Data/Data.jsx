@@ -1,0 +1,107 @@
+import React from "react";
+import PageBanner from "../PageBanner/PageBanner";
+import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
+import Dataimg from "../../assets/Images/Aboutus/Cybersecurity-768x386.png"
+import Logo1 from "../../assets/Images/Aboutus/Data_logo2.png"
+
+import {
+  FaLock,
+  FaShieldAlt,
+  FaUserCheck,
+  FaServer,
+  FaNetworkWired,
+  FaFireExtinguisher,
+  FaCamera,
+  FaUserShield,
+} from "react-icons/fa";
+import "./Data.css";
+const Data = () => {
+  return (
+    <div>
+      <PageBanner title="Data Security" bgImage={bannerImg} />
+    <section className="data-security-section">
+      <div className="container">
+
+        {/* ROW 1 */}
+        <div className="row align-items-center mb-5">
+          <div className="col-lg-6">
+            <span className="subtitle">DATA PROTECTION & COMPLIANCE</span>
+
+            <h2 className="security-title">
+              How We Prioritize <span>Data Security</span>
+            </h2>
+
+            <p className="security-desc">
+              As any firm owner, you handle highly sensitive client information daily.
+              This data isn’t just about numbers — it directly impacts your clients’ trust.
+            </p>
+
+            <p className="security-desc">
+              That’s why maintaining strict confidentiality and data security isn’t just
+              important — it’s essential.
+            </p>
+
+            <p className="security-desc">
+              At <strong>Integrity Data Services</strong>, we manage financial records,
+              tax documents, payroll, bookkeeping, and essential business data
+              with complete responsibility.
+            </p>
+
+            <div className="security-highlight">
+              <FaShieldAlt />
+              <p>
+                Fully compliant with <strong>GDPR</strong>, Data Protection legislation,
+                and <strong>ISO 27001 accredited</strong>.
+              </p>
+            </div>
+          </div>
+
+         <div className="col-lg-6 text-center">
+  <div className="security-image-wrapper">
+    <img src={Dataimg} alt="Data Security" className="main-security-img" />
+
+    {/* Two circular logos */}
+    <div className="security-logos mt-3">
+      <img src={Logo1} alt="Logo 1" className="small-logo" />
+     
+    </div>
+  </div>
+</div>
+        </div>
+
+        {/* ROW 2 */}
+        <div className="row">
+          <div className="col-lg-6">
+            <h5 className="security-subtitle">How We Keep Your Data Secure</h5>
+            <ul className="security-list">
+              <li><FaUserCheck /> Controlled access to production areas</li>
+              <li><FaServer /> Restricted server rooms with IT-only access</li>
+              <li><FaLock /> Secure document storage</li>
+              <li><FaUserShield /> Strict data permissions</li>
+              <li><FaNetworkWired /> IP authentication protection</li>
+              <li><FaShieldAlt /> Anti-virus and malware defense</li>
+            </ul>
+          </div>
+
+          <div className="col-lg-6">
+            <h5 className="security-subtitle">Our Security Measures Include</h5>
+            <ul className="security-list">
+              <li><FaUserShield /> Authorized employee-only data access</li>
+              <li><FaShieldAlt /> SonicWall firewall protection</li>
+              <li><FaCamera /> Restricted doors with CCTV surveillance</li>
+              <li><FaLock /> Clean desk policy</li>
+              <li><FaLock /> No personal devices allowed</li>
+              <li><FaNetworkWired /> Redundant Molex-certified LAN</li>
+              <li><FaFireExtinguisher /> Advanced fire safety systems</li>
+              <li><FaUserCheck /> Thorough HR screening</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    </div>
+  );
+};
+
+export default Data;

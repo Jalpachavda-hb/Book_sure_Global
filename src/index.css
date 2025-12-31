@@ -1,10 +1,14 @@
 body {
- 
-  font-family: "Poppins";
+margin-top: 40px;
+  font-family: "Poppins" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 p {
   font-weight: 400;
   font-size: 16px;
+}
+
+section {
+  scroll-margin-top: 80px; 
 }

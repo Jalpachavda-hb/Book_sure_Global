@@ -1,75 +1,49 @@
-// import './App.css';
-// // import Navbar from './components/Navbar/Navbar';
-// import Home from './components/home/Home';
-// import About from './components/About/About';
-// import Feature from './components/Feature/Feature';
-// import Contact from './components/contact/Contact';
-// import Footer from './components/footer/Fotter';
-// import Navbar from './components/Navbar/Navbar';
-// import ScreenshotsSection from './components/screenshort/Screenshort';
-// // import ScreenshotsSection from './components/screenshort/Screenshort';
-// function App() {
-//   return (
-//     <>
-//    <Navbar/>
-//     <Home/>
-//     <About/>
-//     <Feature/>
-//     {/* <Screenshort/> */}
-//     {/* <ScreenshotsSection/> */}
-//     <Contact/>
-//     <Footer/>
-
-//   </>
-//   );
-// }
-
-// export default App;
-
 import "./App.css";
-import Home from "./components/home/Home";
-import About from "./components/About/About";
-import Feature from "./components/Feature/Feature";
-import Contact from "./components/contact/Contact";
-import Fotter from "./components/footer/Fotter";
-import Navbar from "./components/Navbar/Navbar";
-import ScreenshotsSection from "./components/screenshort/Screenshort";
 import { Routes, Route } from "react-router-dom";
+import "./components/Media.css";
 
+import Layout from "./components/Layout";
+
+// Pages
+import Blog from "./components/Blogs/Blog";
+import Home from "./components/home/Home";
+import Aboutus from "./components/Aboutmain/Aboutus";
+import Services from "./components/Services/Services";
+import Team from "./components/Team/Team";
+import Pricing from "./components/Pricing/Pricing";
+import Data from "./components/Data/Data";
+import Contactus from "./components/Contact/Contact";
+import Teamdetailpage from "./components/Team/Teamdetailpage";
+import Servicesubpage from "./components/Services/Servicesubpage";
+import Gallery from "./components/Team/Gallery";
+import Notfound from "./components/PageBanner/Notdound";
+import BlogDetail from "./components/Blogs/Blogdetail";
+import Careers from "./components/Contact/Careers";
 function App() {
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <section id="home">
-                <Home />
-              </section>
-              <section id="about">
-                <About />
-              </section>
+    <Routes>
 
-              <section id="features">
-                <Feature />
-              </section>
+      {/* Routes WITH Navbar & Footer */}
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Aboutus />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/details" element={<Servicesubpage />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/team/gallery" element={<Gallery />} />
+        <Route path="/team/:slug" element={<Teamdetailpage />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/data" element={<Data />} />
+        <Route path="/contact" element={<Contactus />} />
+        <Route path="/blog" element={<Blog />} />
+         <Route path="/blog/blogdetail" element={<BlogDetail />} />
+          <Route path="/careers" element={<Careers />} />
+      </Route>
 
-              <section>
-                <ScreenshotsSection id="screenshorts"/>
-              </section>
-               <section>
-                <Contact id="contact"/>
-              </section>
-               <section>
-                <Fotter/>
-              </section>
-            </>
-          }
-        />
-      </Routes>
-    </>
+      {/* 404 Page WITHOUT Navbar & Footer */}
+      <Route path="*" element={<Notfound />} />
+
+    </Routes>
   );
 }
 
