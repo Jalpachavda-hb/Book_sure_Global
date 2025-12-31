@@ -41,8 +41,8 @@
 import React from "react";
 import PageBanner from "../PageBanner/PageBanner";
 import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
-import ExpertSection from "../../components/Contact/ExpertSection";
-import GetInTouch from "../../components/Contact/GetInTouch";
+import ExpertSection from "../../components/Contact/Expertsection";
+import GetInTouch from "../../components/Contact/Getintouch";
 import Faq from "../../components/Contact/Faq";
 
 const Contact = () => {
