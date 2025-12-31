@@ -1,6 +1,6 @@
 import React from "react";
 import Stepdesign from "./Stepdesign";
-import Faq from "../Contact/Faq";
+import Faq from "../Contactus/Faq";
 
 import accountingImg from "../../assets/Images/Services/Account-ser.jpg";
 const Servicesubpage = () => {

@@ -1,7 +1,9 @@
-import React from "react";
-import "./contact.css";
 
-const ExpertsSection = () => {
+
+import React from "react";
+import "./Contact.css";
+
+const Expert = () => {
   return (
     <section className="experts-section py-5">
       <div className="container">
@@ -45,4 +47,4 @@ const ExpertsSection = () => {
   );
 };
 
-export default ExpertsSection;
+export default Expert;

@@ -12,9 +12,10 @@ import Services from "./components/Services/Services";
 import Team from "./components/Team/Team";
 import Pricing from "./components/Pricing/Pricing";
 import Data from "./components/Data/Data";
-import Contact from "./components/Contact/Contact";
-import Careers from "./components/Contact/Careers";
-
+// import Contact from "./components/Contact/Contact";
+// import Careers from "./components/Contact/Careers";
+import Contact from "./components/Contactus/Contact";
+import Careers from "./components/Contactus/Careers";
 import Teamdetailpage from "./components/Team/Teamdetailpage";
 import Servicesubpage from "./components/Services/Servicesubpage";
 import Gallery from "./components/Team/Gallery";
