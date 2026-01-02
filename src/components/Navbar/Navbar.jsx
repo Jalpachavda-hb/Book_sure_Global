@@ -3,7 +3,7 @@ import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 import logo from "../../assets/Images/Hero/logo.png";
-import "./Navbar.css";
+import "./navbar.css";
 import "../Media.css";
 import Topbar from "./Topbar";
 import { useState, useEffect } from "react";
