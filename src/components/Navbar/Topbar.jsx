@@ -26,7 +26,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-import "./Navbar.css";
+import "./navbar.css";
 
 export default function TopBar() {
   return (
