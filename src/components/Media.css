@@ -8,6 +8,9 @@
   .logo {
     width: 229px;
   }
+   .discover {
+    font-size: 34px;
+  }
 }
 
 /* Medium devices (tablets) */
@@ -38,10 +41,12 @@
 }
 
 
-
-
-
-
+@media (min-width: 1900px) {
+  .logo {
+    height: 78px;
+        width: 322px;
+  }
+}
 
 
 
@@ -86,4 +91,428 @@
   .hero-section {
     padding-top: 100px;
   }
+}
+
+
+
+@media (max-width: 575.98px) {
+  .min-vh-90 {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 24px;
+    line-height: 1.35;
+    text-align: center;
+  }
+
+  .hero-section p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .hero_btn {
+    width: 100%;
+    justify-content: center;
+  }
+.discover {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .sub-title {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .about-main-img {
+    width: 100%;
+    border-top-left-radius: 40px;
+  }
+
+  .about-exp-box {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin-top: 10px;
+    border-radius: 0 0 16px 16px;
+    text-align: center;
+  }
+
+  .about-exp-box h3 {
+    font-size: 22px;
+  }
+
+ .why-choose-area {
+    padding: 60px 0;
+  }
+
+  .team-img {
+    width: 240px;
+  }
+
+  .dots-img {
+    display: none;
+  }
+
+  .strength-heading {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .strength-text {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .strength-list li {
+    font-size: 13px;
+  }
+
+  .strength-stats {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .strength-btn {
+    width: 100%;
+  }
+
+
+
+
+}
+
+
+
+@media (max-width: 575.98px) {
+  .min-vh-90 {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 24px;
+    line-height: 1.35;
+    text-align: center;
+  }
+
+  .hero-section p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .hero_btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .discover {
+    font-size: 26px;
+  }
+
+  .about-stat h4 {
+    font-size: 22px;
+  }
+
+  .about-stat p {
+    font-size: 13px;
+  }
+ .team-img {
+    width: 280px;
+  }
+
+  .strength-heading {
+    font-size: 24px;
+  }
+
+  .strength-stats h4 {
+    font-size: 22px;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 991.98px) {
+  .min-vh-90 {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 34px;
+  }
+
+  .hero-section p {
+    font-size: 15px;
+  }
+  .why-choose-area {
+    padding: 70px 0;
+  }
+
+  .image-wrapper {
+    text-align: center;
+  }
+
+  .strength-content {
+    padding-left: 0;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .strength-list li {
+    justify-content: center;
+  }
+
+  .strength-stats {
+    justify-content: center;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .hero-section h1 {
+    font-size: 44px;
+  }
+
+
+ .about-laptop-img {
+    display: none;
+  }
+
+  .about-main-img {
+    width: 100%;
+    border-top-left-radius: 60px;
+  }
+
+  .about-exp-box {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .discover {
+    font-size: 30px;
+  }
+
+ .strength-heading {
+    font-size: 28px;
+  }
+
+
+
+}
+
+
+@media (min-width: 1200px) {
+  .hero-section h1 {
+    font-size: 48px;
+  }
+
+  .container {
+    max-width: 1140px;
+  }
+   .container {
+    max-width: 1140px;
+  }
+
+  .discover {
+    font-size: 36px;
+  }
+  .strength-heading {
+    font-size: 32px;
+  }
+
+  .team-img {
+    width: 400px;
+  }
+
+  .container {
+    max-width: 1140px;
+  }
+}
+
+
+
+@media (min-width: 1400px) {
+  .hero-section h1 {
+    font-size: 52px;
+  }
+
+  .container {
+    max-width: 1320px;
+  }
+
+.container {
+    max-width: 1320px;
+  }
+
+  .about-main-img {
+    width: 480px;
+  }
+
+  .about-exp-box {
+    width: 480px;
+  }
+
+  .discover {
+    font-size: 40px;
+  }
+ .container {
+    max-width: 1320px;
+  }
+
+  .strength-heading {
+    font-size: 36px;
+  }
+
+  .team-img {
+    width: 430px;
+  }
+
+  .strength-stats h4 {
+    font-size: 26px;
+  }
+   .container {
+    max-width: 1500px;
+  }
+
+  .team-img {
+    width: 470px;
+  }
+
+  .strength-heading {
+    font-size: 40px;
+  }
+
+  .strength-text {
+    font-size: 15px;
+  }
+
+}
+
+
+@media (min-width: 1600px) {
+  .hero-section h1 {
+    font-size: 56px;
+  }
+
+  .hero-section p {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1500px;
+  }
+  .container {
+    max-width: 1500px;
+  }
+
+  .about-main-img {
+    width: 520px;
+  }
+
+  .about-exp-box {
+    width: 520px;
+  }
+
+  .discover {
+    font-size: 44px;
+  }
+}
+
+
+@media (min-width: 1900px) {
+  .hero-section h1 {
+    font-size: 60px;
+    line-height: 1.15;
+  }
+
+  .hero-section p {
+    font-size: 18px;
+    max-width: 600px;
+  }
+
+  .container {
+    max-width: 1680px;
+  }
+
+  .min-vh-90 {
+    min-height: 85vh;
+  }
+
+ .container {
+    max-width: 1680px;
+  }
+
+  .about-main-img {
+    width: 580px;
+  }
+
+  .about-exp-box {
+    width: 580px;
+    padding: 32px;
+  }
+
+  .about-exp-box h3 {
+    font-size: 44px;
+  }
+
+  .discover {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .about-stat h4 {
+    font-size: 32px;
+  }
+
+  .about-stat p {
+    font-size: 15px;
+  }
+
+
+ .container {
+    max-width: 1680px;
+  }
+
+  .team-img {
+    width: 520px;
+    padding: 10px;
+  }
+
+  .strength-heading {
+    font-size: 44px;
+    line-height: 1.2;
+  }
+
+  .strength-text {
+    font-size: 16px;
+    max-width: 720px;
+  }
+
+  .strength-stats h4 {
+    font-size: 30px;
+  }
+
+  .strength-card h5 {
+    font-size: 18px;
+  }
+
+  .strength-card p {
+    font-size: 15px;
+  }
+
 }

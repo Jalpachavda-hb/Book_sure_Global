@@ -6,7 +6,6 @@
 
 /* ================= TOPBAR ================= */
 .topbar {
-
   top: 0;
   left: 0;
   width: 100%;
@@ -97,17 +96,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* ================= NAVBAR WRAPPER ================= */
 .navbar-wrapper {
   position: sticky;
@@ -126,9 +114,6 @@
   display: flex;
   align-items: center;
   transition: background 0.3s ease, box-shadow 0.3s ease;
-
-
-
 }
 
 /* Menu links */
@@ -188,8 +173,6 @@
 
 /* ================= HERO SECTION ================= */
 
-
-
 .offcanvas-backdrop {
   z-index: 1055;
 }
@@ -212,14 +195,6 @@
   background: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
-
-
-
-
-
-
-
-
 
 /* ===== GLOBAL FIX (VERY IMPORTANT) ===== */
 html,
@@ -295,7 +270,6 @@ body {
   }
 }
 
-
 /* Prevent menu text from breaking */
 .mobile-nav .nav-link {
   white-space: nowrap;
@@ -313,4 +287,137 @@ body {
 .mobile-offcanvas .offcanvas-header {
   justify-content: space-between;
   align-items: center;
+}
+
+.desktop-dropdown .dropdown-menu {
+  border-radius: 12px;
+  padding: 10px 0;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.desktop-dropdown .dropdown-item {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.desktop-dropdown .dropdown-item:hover {
+  background: rgba(36, 59, 154, 0.08);
+  color: #243b9a;
+}
+.mobile-dropdown {
+  margin: 10px 0;
+}
+
+.mobile-dropdown-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-dropdown .arrow {
+  transition: transform 0.3s ease;
+}
+
+.mobile-dropdown .arrow.open {
+  transform: rotate(180deg);
+}
+
+.mobile-submenu {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-submenu a {
+  padding: 8px 0;
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+.mobile-submenu a.active,
+.mobile-submenu a:hover {
+  color: #243b9a;
+}
+/* Desktop hover dropdown */
+@media (min-width: 992px) {
+  .navbar .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s ease;
+  }
+
+  .navbar .dropdown.show .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+/* ================= DROPDOWN BASE ================= */
+.desktop-dropdown .dropdown-menu {
+  background-color: #00030e; /* DEFAULT BG */
+  border: none;
+  border-radius: 14px;
+  padding: 10px 0;
+  min-width: 220px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= DEFAULT ITEM STATE ================= */
+.desktop-dropdown .dropdown-item {
+  background-color: transparent; /* DEFAULT ITEM BG */
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 24px;
+  transition: background-color 0.25s ease, padding-left 0.25s ease;
+}
+
+/* ================= HOVER ================= */
+.desktop-dropdown .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding-left: 30px;
+}
+
+/* ================= ACTIVE (CURRENT PAGE) ================= */
+.desktop-dropdown .dropdown-item.active {
+  background-color: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ================= REMOVE BOOTSTRAP BLUE ================= */
+.desktop-dropdown .dropdown-item:focus,
+.desktop-dropdown .dropdown-item:active {
+  background-color: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  outline: none;
+  box-shadow: none;
+}
+
+/* ================= DROPDOWN OPEN ANIMATION ================= */
+@media (min-width: 992px) {
+  .navbar .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: all 0.25s ease;
+  }
+
+  .navbar .dropdown.show .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 }

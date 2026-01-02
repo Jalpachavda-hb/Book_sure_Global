@@ -30,7 +30,8 @@ import "./navbar.css";
 
 export default function TopBar() {
   return (
-    <div className="topbar d-none d-lg-block">
+    <div className="topbar d-none d-lg-block"
+    >
       <div className="container d-flex justify-content-between align-items-center">
         
         {/* LEFT */}

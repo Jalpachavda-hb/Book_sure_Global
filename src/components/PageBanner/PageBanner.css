@@ -144,3 +144,161 @@
     font-size: 20px;
   }
 }
+
+
+
+@media (max-width: 575.98px) {
+  .page-banner {
+    height: 200px;
+    align-items: flex-end;
+  }
+
+  .page-banner-content {
+    padding: 0 16px 20px;
+    text-align: center;
+  }
+
+  .page-banner-content h1 {
+    font-size: 22px;
+  }
+
+  .breadcrumb {
+    justify-content: center;
+    font-size: 13px;
+  }
+
+  .breadcrumb a,
+  .breadcrumb span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page-banner {
+    height: 220px;
+  }
+
+  .page-banner-content h1 {
+    font-size: 26px;
+  }
+
+  .page-banner-content {
+    padding-left: 20px;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  .page-banner {
+    height: 240px;
+  }
+
+  .page-banner-content h1 {
+    font-size: 30px;
+  }
+
+  .breadcrumb,
+  .breadcrumb a,
+  .breadcrumb span {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .page-banner-content h1 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-banner {
+    height: 300px;
+  }
+
+  .page-banner-content h1 {
+    font-size: 42px;
+  }
+
+  .page-banner-content {
+    padding-left: 80px;
+  }
+}
+@media (min-width: 1400px) {
+  .page-banner {
+    height: 340px;
+  }
+
+  .page-banner-content h1 {
+    font-size: 46px;
+  }
+
+  .breadcrumb,
+  .breadcrumb a,
+  .breadcrumb span {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1600px) {
+  .page-banner {
+    height: 380px;
+  }
+
+  .page-banner-content {
+    padding-left: 120px;
+  }
+
+  .page-banner-content h1 {
+    font-size: 52px;
+  }
+
+  .breadcrumb,
+  .breadcrumb a,
+  .breadcrumb span {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1900px) {
+  .page-banner {
+    height: 420px;
+  }
+
+  .page-banner-content {
+    padding-left: 160px;
+  }
+
+  .page-banner-content h1 {
+    font-size: 60px;
+    line-height: 1.15;
+  }
+
+  .breadcrumb,
+  .breadcrumb a,
+  .breadcrumb span {
+    font-size: 19px;
+  }
+}
+@media (max-width: 575.98px) {
+  .notfound-content img {
+    max-width: 240px;
+  }
+
+  .notfound-content p {
+    font-size: 14px;
+  }
+
+  .home-btn {
+    padding: 12px 28px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .notfound-content h1 {
+    font-size: 110px;
+  }
+
+  .notfound-content h3 {
+    font-size: 30px;
+  }
+
+  .notfound-content p {
+    font-size: 18px;
+  }
+}
