@@ -345,7 +345,7 @@ img.about-phone {
 .strength-card {
   position: relative;
   background: #fff;
-  border: 1.5px solid #CC952B;
+  border-top: 4.5px solid #CC952B;
   border-radius: 12px;
   padding: 28px 22px 32px;
   height: 100%;
@@ -360,7 +360,7 @@ img.about-phone {
   right: 10px;
   bottom: -10px;
   height: 10px;
-  background: #293C8F;
+  /* background: #293C8F; */
   border-radius: 0 0 12px 12px;
   z-index: -1;
 }
