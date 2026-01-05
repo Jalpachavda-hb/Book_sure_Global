@@ -18,7 +18,7 @@
 import React from "react";
 // import "./Hero.css";
 import bgImage from "../../assets/Images/bgabout.jpg";
-import service from "../../assets/Images/Aboutus/service.jpg";
+import service from "../../assets/Images/Aboutus/services_details_inner02.jpg";
 
 const Help = () => {
   return (
