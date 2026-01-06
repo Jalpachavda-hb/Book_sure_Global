@@ -5,7 +5,7 @@ import "./PageBanner.css";
 const PageBanner = ({ title, bgImage }) => {
   return (
     <section
-      className="page-banner"
+      className="page-banner mt-5"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="page-banner-overlay"></div>

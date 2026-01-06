@@ -1,0 +1,188 @@
+/* =========================
+   NAVBAR BASE
+========================= */
+.main-navbar {
+  height: 78px;
+  background: linear-gradient(90deg, #0b1c3a 0%, #132d63 50%, #0b1c3a 100%);
+  padding: 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  z-index: 999;
+}
+
+/* Scroll effect */
+.main-navbar.scrolled {
+  height: 68px;
+}
+
+/* =========================
+   LOGO AREA (MATCH IMAGE)
+========================= */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper {
+  position: relative;
+}
+
+
+/* =========================
+   DESKTOP MENU
+========================= */
+.main-navbar .nav-link {
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 14px;
+  padding: 0;
+  position: relative;
+}
+
+/* Gold underline */
+.main-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #f6d365, #fda085);
+  transition: width 0.3s ease;
+}
+
+.main-navbar .nav-link:hover::after,
+.main-navbar .nav-link.active::after {
+  width: 100%;
+}
+
+.main-navbar .nav-link:hover,
+.main-navbar .nav-link.active {
+  color: #fbd38d !important;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+.dropdown-menu {
+  border-radius: 14px;
+  border: none;
+  padding: 10px 0;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown-item {
+  padding: 10px 22px;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 215, 150, 0.25);
+}
+
+/* remove bootstrap arrow */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* =========================
+   TOGGLER
+========================= */
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* =========================
+   MOBILE OFFCANVAS
+========================= */
+.mobile-offcanvas {
+  background: linear-gradient(180deg, #0b1c3a, #132d63);
+  color: #fff;
+}
+
+.mobile-nav .nav-link {
+  color: #fff !important;
+  padding: 12px 0;
+  font-size: 16px;
+}
+
+.mobile-submenu a {
+  display: block;
+  padding: 8px 0 8px 15px;
+  color: #fbd38d;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* =========================
+   LEFT WHITE LOGO STRIP
+========================= */
+/* .logo-strip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 320px;
+  background: #ffffff;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #cc952b, #293c8f);
+  border-image-slice: 1;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+
+  border-bottom-right-radius: 100px;
+    border-right-style: groove;
+  border-right-color: coral;
+  border-right-width: 3px;
+} */
+
+/* Push menu away from white strip */
+@media (min-width: 992px) {
+  .main-navbar .container {
+    padding-left: 340px;
+  }
+}
+
+/* =========================
+   LOGO DESIGN (MATCH SCREENSHOT)
+========================= */
+.logo-brand {
+  padding-left: 30px;
+}
+
+.logo-wrapper {
+  position: relative;
+}
+
+.logo-img {
+  height: 59px;
+}
+
+.logo-strip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 320px;
+  background: #ffffff;
+
+  /* Bottom gradient border */
+  border-bottom: 3px solid transparent;
+  /* border-image: linear-gradient(90deg, #cc952b, #293c8f); */
+  border-image-slice: 1;
+
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+
+  /* Right side curve */
+  border-bottom-right-radius: 100px;
+
+  /* Important for pseudo-element clipping */
+  overflow: visible;
+}

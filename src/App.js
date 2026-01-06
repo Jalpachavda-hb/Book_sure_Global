@@ -28,7 +28,7 @@ function App() {
       {/* Routes WITH Navbar & Footer */}
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Aboutus />} />
+        <Route path="/company/about" element={<Aboutus />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/details" element={<Servicesubpage />} />
         <Route path="/team" element={<Team />} />
@@ -37,9 +37,9 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/data" element={<Data />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/company/blog" element={<Blog />} />
          <Route path="/blog/blogdetail" element={<BlogDetail />} />
-          <Route path="/careers" element={<Careers />} />
+          <Route path="/company/careers" element={<Careers />} />
       </Route>
 
       {/* 404 Page WITHOUT Navbar & Footer */}

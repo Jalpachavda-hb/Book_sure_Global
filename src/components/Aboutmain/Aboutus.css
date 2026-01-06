@@ -514,3 +514,29 @@
   background: #f5a000;
   color: #fff;
 }
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+  .ass_img {
+    width: 259px;
+  }
+}
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 492px) {
+  .ass_img {
+    width: 259px;
+  }
+}
+@media (min-width: 388px) {
+  .ass_img {
+    width: 259px;
+  }
+}

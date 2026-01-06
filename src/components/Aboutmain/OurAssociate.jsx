@@ -35,7 +35,7 @@ const OurAssociate = () => {
             </p>
 
             <div >
-            <img src={sign} alt="25 Years Experience" />
+            <img className="ass_img" src={sign} alt="25 Years Experience" />
           </div>
           </div>
         </div>
