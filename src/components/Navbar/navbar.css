@@ -385,7 +385,7 @@
 }
 
 .mobile-offcanvas .offcanvas-header {
-  background: #fff;
+  /* background: #fff; */
   border-bottom: 2px solid #cc952b;
 }
 
@@ -553,3 +553,28 @@ body {
   background-color: #2d3e92 !important;
   color: #ffffff !important;
 }
+@media (min-width: 1600px) {
+   .main-navbar .nav-link {
+  white-space: nowrap !important;
+}
+
+.main-navbar .navbar-nav {
+  flex-wrap: nowrap !important;
+}
+}
+@media (min-width: 1900px) {
+ .main-navbar .nav-link {
+  white-space: nowrap !important;
+}
+
+.main-navbar .navbar-nav {
+  flex-wrap: nowrap !important;
+}
+}
+/* .main-navbar .nav-link {
+  white-space: nowrap;
+}
+
+.main-navbar .navbar-nav {
+  flex-wrap: nowrap;
+} */
