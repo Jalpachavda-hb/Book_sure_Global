@@ -125,9 +125,11 @@ export default function Hero() {
                 Partners in Corporate <br />& Research
               </h1>
               <p>Corporate compliance and in-depth research support.</p>
+              <a href="/company/about">
               <button className="btn hero_btn px-4 py-2">
                 Explore More →
               </button>
+              </a>
             </div>
           </div>
         </div>
