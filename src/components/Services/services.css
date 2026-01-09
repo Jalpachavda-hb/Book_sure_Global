@@ -207,7 +207,9 @@
 
 .feature-list li {
   cursor: pointer;
-  transition: color 0.2s; /* optional: smooth effect on hover */
+  transition: color 0.2s;
+  text-align: start;
+   /* optional: smooth effect on hover */
 }
 
 .feature-list li:hover {

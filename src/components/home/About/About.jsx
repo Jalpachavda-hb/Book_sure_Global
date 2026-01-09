@@ -1,8 +1,8 @@
 import React from "react";
 import { FaCalendarCheck, FaFolderOpen } from "react-icons/fa";
 
-import doctor from "../../../assets/Images/Aboutus/service.jpg";
-import laptop from "../../../assets/Images/Aboutus/service-d-1-5.jpg";
+import mainimg from "../../../assets/Images/Aboutus/service.jpg";
+import ghraph from "../../../assets/Images/Aboutus/service-d-1-5.jpg";
 import bgpara from "../../../assets/Images/Aboutus/bgimageabout.webp";
 import shape from "../../../assets/Images/Aboutus/h4_banner_shape02.webp";
 
@@ -43,7 +43,7 @@ export default function About() {
               }}
             >
               <img
-                src={doctor}
+                src={mainimg}
                 alt="Doctor at desk"
                 className="img-fluid w-100"
               />
@@ -62,7 +62,7 @@ export default function About() {
               }}
             >
               <img
-                src={laptop}
+                src={ghraph}
                 alt="Laptop analytics"
                 className="img-fluid w-100"
               />
@@ -92,28 +92,29 @@ export default function About() {
           {/* === RIGHT SIDE TEXT === */}
           <div className="col-lg-6 order-1 order-lg-2 text-center text-lg-start">
             <span className="sub-title text-uppercase fw-semibold small bg-light px-3 px-sm-4 py-1 rounded-pill d-inline-block mb-3">
-              Pioneers in Innovative Solutions and Business Support
+             Professional Accounting, Payroll & Tax Support
             </span>
 
-            <h2 className="discover fw-bold display-6  mb-3">
-              Discover Integrity Data Services
-            </h2>
+            <h1 className="discover fw-bold display-6  mb-3">
+          Global Accounting Services
+            </h1>
 
             <p className="text-secondary">
-              Integrity Data Services is a trusted outsourcing and offshore
-              staffing consulting firm, founded by industry professionals with
-              over 25 years of experience in delivering high-quality financial,
-              accounting, taxation, corporate research, and back-office support
-              services.
+              Booksure Global is a professional accounting outsourcing firm
+              delivering reliable bookkeeping, accounting, payroll and tax
+              support services to growing businesses. Our team includes
+              qualified Chartered Accountants and CPA Australia and other
+              qualified professionals with strong global tax and compliance
+              knowledge.
             </p>
 
             <p className="text-secondary">
-              We partner with businesses across the globe to streamline
-              operations, reduce costs, and enhance productivity through
-              reliable, scalable, and technology-driven solutions. Our team
-              combines deep domain knowledge with modern tools to ensure
-              accuracy, compliance, and efficiency at every stage of service
-              delivery.
+              With a process-driven approach and a strong focus on accuracy,
+              confidentiality and timely delivery, we help organisations
+              maintain clean financial records, produce reliable reports and
+              stay compliant with diverse regulatory frameworks. Our clients
+              rely on us to manage their numbers with precision, allowing them
+              to focus on building and scaling their business.
             </p>
 
             {/* === Stats Row === */}
@@ -133,9 +134,7 @@ export default function About() {
                   <FaFolderOpen size={32} color="#CC952B" />
                   <div>
                     <h4 className="fw-bold mb-0">100%</h4>
-                    <p className="mb-0 text-muted">
-                      Data Security 
-                    </p>
+                    <p className="mb-0 text-muted">Data Security</p>
                     <p className="mb-0 text-muted"></p>
                   </div>
                 </div>

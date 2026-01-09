@@ -370,7 +370,7 @@
 } */
 
 .mission-title {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 700;
   color: #294a97;
   margin-top: 10px;
@@ -393,7 +393,7 @@
 }
 
 /* ICON */
-.mission-icon {
+.mission-icon_left {
   position: absolute;
   top: -25px;
   right: 30px;
@@ -403,6 +403,19 @@
   padding: 15px;
   border-radius: 50%;
 }
+
+.mission-icon_right{
+    position: absolute;
+  top: -25px;
+  /* right: 30px; */
+  font-size: 60px;
+  color: #2563eb;
+  background: #fff;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+
 /* ==============OurAssociat============== */
 .hero-finance {
   min-height: 90vh;

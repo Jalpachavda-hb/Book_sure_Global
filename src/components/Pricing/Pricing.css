@@ -113,3 +113,66 @@
   color: #fff;
   box-shadow: 0 10px 22px rgba(204, 149, 43, 0.35);
 }
+
+
+.contact-cta strong {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.contact-cta .btn {
+  margin-top: 8px;
+}
+
+/* ------------inqform========= */
+
+.inquiry-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.inquiry-wrapper .pricing-card {
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.07);
+}
+
+.inquiry-wrapper .form-label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #2f2f2f;
+}
+
+.inquiry-wrapper input,
+.inquiry-wrapper select,
+.inquiry-wrapper textarea {
+  border-radius: 8px;
+  border: 1px solid #d6d6d6;
+  padding: 10px 12px;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.inquiry-wrapper input:focus,
+.inquiry-wrapper select:focus,
+.inquiry-wrapper textarea:focus {
+  border-color: #c5a352;
+  box-shadow: 0 0 0 2px rgba(197,163,82,0.15);
+  outline: none;
+}
+
+.btnplan {
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.inquiry-success {
+  background: #e7e0c7;
+  border-left: 4px solid #c5a352;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #3d3319;
+  margin-bottom: 12px;
+  font-weight: 500;
+}

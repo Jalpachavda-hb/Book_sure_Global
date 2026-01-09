@@ -6,44 +6,72 @@ import Serimg2 from "../../assets/Images/Aboutus/Serimg2.jpg";
 import Serimg3 from "../../assets/Images/Aboutus/serimg3.jpeg";
 import { FiLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { FaCalculator, FaBalanceScale, FaCogs } from "react-icons/fa";
+import { FaCalculator, FaCogs } from "react-icons/fa";
+import { MdOutlineSupport } from "react-icons/md";
+import { FaBookAtlas } from "react-icons/fa6";
 const Servicedata = [
   {
     id: 1,
-    icon: <FaCalculator />,
-    title: "Financial & Accounting Services",
+    icon: <FaBookAtlas />,
+    title: "Bookkeeping Services",
     description:
-      "Explore our savings, quality care and wellness solutions to craft the perfect plan for your business.",
+      "Accurate, organised and audit-ready books — every period, without stress.",
+
     image: Serimg1,
     features: [
-      "Accounting Services",
-      "Bookkeeping Services",
-      "Tax Filing Services",
-      "Payroll Management Services",
-      "Audit Support Services",
+      "Ongoing Bookkeeping",
+      "Cleanup Bookkeeping",
+      "Catch-Up Bookkeeping",
+      "Reconciliations",
+      "AR & AP Support",
+      "Chart of Accounts Optimization",
     ],
   },
   {
     id: 2,
-    icon: <FaBalanceScale />,
-    title: "Insolvency Support Services",
+    icon: <FaCalculator />,
+    title: "Accounting Services",
     description:
-      "Our Insolvency Support Services are tailored to meet the specific needs of insolvency professionals and organizations through each phase of the process.",
+      "We provide end-to-end accounting support to keep your financial records accurate, compliant and report-ready.",
     image: Serimg2,
-    features: [],
+    features: [
+      "Monthly, quarterly & annual financial statements",
+      "Profit & Loss, Balance Sheet & Cash Flow reports",
+      "Accrual accounting & period-end adjustments",
+      "Ledger review, reconciliations & error correction",
+      "Management reports & performance analysis",
+      "Year-end closing & audit-ready schedules",
+      "Coordination with your external CPA or tax advisor",
+    ],
   },
   {
     id: 3,
     icon: <FaCogs />,
-    title: "Back-Office Support Services",
+    title: "Payroll Processing Services",
     description:
-      "Protect your vehicles and drive worry-free with our vehicle insurance policies.",
+      "We manage your payroll accurately and on time, ensuring smooth salary processing and compliance support.",
     image: Serimg3,
     features: [
-      "Corporate Research",
-      "Data Analytics",
-      "Due Diligence",
-      "Operational Management Support",
+      "Payroll calculation & processing",
+      "Payslip preparation",
+      "Payroll journal entries",
+      "Statutory deduction tracking",
+    ],
+  },
+
+  {
+    id: 4,
+    icon: <MdOutlineSupport />,
+    title: "Tax Support Services",
+    description:
+      "We prepare your financial data in line with diverse regulatory frameworks so your tax filings remain accurate across different compliance environments.",
+    image: Serimg3,
+    features: [
+      "Tax-ready financial statements",
+      "Indirect tax reconciliation support (VAT / GST / sales tax equivalents)",
+      "Preparation of jurisdiction-specific tax schedules",
+      "Multi-compliance reporting assistance",
+      "Coordination with your external tax advisor or CPA",
     ],
   },
 ];
@@ -56,7 +84,7 @@ const Servicedatasection = () => {
     <>
       <section className="insurance-section">
         <div className="container">
-         <div className="hero-content-left animated-content position-relative z-index text-white mb-4">
+          <div className="hero-content-left animated-content position-relative z-index text-white mb-4">
             <h3 className="page-tital mt-1">Our Services</h3>
             <p className="contain-colur">“What We Provide”</p>
           </div>

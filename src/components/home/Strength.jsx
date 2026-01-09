@@ -56,19 +56,23 @@ const Strength = () => {
               {/* HIGHLIGHT POINTS */}
               <ul className="strength-list">
                 <li>
-                  <FaCheckCircle /> Industry-compliant processes with proven
-                  results
+                  <FaCheckCircle /> Quality-first delivery standards
                 </li>
                 <li>
-                  <FaCheckCircle /> Scalable outsourcing tailored to your
-                  business needs
+                  <FaCheckCircle /> Qualified CA & CPA professionals
                 </li>
                 <li>
-                  <FaCheckCircle /> Technology-driven insights for smarter
-                  decisions
+                  <FaCheckCircle /> Multi-level review process
                 </li>
                 <li>
-                  <FaCheckCircle /> Dedicated teams focused on long-term success
+                  <FaCheckCircle /> Process-driven accuracy
+                </li>
+                <li>
+                  <FaCheckCircle /> Secure & confidential handling
+                </li>
+                <li>
+                  <FaCheckCircle /> Consistent, reliable outcomes
+
                 </li>
               </ul>
 

@@ -121,14 +121,14 @@ export default function Hero() {
           <div className="row align-items-center min-vh-90">
             <div className="col-lg-6">
               <h1>
-                Your Outsources <br />
-                Partners in Corporate <br />& Research
+                CLEAN NUMBERS <br />
+                CLEAN BOOKS!
               </h1>
-              <p>Corporate compliance and in-depth research support.</p>
+              <p>Financial clarity backed by regulatory expertise</p>
               <a href="/company/about">
-              <button className="btn hero_btn px-4 py-2">
-                Explore More →
-              </button>
+                <button className="btn hero_btn px-4 py-2  mt-3">
+                  Explore More →
+                </button>
               </a>
             </div>
           </div>

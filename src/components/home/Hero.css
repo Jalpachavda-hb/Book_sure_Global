@@ -16,7 +16,11 @@
 .gradient-overlay:before {
   position: absolute;
   content: "";
-  background-image: linear-gradient(to bottom, #ebefff, rgba(222, 226, 226, 0.8));
+  background-image: linear-gradient(
+    to bottom,
+    #ebefff,
+    rgba(222, 226, 226, 0.8)
+  );
   width: 100%;
   height: 100%;
   top: 0;
@@ -26,7 +30,7 @@
 .solid-white-btn,
 .outline-white-btn {
   padding: 12px 30px !important;
- 
+
   font-weight: 700 !important;
   border-radius: 30px !important;
 }
@@ -255,11 +259,10 @@ img.about-phone {
   transform: translateY(-4px);
 }
 
-.software-section  {
+.software-section {
   background: #f8f9ff !important;
   padding: -6rem;
 }
-
 
 /* ========Ourstrength======= */
 /* SECTION */
@@ -345,7 +348,7 @@ img.about-phone {
 .strength-card {
   position: relative;
   background: #fff;
-  border-top: 4.5px solid #CC952B;
+  border-top: 4.5px solid #cc952b;
   border-radius: 12px;
   padding: 28px 22px 32px;
   height: 100%;
@@ -405,7 +408,6 @@ img.about-phone {
   margin-bottom: 0;
 }
 
-
 /* RIGHT CONTENT */
 .strength-content {
   padding-left: 10px;
@@ -418,7 +420,7 @@ img.about-phone {
 }
 
 .strength-heading span {
-  color: #CC952B;
+  color: #cc952b;
 }
 
 .strength-text {
@@ -445,7 +447,7 @@ img.about-phone {
 }
 
 .strength-list svg {
-  color: #CC952B;
+  color: #cc952b;
   font-size: 16px;
 }
 
@@ -459,7 +461,7 @@ img.about-phone {
 .strength-stats h4 {
   font-size: 24px;
   font-weight: 700;
-  color: #CC952B;
+  color: #cc952b;
   margin-bottom: 0;
 }
 
@@ -470,13 +472,12 @@ img.about-phone {
 
 /* CTA */
 .strength-btn {
-  background-color: #CC952B !important;
+  background-color: #cc952b !important;
   border: none;
   padding: 10px 25px;
   font-weight: 600;
   color: white !important;
 }
-
 
 /* ===============testimonial=-=========== */
 
@@ -563,7 +564,7 @@ img.about-phone {
   display: inline-block;
   width: 40px;
   height: 3px;
-  background: #CC952B;
+  background: #cc952b;
   border-radius: 2px;
 }
 
@@ -607,7 +608,7 @@ img.about-phone {
 /* SHAPE IMAGE AS BACKGROUND */
 .shape-bg {
   position: absolute;
-  width: 500px;          /* adjust if needed */
+  width: 500px; /* adjust if needed */
   height: auto;
   z-index: 1;
 }
@@ -617,7 +618,7 @@ img.about-phone {
   position: relative;
   max-width: 100%;
   z-index: 2;
-  
+
   border-radius: 12px;
 }
 
@@ -649,7 +650,6 @@ img.about-phone {
 .min-vh-90 {
   min-height: 90vh; /* 90% of viewport height */
 }
-
 
 .hero-content p {
   margin: 20px 0;
@@ -685,7 +685,7 @@ img.about-phone {
   content: "";
   position: absolute;
   inset: 0;
- 
+
   background: linear-gradient(
     90deg,
     rgba(247, 240, 227, 0.9) 0%,
@@ -704,6 +704,7 @@ img.about-phone {
   font-size: 48px;
   font-weight: 700;
   color: #243b9a;
+  line-height: 1.5;
 }
 
 .hero-section p {
@@ -720,8 +721,8 @@ img.about-phone {
 }
 
 .hero_btn {
-  background-color: #CC952B !important;
- 
+  background-color: #cc952b !important;
+
   padding: 14px 32px;
   border-radius: 6px;
   border: none;
@@ -733,15 +734,13 @@ img.about-phone {
   gap: 8px;
 
   /* animation */
-  transition: 
-    background-color 0.35s ease,
-    transform 0.35s ease,
+  transition: background-color 0.35s ease, transform 0.35s ease,
     box-shadow 0.35s ease;
 }
 
 .hero_btn:hover {
-  background-color: #293C8F !important; 
-  color:white !important;
+  background-color: #293c8f !important;
+  color: white !important;
   transform: translateY(-3px); /* lift effect */
   box-shadow: 0 8px 20px rgba(41, 60, 143, 0.35);
 }
