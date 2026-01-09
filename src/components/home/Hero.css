@@ -647,8 +647,8 @@ img.about-phone {
 }
 
 /*=============== herosection=============== */
-.min-vh-90 {
-  min-height: 90vh; /* 90% of viewport height */
+.min-vh-80 {
+  min-height: 80vh; /* 80% of viewport height */
 }
 
 .hero-content p {
@@ -706,7 +706,6 @@ img.about-phone {
   color: #243b9a;
   line-height: 1.5;
 }
-
 .hero-section p {
   margin: 20px 0;
   font-size: 16px;
@@ -743,4 +742,54 @@ img.about-phone {
   color: white !important;
   transform: translateY(-3px); /* lift effect */
   box-shadow: 0 8px 20px rgba(41, 60, 143, 0.35);
+}
+
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #243b9a;
+  line-height: 1.5;
+}
+
+/* Small devices (300px+) */
+@media (max-width: 575px) {
+  .hero-section h1 {
+    font-size: 28px;
+  }
+}
+
+/* Mobile */
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero-section h1 {
+    font-size: 32px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-section h1 {
+    font-size: 36px;
+  }
+}
+
+/* Small laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-section h1 {
+    font-size: 42px;
+  }
+}
+
+/* 1366px screens */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .hero-section h1 {
+    font-size: 48px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1600px) {
+  .hero-section h1 {
+    font-size: 64px;
+  }
 }

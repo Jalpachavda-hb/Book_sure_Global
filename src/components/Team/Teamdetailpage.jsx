@@ -25,7 +25,7 @@ const TeamDetail = () => {
     <section className="team-detail-page">
       <div className="container">
         {/* Header */}
-        <div className="team-detail-header">
+        <div className="team-detail-header mt-3">
           <h1>{member.name}</h1>
           <span>{member.role}</span>
         </div>
@@ -40,15 +40,18 @@ const TeamDetail = () => {
 
           {/* Content */}
           <div className="col-lg-8">
-         <div className="team-detail-content">
-  {member.details && member.details.trim() !== '' ? (
-    member.details.split('\n').map((para, index) => (
-      para.trim() !== '' && <p key={index}>{para}</p>
-    ))
-  ) : (
-    <p>No details available.</p>
-  )}
-</div>
+            <div className="team-detail-content">
+              {member.details && member.details.trim() !== "" ? (
+                member.details
+                  .split("\n")
+                  .map(
+                    (para, index) =>
+                      para.trim() !== "" && <p key={index}>{para}</p>
+                  )
+              ) : (
+                <p>No details available.</p>
+              )}
+            </div>
           </div>
         </div>
       </div>

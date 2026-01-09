@@ -1,14 +1,14 @@
 import React from "react";
 import { FaBullseye } from "react-icons/fa";
 import "./Aboutus.css";
-
+import Mission from "../../assets/Images/Aboutus/mission.jpg";
+import Vision from "../../assets/Images/Aboutus/vision.jpg";
 const Ourmission = () => {
   return (
     <>
-      <section className="mission-section">
+      {/* <section className="mission-section">
         <div className="container">
           <div className="row align-items-center g-5">
-            {/* LEFT CONTENT */}
             <div className="col-lg-4">
               <span className="subtitle">OUR MISSION</span>
               <h3 className="mission-title">
@@ -17,7 +17,6 @@ const Ourmission = () => {
               </h3>
             </div>
 
-            {/* RIGHT CARD */}
             <div className="col-lg-8">
               <div className="mission-card">
                 <FaBullseye className="mission-icon_left" />
@@ -44,7 +43,6 @@ const Ourmission = () => {
       <section className="mission-section">
         <div className="container">
           <div className="row align-items-center g-5">
-            {/* LEFT CONTENT */}
             <div className="col-lg-8">
               <div className="mission-card">
                 <FaBullseye className="mission-icon_right" />
@@ -58,13 +56,37 @@ const Ourmission = () => {
               </div>
             </div>
 
-            {/* RIGHT CARD */}
             <div className="col-lg-4">
               <span className="subtitle">OUR VISION</span>
               <h3 className="mission-title">
                 To be a trusted global partner for accounting excellence.
               </h3>
             </div>
+          </div>
+        </div>
+      </section> */}
+
+      <section className="mission-vision-section container">
+        <div className="mv-box">
+          <div className="mv-content mission">
+            <h4>Our Mission</h4>
+            <p>
+              To provide accurate, secure and cost-effective accounting
+              solutions powered by global expertise.
+            </p>
+          </div>
+
+          <div className="mv-img">
+            <img src={Mission} alt="Mission" />
+          </div>
+
+          <div className="mv-content vision">
+            <h4>Our Vision</h4>
+            <p>To be a trusted global partner for accounting excellence.</p>
+          </div>
+
+          <div className="mv-img">
+            <img src={Vision} alt="Vision" />
           </div>
         </div>
       </section>

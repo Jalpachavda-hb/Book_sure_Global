@@ -9,7 +9,7 @@ const Servicesubpage = () => {
       <section className="team-detail-page">
         <div className="container">
           {/* Header */}
-          <div className="team-detail-header">
+          <div className="team-detail-header mt-5">
             <h1>Accounting Services</h1>
             <span>FINANCIAL & ACCOUNTING SERVICES</span>
 

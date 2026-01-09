@@ -161,7 +161,9 @@ const InquiryForm = () => {
             </button>
           </form>
           {successMsg && (
-            <div className="alert alert-success py-2 mb-3 mt-5">{successMsg}</div>
+            <div className="alert alert-success py-2 mb-3 mt-5">
+              {successMsg}
+            </div>
           )}
         </div>
       </div>
