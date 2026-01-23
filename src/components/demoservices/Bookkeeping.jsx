@@ -3,6 +3,7 @@ import ConsultationSection from "./ConsultationSection";
 import Stepdesign from "../Services/Stepdesign";
 import { FaCheckCircle } from "react-icons/fa";
 import pageimg from "../../assets/Images/Services/innerpageserv.png";
+import "./DemoServices.css";
 const Bookkeeping = () => {
   return (
     <>

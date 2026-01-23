@@ -2,7 +2,7 @@ import ConsultationSection from "./ConsultationSection";
 import Stepdesign from "../Services/Stepdesign";
 import { FaCheckCircle } from "react-icons/fa";
 import pageimg from "../../assets/Images/Services/accounting-removebg-preview.png";
-
+import "./DemoServices.css";
 const Accounting = () => {
   return (
     <>
