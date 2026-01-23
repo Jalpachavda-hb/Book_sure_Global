@@ -12,7 +12,7 @@ import Services from "./components/Services/Services";
 import DemoServices from "./components/demoservices/DemoServices";
 import Bookkeeping from "./components/demoservices/Bookkeeping";
 import Accounting from "./components/demoservices/Accounting";
-// import Team from "./components/Team/Team";
+import Team from "./components/Team/Team";
 // import Pricing from "./components/Pricing/Pricing";
 // import Data from "./components/Data/Data";
 // import Contact from "./components/Contact/Contact";
@@ -38,7 +38,7 @@ function App() {
         <Route path="/services1" element={<DemoServices />} />
         <Route path="services1/bookkeepingservices" element={<Bookkeeping />} />
         <Route path="services1/accountingservices" element={<Accounting />} />
-        {/* <Route path="/team" element={<Team />} /> */}
+        <Route path="/team" element={<Team />} />
         {/* <Route path="/team/gallery" element={<Gallery />} /> */}
         {/* <Route path="/team/:slug" element={<Teamdetailpage />} /> */}
         {/* <Route path="/pricing" element={<Pricing />} /> */}
