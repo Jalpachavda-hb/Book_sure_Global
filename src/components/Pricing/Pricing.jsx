@@ -104,9 +104,9 @@ const Pricing = () => {
           </div>
         </div>
       </section>
-      <InquiryForm/>
+      <InquiryForm />
     </>
-  );
+  );  
 };
 
 export default Pricing;

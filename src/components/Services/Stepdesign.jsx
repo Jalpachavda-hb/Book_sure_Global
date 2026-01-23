@@ -11,40 +11,29 @@ const servicesData = [
   {
     id: 1,
     icon: SerIcon1,
-    title: "General Accounting",
-    desc: " Comprehensive management of daily financial transactions, including recording, classifying, and reconciling accounts.",
+    title: "Schedule Your Payroll Consultation",
+    desc: "Share your payroll frequency, team size, and system requirements.",
   },
   {
     id: 2,
     icon: SerIcon2,
-    title: "Account Reconciliation",
-    desc: " Regular reconciliation of bank accounts, credit cards, and other financial records to ensure accuracy and consistency in your books.",
+    title: "Payroll Review & Compliance Setup",
+    desc: "We assess compliance needs, workflows, and payroll regulations relevant to your region.",
   },
   {
     id: 3,
     icon: SerIcon3,
-    title: "Financial Statement Preparation",
-    desc: "Accurate preparation of balance sheets, income statements, and cash flow statements, providing clear insights into your financial position",
+    title: "We set it up for you",
+    desc: "Your payroll is managed by dedicated specialists for smooth, ongoing processing.",
   },
-  {
-    id: 4,
-    icon: SerIcon4,
-    title: "Month-End & Year-End Closing Report",
-    desc: "Thorough closing processes to finalize your financial records at the end of each month and fiscal year, ensuring proper reporting and tax compliance.",
-  },
-  {
-    id: 5,
-    icon: SerIcon5,
-    title: "Fixed Asset Accounting",
-    desc: "Managing and tracking depreciation, acquisitions, disposals, and other asset-related transactions",
-  },
+
 ];
 export default function ServicesSection() {
   return (
     <section className="services-section">
       <div className="container">
         <div className="team-detail-header">
-          <h3>Our Services Include</h3>
+          <h3>Accounting Services Process</h3>
         </div>
 
         <div className="services-grid">

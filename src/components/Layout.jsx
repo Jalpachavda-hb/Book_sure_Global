@@ -6,9 +6,8 @@ import ScrollToTop from "../components/Navbar/ScrollToTop";
 export default function Layout() {
   return (
     <>
-      {/* <Xyz /> */}
-       <ScrollToTop />
-      <Navbar/>
+      <ScrollToTop />
+      <Navbar />
       <Outlet />
       <Footer />
     </>

@@ -82,7 +82,7 @@ export default function About() {
                 zIndex: 0,
               }}
             >
-              <h3 className="fw-bold display-6 mb-1">25</h3>
+              <h3 className="fw-bold display-6 mb-1">11</h3>
               <p className="small mb-0">
                 Years of Expertise in <br /> Revenue Cycle Management
               </p>
@@ -123,7 +123,7 @@ export default function About() {
                 <div className="d-flex align-items-center justify-content-center justify-content-sm-start gap-3 p-4 border rounded-3 bg-light">
                   <FaCalendarCheck size={32} color="#CC952B" />
                   <div>
-                    <h4 className="fw-bold mb-0">25+</h4>
+                    <h4 className="fw-bold mb-0">11+</h4>
                     <p className="mb-0 text-muted">Years of Experience</p>
                   </div>
                 </div>

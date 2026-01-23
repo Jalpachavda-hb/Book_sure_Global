@@ -120,7 +120,7 @@ export default function Hero() {
         <div className="container">
           <div className="row align-items-center min-vh-80">
             <div className="col-lg-6">
-              <h1 > 
+              <h1>
                 CLEAN NUMBERS <br />
                 CLEAN BOOKS!
               </h1>

@@ -1,10 +1,10 @@
 import React from "react";
 import "./Aboutus.css";
-import ceo from "../../assets/Images/Aboutus/team.jpg"
+import ceo from "../../assets/Images/Aboutus/team.jpg";
 import mainImg from "../../assets/Images/Aboutus/aboutf.jpg";
 import starImg from "../../assets/Images/Aboutus/round.png";
 import { FaPhoneVolume } from "react-icons/fa6";
-import card from "../../assets/Images/Aboutus/98img.jpg"
+import card from "../../assets/Images/Aboutus/98img.jpg";
 const FirstSection = () => {
   return (
     <section className="about-section">
@@ -19,7 +19,7 @@ const FirstSection = () => {
 
             {/* BADGE */}
             <div className="miniimg">
-             <img src={card} alt="Consulting" />
+              <img src={card} alt="Consulting" />
             </div>
           </div>
 
@@ -28,8 +28,7 @@ const FirstSection = () => {
             <span className="subtitle">ABOUT OUR COMPANY</span>
 
             <h1 className="mission-title">
-              Providing Expert Advice On
-              Business Consulting, Planning & Success
+              Providing Expert Advice On Business Consulting, Planning & Success
             </h1>
 
             <p className="about-text">
@@ -67,44 +66,40 @@ const FirstSection = () => {
                 </li>
               </ul>
             </div>
-         <div className="d-flex align-items-center justify-content-between flex-wrap gap-4 contact-wrapper mt-4">
+            <div className="d-flex align-items-center justify-content-between flex-wrap gap-4 contact-wrapper mt-4">
+              {/* LEFT – PROFILE */}
+              <div className="d-flex align-items-center gap-3">
+                <img
+                  src={ceo}
+                  alt="CEO"
+                  className="rounded-circle"
+                  width="55"
+                  height="55"
+                />
 
-  {/* LEFT – PROFILE */}
-  <div className="d-flex align-items-center gap-3">
-    <img
-      src={ceo}
-      alt="CEO"
-      className="rounded-circle"
-      width="55"
-      height="55"
-    />
+                <div>
+                  <div className="signature-name">Martinaze.</div>
+                  <div className="fw-semibold text-primary">Martinaze, CEO</div>
+                </div>
+              </div>
 
-    <div>
-      <div className="signature-name">Martinaze.</div>
-      <div className="fw-semibold text-primary">
-        Martinaze, CEO
-      </div>
-    </div>
-  </div>
+              {/* RIGHT – HOTLINE */}
+              <div className="d-flex align-items-center gap-3">
+                <div className="phone-icon">
+                  <FaPhoneVolume />
+                </div>
 
-  {/* RIGHT – HOTLINE */}
-  <div className="d-flex align-items-center gap-3">
-    <div className="phone-icon">
-    <FaPhoneVolume />
-    </div>
-
-    <div>
-      <div className="text-muted small">Hot Line Number</div>
-      <a
-        href="tel:+1238989444"
-        className="fw-bold text-primary text-decoration-none"
-      >
-        +123 8989 444
-      </a>
-    </div>
-  </div>
-
-</div>
+                <div>
+                  <div className="text-muted small">Hot Line Number</div>
+                  <a
+                    href="tel:+1238989444"
+                    className="fw-bold text-primary text-decoration-none"
+                  >
+                    +123 8989 444
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

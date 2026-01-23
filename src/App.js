@@ -9,6 +9,9 @@ import Blog from "./components/Blogs/Blog";
 import Home from "./components/home/Home";
 import Aboutus from "./components/Aboutmain/Aboutus";
 import Services from "./components/Services/Services";
+import DemoServices from "./components/demoservices/DemoServices";
+import Bookkeeping from "./components/demoservices/Bookkeeping";
+import Accounting from "./components/demoservices/Accounting";
 import Team from "./components/Team/Team";
 import Pricing from "./components/Pricing/Pricing";
 import Data from "./components/Data/Data";
@@ -21,16 +24,20 @@ import Servicesubpage from "./components/Services/Servicesubpage";
 import Gallery from "./components/Team/Gallery";
 import Notfound from "./components/PageBanner/Notdound";
 import BlogDetail from "./components/Blogs/Blogdetail";
+
 function App() {
   return (
     <Routes>
-
       {/* Routes WITH Navbar & Footer */}
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/company/about" element={<Aboutus />} />
+        <Route path="/about" element={<Aboutus />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/services/details" element={<Servicesubpage />} />
+        <Route path="/services/detail" element={<Servicesubpage />} />
+
+        <Route path="/services1" element={<DemoServices />} />
+        <Route path="services1/bookkeepingservices" element={<Bookkeeping />} />
+         <Route path="services1/accountingservices" element={<Accounting />} />
         <Route path="/team" element={<Team />} />
         <Route path="/team/gallery" element={<Gallery />} />
         <Route path="/team/:slug" element={<Teamdetailpage />} />
@@ -38,13 +45,12 @@ function App() {
         <Route path="/data" element={<Data />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/company/blog" element={<Blog />} />
-         <Route path="/blog/blogdetail" element={<BlogDetail />} />
-          <Route path="/company/careers" element={<Careers />} />
+        <Route path="/blog/blogdetail" element={<BlogDetail />} />
+        <Route path="/careers" element={<Careers />} />
       </Route>
 
       {/* 404 Page WITHOUT Navbar & Footer */}
       <Route path="*" element={<Notfound />} />
-
     </Routes>
   );
 }

@@ -22,7 +22,6 @@ const Servicesubpage = () => {
             </p>
           </div>
 
-          <Stepdesign />
           <section className="accounting-cta">
             <div className="container">
               <div className="cta-grid">
@@ -52,7 +51,6 @@ const Servicesubpage = () => {
           </section>
         </div>
       </section>
-      <Faq />
     </>
   );
 };

@@ -44,40 +44,17 @@ const Servicedata = [
       "Coordination with your external CPA or tax advisor",
     ],
   },
-  {
-    id: 3,
-    icon: <FaCogs />,
-    title: "Payroll Processing Services",
-    description:
-      "We manage your payroll accurately and on time, ensuring smooth salary processing and compliance support.",
-    image: Serimg3,
-    features: [
-      "Payroll calculation & processing",
-      "Payslip preparation",
-      "Payroll journal entries",
-      "Statutory deduction tracking",
-    ],
-  },
-
-  {
-    id: 4,
-    icon: <MdOutlineSupport />,
-    title: "Tax Support Services",
-    description:
-      "We prepare your financial data in line with diverse regulatory frameworks so your tax filings remain accurate across different compliance environments.",
-    image: Serimg3,
-    features: [
-      "Tax-ready financial statements",
-      "Indirect tax reconciliation support (VAT / GST / sales tax equivalents)",
-      "Preparation of jurisdiction-specific tax schedules",
-      "Multi-compliance reporting assistance",
-      "Coordination with your external tax advisor or CPA",
-    ],
-  },
 ];
 
 const Servicedatasection = () => {
   const [active, setActive] = useState(1); // Default active: Fire Insurance
+  const scrollToSection = (slug, id) => {
+    setActive(id);
+    const element = document.getElementById(slug);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   const currentData = Servicedata.find((item) => item.id === active);
   return (

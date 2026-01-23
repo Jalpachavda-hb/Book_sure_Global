@@ -131,10 +131,12 @@ const Team = () => {
               Visionaries guiding our organization forward
             </p>
           </div> */}
-           <div className="hero-content-left animated-content position-relative z-index text-white mb-4">
-           {/* <span className="section-tag">Leadership</span> */}
+          <div className="hero-content-left animated-content position-relative z-index text-white mb-4">
+            {/* <span className="section-tag">Leadership</span> */}
             <h3 className="page-tital mt-1">Our Founders</h3>
-            <p className="contain-colur">“Visionaries guiding our organization forward”</p>
+            <p className="contain-colur">
+              “Visionaries guiding our organization forward”
+            </p>
           </div>
 
           {/* ===== FOUNDERS CARDS ===== */}
@@ -159,10 +161,12 @@ const Team = () => {
               Dedicated professionals working together
             </p>
           </div> */}
-              <div className="hero-content-left animated-content position-relative z-index text-white mb-4">
-           {/* <span className="section-tag">Leadership</span> */}
+          <div className="hero-content-left animated-content position-relative z-index text-white mb-4">
+            {/* <span className="section-tag">Leadership</span> */}
             <h3 className="page-tital mt-1">Our Team</h3>
-            <p className="contain-colur">“Dedicated professionals working together”</p>
+            <p className="contain-colur">
+              “Dedicated professionals working together”
+            </p>
           </div>
 
           {/* ===== TEAM CARDS ===== */}

@@ -83,7 +83,7 @@ const Careers = () => {
 
           {/* FORM CARD */}
           <div className="career-card">
-            <h3>Apply for This Position</h3>
+            <h3>Apply Now</h3>
 
             <form onSubmit={handleSubmit} noValidate>
               <div className="form-grid">
