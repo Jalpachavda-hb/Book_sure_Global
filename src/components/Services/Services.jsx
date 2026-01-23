@@ -60,7 +60,7 @@ const servicesData = [
 ];
 
 const Services = () => {
-  const [   , setActive] = useState(1);
+  const [, setActive] = useState(1);
 
   const scrollToSection = (slug, id) => {
     setActive(id);
@@ -152,7 +152,7 @@ const Services = () => {
 
                     <div className="card-footer">
                       <span className="line"></span>
-                      <Link to="/services/detail" className="more">
+                      <Link to="/services1/bookkeepingservices" className="more">
                         Find out more
                       </Link>
                     </div>

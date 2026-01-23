@@ -651,9 +651,10 @@
 
   /* Icon sizing */
   .split-icon {
-    width: 62px;
-    height: 62px;
+    width: 72px;
+    height: 47px;
     font-size: 24px;
+    border-radius: 0px;
   }
 
   /* Fix underline alignment */

@@ -134,9 +134,9 @@
   color: #ffffff;
 }
 @media (max-width: 575.98px) {
-  .footer-main {
+  /* .footer-main {
     text-align: center;
-  }
+  } */
 
   .footer-text {
     max-width: 100%;

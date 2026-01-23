@@ -4,7 +4,7 @@
 
 /* Subtitle */
 .faq-subtitle {
-  color: #CC952B;
+  color: #cc952b;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 14px;
@@ -13,7 +13,7 @@
 /* Title */
 .faq-title {
   font-weight: 700;
-  color: #293C8F;
+  color: #293c8f;
   line-height: 1.3;
 }
 
@@ -51,7 +51,7 @@
   position: absolute;
   right: 0;
   font-size: 20px;
-  color: #293C8F;
+  color: #293c8f;
 }
 
 .faq-question:not(.collapsed)::after {
@@ -75,11 +75,11 @@
 
 /* 🔥 ACTIVE STATE */
 .faq-question:not(.collapsed) .faq-number {
-  background: #293C8F;
+  background: #293c8f;
 }
 
 .faq-question:not(.collapsed) .faq-text {
-  color: #293C8F;
+  color: #293c8f;
 }
 
 /* Answer */
@@ -97,11 +97,7 @@
 
 /* =====================ExpertsSection========= */
 .experts-section {
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #f7f9ff 100%
-  );
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
 }
 
 /* Badge */
@@ -113,18 +109,18 @@
   font-weight: 600;
   letter-spacing: 0.5px;
   background: rgba(204, 149, 43, 0.15);
-  color: #CC952B;
+  color: #cc952b;
 }
 
 /* Title */
 .experts-title {
   font-weight: 800;
-  color: #293C8F;
+  color: #293c8f;
   line-height: 1.3;
 }
 
 .experts-title span {
-  color: #CC952B;
+  color: #cc952b;
 }
 
 /* Description */
@@ -146,7 +142,7 @@
 
 /* Primary button */
 .btn-experts-primary {
-  background: #293C8F;
+  background: #293c8f;
   color: #fff;
   padding: 12px 28px;
   border-radius: 30px;
@@ -165,8 +161,8 @@
 /* Outline button */
 .btn-experts-outline {
   background: transparent;
-  color: #293C8F;
-  border: 2px solid #293C8F;
+  color: #293c8f;
+  border: 2px solid #293c8f;
   padding: 12px 28px;
   border-radius: 30px;
   font-weight: 600;
@@ -174,8 +170,8 @@
 }
 
 .btn-experts-outline:hover {
-  background: #CC952B;
-  border-color: #CC952B;
+  background: #cc952b;
+  border-color: #cc952b;
   color: #fff;
   box-shadow: 0 10px 25px rgba(204, 149, 43, 0.35);
   transform: translateY(-2px);
@@ -189,7 +185,7 @@
 }
 /* =============get in touch===== */
 .contact-form-section {
-  background-color:#041047;
+  background-color: #041047;
 }
 
 .contact-form-title {
@@ -207,7 +203,7 @@
   width: 45px;
   height: 45px;
   background: #fff;
-  color: #CC952B;
+  color: #cc952b;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -245,7 +241,7 @@
 }
 
 .btn-submit {
-  background-color: #CC952B;
+  background-color: #cc952b;
   border: none;
   color: #fff;
   padding: 12px 30px;
@@ -257,13 +253,12 @@
 .btn-submit:hover {
   background-color: #e6a200;
 }
-.formtitle{
-    color:#CC952B;
-    font-weight: 600;
+.formtitle {
+  color: #cc952b;
+  font-weight: 600;
 }
 
 /* ==========Careers======= */
-
 
 .career-page {
   background: #f9fafc;
@@ -386,6 +381,105 @@
     font-size: 28px;
   }
 }
-.career-header{
-color: #293C8F;
+.career-header {
+  color: #293c8f;
+}
+
+@media (max-width: 576px) {
+  .career-page {
+    padding: 50px 15px;
+  }
+
+  .career-header {
+    margin-bottom: 30px;
+  }
+
+  .career-header h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .career-header p {
+    font-size: 14px;
+  }
+
+  .career-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .career-card h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 18px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .form-group input[type="file"] {
+    padding: 10px;
+  }
+
+  .career-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+}
+.career-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 360px) {
+  .career-card {
+    padding: 15px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px;
+  }
+}
+
+
+@media (max-width: 536px) {
+  .form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-group,
+  .form-group.full {
+    width: 100%;
+  }
+
+  .career-card {
+    padding: 18px;
+  }
+
+  .career-header h1 {
+    font-size: 22px;
+  }
+
+  .career-header p {
+    font-size: 14px;
+  }
+
+  .career-btn {
+    width: 100%;
+  }
 }

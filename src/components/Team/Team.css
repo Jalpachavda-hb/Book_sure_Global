@@ -59,7 +59,7 @@
 }
 
 .team-social a:hover {
-  color: #CC952B;
+  color: #cc952b;
 }
 
 /* Hover Effect */
@@ -108,7 +108,7 @@
 }
 .section-tag {
   display: inline-block;
-  color: #CC952B;
+  color: #cc952b;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -118,7 +118,7 @@
 .section-title {
   font-size: 36px;
   font-weight: 700;
-  color: #293C8F;
+  color: #293c8f;
 }
 
 .section-subtitle {
