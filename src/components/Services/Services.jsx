@@ -152,7 +152,10 @@ const Services = () => {
 
                     <div className="card-footer">
                       <span className="line"></span>
-                      <Link to="/services1/bookkeepingservices" className="more">
+                      <Link
+                        to="/services1/bookkeepingservices"
+                        className="more"
+                      >
                         Find out more
                       </Link>
                     </div>

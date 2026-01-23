@@ -13,7 +13,7 @@ const Bookkeeping = () => {
           <div
             className="team-detail-header"
             style={{
-              backgroundImage: `url(${require("../../assets/Images/contactmain.jpg")})`,
+              // backgroundImage: `url(${require("../../assets/Images/contactmain.jpg")})`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center bottom",
               backgroundSize: "cover",

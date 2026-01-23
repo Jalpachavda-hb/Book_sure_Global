@@ -21,7 +21,7 @@ export default function Hero() {
                 CLEAN BOOKS!
               </h1>
               <p>Financial clarity backed by regulatory expertise</p>
-              <a href="/company/about">
+              <a href="/services">
                 <button className="btn hero_btn px-4 py-2  mt-3">
                   Explore More →
                 </button>
