@@ -1,5 +1,3 @@
-// BlogDetail.jsx
-import React from "react";
 import "./Blog.css";
 import Blogimage from "../../assets/Images/ss/blog_img01.jpg";
 import Author from "../../assets/Images/Aboutus/Trupal_Patel_1.png";

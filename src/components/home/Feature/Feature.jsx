@@ -1,13 +1,5 @@
-import React from "react";
 import "./feature.css";
-import { GiFiles } from "react-icons/gi";
-import { MdOutlineSecurity } from "react-icons/md";
-import { FaUserTag } from "react-icons/fa";
-import { MdOutlinePhoneAndroid } from "react-icons/md";
-import { AiFillFileAdd } from "react-icons/ai";
-import { AiOutlineSelect } from "react-icons/ai";
 import { RiHomeOfficeFill } from "react-icons/ri";
-
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 

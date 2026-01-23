@@ -1,7 +1,6 @@
-import React from "react";
 import PageBanner from "../PageBanner/PageBanner";
 import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
-import { FaCalculator, FaCogs } from "react-icons/fa";
+import { FaCalculator } from "react-icons/fa";
 import { FaBookAtlas } from "react-icons/fa6";
 import ConsultationSection1 from "../demoservices/ConsultationSection1";
 import { useNavigate } from "react-router-dom";
@@ -24,7 +23,7 @@ const DemoServices = () => {
         "End-to-end accounting support to keep your financial records accurate and compliant.",
     },
   ];
-const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       <PageBanner title="Services" bgImage={bannerImg} />
@@ -46,26 +45,24 @@ const navigate = useNavigate();
             </div>
 
             {/* SERVICES */}
-<div className="split-services-grid mt-5">
-  {servicesData.map((service, index) => (
-    <div
-      key={service.id}
-      className={`split-item ${index % 2 === 0 ? "left" : "right"}`}
-      onClick={() =>
-        navigate(`/services1/${service.slug}services`)
-      }
-      style={{ cursor: "pointer" }}
-    >
-      <div className="split-icon">{service.icon}</div>
+            <div className="split-services-grid mt-5">
+              {servicesData.map((service, index) => (
+                <div
+                  key={service.id}
+                  className={`split-item ${index % 2 === 0 ? "left" : "right"}`}
+                  onClick={() => navigate(`/services1/${service.slug}services`)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <div className="split-icon">{service.icon}</div>
 
-      <div className="split-content">
-        <h4>{service.title}</h4>
-        <span className="split-line"></span>
-        <p>{service.description}</p>
-      </div>
-    </div>
-  ))}
-</div>
+                  <div className="split-content">
+                    <h4>{service.title}</h4>
+                    <span className="split-line"></span>
+                    <p>{service.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

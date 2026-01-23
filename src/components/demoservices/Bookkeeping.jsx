@@ -1,6 +1,5 @@
 import React from "react";
 import ConsultationSection from "./ConsultationSection";
-import accountingImg from "../../assets/Images/Services/Account-ser.jpg";
 import Stepdesign from "../Services/Stepdesign";
 import { FaCheckCircle } from "react-icons/fa";
 import pageimg from "../../assets/Images/Services/innerpageserv.png";

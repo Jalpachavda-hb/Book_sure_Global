@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Contact.css";
 import PageBanner from "../PageBanner/PageBanner";
 import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
@@ -19,7 +19,7 @@ const Careers = () => {
     const { name, value, files } = e.target;
 
     if (name === "phone") {
-      if (!/^\d*$/.test(value)) return; 
+      if (!/^\d*$/.test(value)) return;
     }
 
     setFormData({

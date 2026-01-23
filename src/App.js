@@ -5,25 +5,25 @@ import "./components/Media.css";
 import Layout from "./components/Layout";
 
 // Pages
-import Blog from "./components/Blogs/Blog";
+// import Blog from "./components/Blogs/Blog";
 import Home from "./components/home/Home";
 import Aboutus from "./components/Aboutmain/Aboutus";
 import Services from "./components/Services/Services";
 import DemoServices from "./components/demoservices/DemoServices";
 import Bookkeeping from "./components/demoservices/Bookkeeping";
 import Accounting from "./components/demoservices/Accounting";
-import Team from "./components/Team/Team";
-import Pricing from "./components/Pricing/Pricing";
-import Data from "./components/Data/Data";
+// import Team from "./components/Team/Team";
+// import Pricing from "./components/Pricing/Pricing";
+// import Data from "./components/Data/Data";
 // import Contact from "./components/Contact/Contact";
 // import Careers from "./components/Contact/Careers";
 import Contact from "./components/Contactus/Contact";
 import Careers from "./components/Contactus/Careers";
-import Teamdetailpage from "./components/Team/Teamdetailpage";
+// import Teamdetailpage from "./components/Team/Teamdetailpage";
 import Servicesubpage from "./components/Services/Servicesubpage";
-import Gallery from "./components/Team/Gallery";
+// import Gallery from "./components/Team/Gallery";
 import Notfound from "./components/PageBanner/Notdound";
-import BlogDetail from "./components/Blogs/Blogdetail";
+// import BlogDetail from "./components/Blogs/Blogdetail";
 
 function App() {
   return (
@@ -37,15 +37,15 @@ function App() {
 
         <Route path="/services1" element={<DemoServices />} />
         <Route path="services1/bookkeepingservices" element={<Bookkeeping />} />
-         <Route path="services1/accountingservices" element={<Accounting />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/team/gallery" element={<Gallery />} />
-        <Route path="/team/:slug" element={<Teamdetailpage />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/data" element={<Data />} />
+        <Route path="services1/accountingservices" element={<Accounting />} />
+        {/* <Route path="/team" element={<Team />} /> */}
+        {/* <Route path="/team/gallery" element={<Gallery />} /> */}
+        {/* <Route path="/team/:slug" element={<Teamdetailpage />} /> */}
+        {/* <Route path="/pricing" element={<Pricing />} /> */}
+        {/* <Route path="/data" element={<Data />} /> */}
         <Route path="/contact" element={<Contact />} />
-        <Route path="/company/blog" element={<Blog />} />
-        <Route path="/blog/blogdetail" element={<BlogDetail />} />
+        {/* <Route path="/company/blog" element={<Blog />} /> */}
+        {/* <Route path="/blog/blogdetail" element={<BlogDetail />} /> */}
         <Route path="/careers" element={<Careers />} />
       </Route>
 

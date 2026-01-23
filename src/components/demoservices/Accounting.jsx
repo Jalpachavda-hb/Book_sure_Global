@@ -1,23 +1,6 @@
-// import React from 'react'
-// import ConsultationSection1 from './ConsultationSection1'
-// const Accounting = () => {
-//   return (
-// <>
-
-// <ConsultationSection1/>
-
-// </>
-//   )
-// }
-
-// export default Accounting
-
-import React from "react";
 import ConsultationSection from "./ConsultationSection";
 import Stepdesign from "../Services/Stepdesign";
 import { FaCheckCircle } from "react-icons/fa";
-
-import accountingImg from "../../assets/Images/Services/Account-ser.jpg";
 import pageimg from "../../assets/Images/Services/accounting-removebg-preview.png";
 
 const Accounting = () => {

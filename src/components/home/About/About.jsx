@@ -1,6 +1,4 @@
-import React from "react";
 import { FaCalendarCheck, FaFolderOpen } from "react-icons/fa";
-
 import mainimg from "../../../assets/Images/Aboutus/service.jpg";
 import ghraph from "../../../assets/Images/Aboutus/service-d-1-5.jpg";
 import bgpara from "../../../assets/Images/Aboutus/bgimageabout.webp";

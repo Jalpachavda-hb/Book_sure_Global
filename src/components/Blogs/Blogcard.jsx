@@ -1,4 +1,3 @@
-import React from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 import "./Blog.css";
 import Author from "../../assets/Images/Aboutus/Trupal_Patel_1.png"
