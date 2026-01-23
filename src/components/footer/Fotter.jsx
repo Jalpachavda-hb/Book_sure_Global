@@ -26,19 +26,19 @@ const Footer = () => {
 
             {/* SOCIAL ICONS */}
             <div className="footer-social mt-4">
-              <a href="#">
+              <a href="/">
                 <FaFacebookF />
               </a>
-              <a href="#">
+              <a href="/">
                 <FaTwitter />
               </a>
-              <a href="#">
+              <a href="/">
                 <FaInstagram />
               </a>
-              <a href="#">
+              <a href="/">
                 <FaLinkedinIn />
               </a>
-              <a href="#">
+              <a href="/">
                 <FaYoutube />
               </a>
             </div>

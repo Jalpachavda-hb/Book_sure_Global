@@ -15,15 +15,15 @@
 
 // export default Services;
 
-import React, { useState } from "react";
+import  { useState } from "react";
 import PageBanner from "../PageBanner/PageBanner";
 import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
 // import Testimonial from "../../components/home/Testimonial";
-import { FaCalculator, FaCogs } from "react-icons/fa";
+import { FaCalculator } from "react-icons/fa";
 import { FaBookAtlas } from "react-icons/fa6";
 import "./services.css";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 const servicesData = [
   {
     id: 1,
@@ -60,7 +60,7 @@ const servicesData = [
 ];
 
 const Services = () => {
-  const [active, setActive] = useState(1);
+  const [_active, setActive] = useState(1);
 
   const scrollToSection = (slug, id) => {
     setActive(id);

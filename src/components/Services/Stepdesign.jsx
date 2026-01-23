@@ -4,8 +4,8 @@ import "./services.css";
 import SerIcon1 from "../../assets/Images/Services/General-Accounting.png";
 import SerIcon2 from "../../assets/Images/Services/Account-Reconciliation.png";
 import SerIcon3 from "../../assets/Images/Services/Financial-Statement-Preparation.png";
-import SerIcon4 from "../../assets/Images/Services/Closing-Report.png";
-import SerIcon5 from "../../assets/Images/Services/Fixed-Asset-Accounting.png";
+// import SerIcon4 from "../../assets/Images/Services/Closing-Report.png";
+// import SerIcon5 from "../../assets/Images/Services/Fixed-Asset-Accounting.png";
 
 const servicesData = [
   {
