@@ -11,9 +11,9 @@ const Bookkeeping = () => {
         <div className="container">
           {/* Header */}
           <div
-            className="team-detail-header "
+            className="team-detail-header"
             style={{
-              backgroundImage: `url(${require("../../assets/Images/Aboutus/flat-design-polygonal-background_23-2148901857.avif")})`,
+              backgroundImage: `url(${require("../../assets/Images/contactmain.jpg")})`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center bottom",
               backgroundSize: "cover",
@@ -35,7 +35,7 @@ const Bookkeeping = () => {
               {/* LEFT CONTENT */}
               <div className="payroll-hero-content">
                 <h2>
-                  Outsourced Payroll Services That Are                   
+                  Outsourced Payroll Services That Are
                   <span> Accurate, Compliant & Scalable</span>
                 </h2>
 
@@ -55,20 +55,24 @@ const Bookkeeping = () => {
 
                 <ul className="hero-points">
                   <li>
-                    <FaCheckCircle style={{color: "#cc952b"}}/> End-to-end payroll outsourcing services
+                    <FaCheckCircle style={{ color: "#cc952b" }} /> End-to-end
+                    payroll outsourcing services
                   </li>
                   <li>
-                    <FaCheckCircle style={{color: "#cc952b"}} /> Compliance with US, Australian & regional
-                    laws
+                    <FaCheckCircle style={{ color: "#cc952b" }} /> Compliance
+                    with US, Australian & regional laws
                   </li>
                   <li>
-                    <FaCheckCircle style={{color: "#cc952b"}}/> Experienced payroll specialists
+                    <FaCheckCircle style={{ color: "#cc952b" }} /> Experienced
+                    payroll specialists
                   </li>
                   <li>
-                    <FaCheckCircle style={{color: "#cc952b"}}/> Seamless payroll & accounting integration
+                    <FaCheckCircle style={{ color: "#cc952b" }} /> Seamless
+                    payroll & accounting integration
                   </li>
                   <li>
-                    <FaCheckCircle style={{color: "#cc952b"}} /> Transparent pricing with predictable costs
+                    <FaCheckCircle style={{ color: "#cc952b" }} /> Transparent
+                    pricing with predictable costs
                   </li>
                 </ul>
               </div>
