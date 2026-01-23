@@ -128,11 +128,11 @@ const Footer = () => {
             </p>
           </div>
           <div className="col-md-6 text-md-end">
-            <a href="#" className="footer-policy">
+            <a href="/" className="footer-policy">
               Privacy Policy
             </a>
             <span className="mx-2">|</span>
-            <a href="#" className="footer-policy">
+            <a href="/" className="footer-policy">
               Contact Us
             </a>
           </div>

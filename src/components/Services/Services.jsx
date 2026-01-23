@@ -15,7 +15,7 @@
 
 // export default Services;
 
-import  { useState } from "react";
+import { useState } from "react";
 import PageBanner from "../PageBanner/PageBanner";
 import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
 // import Testimonial from "../../components/home/Testimonial";
@@ -60,7 +60,7 @@ const servicesData = [
 ];
 
 const Services = () => {
-  const [_active, setActive] = useState(1);
+  const [   , setActive] = useState(1);
 
   const scrollToSection = (slug, id) => {
     setActive(id);
