@@ -4,7 +4,7 @@ import { FaCalculator } from "react-icons/fa";
 import { FaBookAtlas } from "react-icons/fa6";
 import ConsultationSection1 from "../demoservices/ConsultationSection1";
 import { useNavigate } from "react-router-dom";
-
+import "../Services/services.css";
 const DemoServices = () => {
   const servicesData = [
     {
@@ -51,7 +51,7 @@ const DemoServices = () => {
                 <div
                   key={service.id}
                   className={`split-item ${index % 2 === 0 ? "left" : "right"}`}
-                  onClick={() => navigate(`/services1/${service.slug}services`)}
+                  onClick={() => navigate(`/services/${service.slug}services`)}
                   style={{ cursor: "pointer" }}
                 >
                   <div className="split-icon">{service.icon}</div>
