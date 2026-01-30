@@ -1,112 +1,114 @@
-// import React from 'react'
-// import ConsultationSection1 from './ConsultationSection1'
-// const Accounting = () => {
-//   return (
-// <>
-
-// <ConsultationSection1/>
-
-// </>
-//   )
-// }
-
-// export default Accounting
-
 import React from "react";
 import ConsultationSection from "./ConsultationSection";
-import Stepdesign from "../Services/Stepdesign";
-import { FaCheckCircle } from "react-icons/fa";
-
-// import accountingImg from "../../assets/Images/Services/Account-ser.jpg";
+import Tax from "../../assets/Images/Services/tax.png";
 import pageimg from "../../assets/Images/Services/accounting-removebg-preview.png";
+import payroll from "../../assets/Images/Services/payroll.jpg";
+import PageBanner from "../PageBanner/PageBanner";
+import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
+import { FaCalculator } from "react-icons/fa";
+import { FaBookAtlas } from "react-icons/fa6";
 
-const Accounting = () => {
+
+const Bookkeeping = () => {
+
   return (
     <>
-      <section className="team-detail-page ">
+      {/* ✅ Banner */}
+      <PageBanner title="Accounting Services" bgImage={bannerImg} />
+
+      {/* ✅ Hero CTA Section */}
+      <section>
         <div className="container">
-          {/* Header */}
-          <div
-            className="team-detail-header"
-            style={{
-              backgroundImage: `url(${require("../../assets/Images/Aboutus/flat-design-polygonal-background_23-2148901857.avif")})`,
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center bottom",
-              backgroundSize: "cover",
-            }}
-          >
-            <h1 className="mt-5">Accounting Services</h1>
-            <span>Accounts Receivable & Accounts Payable</span>
-
-            <p className="services-intro mt-5">
-              We specialize in delivering precise and reliable accounting
-              services tailored to your specific financial needs. Our team of
-              experts ensures that all aspects of your accounting are handled
-              with the utmost accuracy and attention to detail, allowing you to
-              maintain financial clarity and compliance.
-            </p>
-          </div>
-
-          {/* Payroll Section */}
-          <section className="payroll-page">
-            <div className="payroll-hero">
-              {/* LEFT */}
-              <div className="payroll-hero-content">
-                <h2>
-                  We Simplify Your Accounts Receivable
-                  <span> & Payable Management</span>
-                </h2>
+          {/* <div className="cta-grid hero-bg">
+          
+          {/* ✅ Vertical Services Section */}
+          <div className="service-alt-wrapper">
+            {/* ✅ Row 1 */}
+            <div className="service-alt-row ">
+              <div className="service-alt-content">
+                <div className="service-title">
+                  <FaCalculator className="service-icon" />
+                  <h3>Accounting Services</h3>
+                </div>
 
                 <p>
-                  Our payroll outsourcing services help businesses manage
-                  payroll accurately and compliantly without the administrative
-                  burden or compliance risk. Our experienced payroll
-                  professionals handle everything from employee onboarding to
-                  statutory filings.
+                  We provide end-to-end accounting support to keep your
+                  financial records accurate, compliant, and report-ready.
                 </p>
 
-                <p>
-                  Whether you operate in <strong>Australia, USA</strong> or
-                  across multiple regions, we deliver secure and scalable
-                  payroll solutions tailored to your business needs.
-                </p>
-
-                <ul className="hero-points">
-                  <li>
-                    <FaCheckCircle   style={{color: "#cc952b"}} /> Accurate and timely accounts receivable & payable processing
-                  </li>
-                  <li>
-                    <FaCheckCircle  style={{color: "#cc952b"}} />Improved cash flow through proactive invoicing and collections
-                  </li>
-                  <li>
-                    <FaCheckCircle  style={{color: "#cc952b"}} />On-time vendor payments and expense control
-                  </li>
-                  <li>
-                    <FaCheckCircle  style={{color: "#cc952b"}} /> Secure handling of financial data with full transparency
-                  </li>
-                  <li>
-                    <FaCheckCircle  style={{color: "#cc952b"}} /> Scalable AR/AP outsourcing support for growing businesses
-                  </li>
+                <ul>
+                  <li>Monthly, quarterly & annual financial statements</li>
+                  <li>Profit & Loss, Balance Sheet & Cash Flow reports</li>
+                  <li>Accrual accounting & period-end adjustments</li>
+                  <li>Ledger review & reconciliations</li>
                 </ul>
               </div>
 
-              {/* RIGHT */}
-              <div className="payroll-hero-visual">
-                <img
-                  src={pageimg}
-                  alt="Payroll service illustration"
-                  className="service-hero-image"
-                />
+              <div className="service-alt-img">
+                <img src={pageimg} alt="Accounting Services" />
               </div>
             </div>
-          </section>
+
+            {/* ✅ Row 2 */}
+            <div className="service-alt-row  reverse">
+              <div className="service-alt-content">
+                <div className="service-title">
+                  <FaBookAtlas className="service-icon" />
+                  <h3>Payroll Processing Services</h3>
+                </div>
+
+                <p>
+                  We manage payroll processing smoothly and accurately while
+                  ensuring statutory and compliance requirements are met.
+                </p>
+
+                <ul>
+                  <li>Payroll calculation & processing</li>
+                  <li>Payslip preparation</li>
+                  <li>Payroll journal entries</li>
+                  <li>Statutory deduction tracking</li>
+                </ul>
+              </div>
+
+              <div className="service-alt-img">
+                <img src={payroll} alt="Payroll Processing" />
+              </div>
+            </div>
+
+            {/* ✅ Row 3 */}
+            <div className="service-alt-row ">
+              <div className="service-alt-content">
+                <div className="service-title">
+                  <FaCalculator className="service-icon" />
+                  <h3>Tax Support Services</h3>
+                </div>
+
+                <p>
+                  Tax-ready financial preparation aligned with multiple
+                  jurisdictions and regulatory environments.
+                </p>
+
+                <ul>
+                  <li>Indirect tax reconciliation (VAT / GST)</li>
+                  <li>Jurisdiction-specific tax schedules</li>
+                  <li>Multi-compliance reporting assistance</li>
+                  <li>Coordination with CPA / tax advisor</li>
+                </ul>
+              </div>
+
+              <div className="service-alt-img w-20 h-10">
+                <img src={Tax} alt="Tax Support Services" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <Stepdesign />
+      {/* ✅ Extra Sections */}
+
       <ConsultationSection />
     </>
   );
 };
 
-export default Accounting;
+export default Bookkeeping;

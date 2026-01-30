@@ -12,7 +12,8 @@ const Aboutus = () => {
       <FirstSection />
       <Cardsection/>
       <Ourmission/>
-      <OurAssociate/>
+            <OurAssociate/>
+            
    
     </>
   );

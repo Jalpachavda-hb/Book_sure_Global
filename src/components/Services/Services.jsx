@@ -23,6 +23,7 @@ import { FaCalculator } from "react-icons/fa";
 import { FaBookAtlas } from "react-icons/fa6";
 import "./services.css";
 import { Link } from "react-router-dom";
+
 // import { useNavigate } from "react-router-dom";
 const servicesData = [
   {
@@ -165,6 +166,7 @@ const Services = () => {
             </div>
           ))}
         </div>
+       
       </section>
     </>
   );

@@ -40,7 +40,7 @@
    FEATURED CARD
 ============================= */
 .pricing-card.featured {
-  border: 2px solid #CC952B;
+  border: 2px solid #cc952b;
 }
 
 /* Badge */
@@ -49,7 +49,7 @@
   top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: #CC952B;
+  background: #cc952b;
   color: #fff;
   padding: 6px 18px;
   border-radius: 20px;
@@ -62,7 +62,7 @@
    TEXT
 ============================= */
 .pricing-card h5 {
-  color: #CC952B;
+  color: #cc952b;
   font-weight: 700;
 }
 
@@ -82,8 +82,8 @@
 .btnplan {
   margin-top: auto;
   background-color: transparent;
-  color: #CC952B;
-  border: 2px solid #CC952B;
+  color: #cc952b;
+  border: 2px solid #cc952b;
   border-radius: 12px;
   padding: 11px 18px;
   font-weight: 600;
@@ -91,12 +91,12 @@
 
   transition: all 0.35s ease;
 }
-.titlecolor{
-    color: #293C8F;
+.titlecolor {
+  color: #293c8f;
 }
 /* Button hover */
 .pricing-card:hover .btnplan {
-  background-color: #CC952B;
+  background-color: #cc952b;
   color: #ffffff;
   box-shadow: 0 10px 22px rgba(41, 60, 143, 0.35);
   transform: translateY(-2px);
@@ -104,16 +104,15 @@
 
 /* Gold accent button (optional) */
 .btnplan.gold {
-  border-color: #CC952B;
-  color: #CC952B;
+  border-color: #cc952b;
+  color: #cc952b;
 }
 
 .pricing-card:hover .btnplan.gold {
-  background-color: #CC952B;
+  background-color: #cc952b;
   color: #fff;
   box-shadow: 0 10px 22px rgba(204, 149, 43, 0.35);
 }
-
 
 .contact-cta strong {
   font-size: 1.2rem;
@@ -157,7 +156,7 @@
 .inquiry-wrapper select:focus,
 .inquiry-wrapper textarea:focus {
   border-color: #c5a352;
-  box-shadow: 0 0 0 2px rgba(197,163,82,0.15);
+  box-shadow: 0 0 0 2px rgba(197, 163, 82, 0.15);
   outline: none;
 }
 
@@ -175,4 +174,143 @@
   color: #3d3319;
   margin-bottom: 12px;
   font-weight: 500;
+}
+
+/* ✅ New Pricing Section */
+.pricing-section-new {
+  position: relative;
+  padding: 100px 0;
+  background: #f9fcff;
+  overflow: hidden;
+}
+
+/* ✅ Decorative Shapes */
+.pricing-shape {
+  position: absolute;
+  width: 280px;
+
+  z-index: 0;
+}
+
+.top-shape {
+  top: 0;
+  left: 0;
+}
+
+.bottom-shape {
+  bottom: 0;
+  right: 0;
+}
+
+/* ✅ Heading */
+.pricing-heading {
+  position: relative;
+  z-index: 2;
+}
+
+.pricing-tag {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f59e0b;
+  letter-spacing: 1px;
+}
+
+.pricing-heading h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #1e2b67;
+}
+
+/* ✅ Pricing Card UI */
+.pricing-card-ui {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.pricing-card-ui:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ✅ Active Middle Card */
+.pricing-card-ui.active {
+  border: 2px solid #f59e0b;
+}
+
+/* ✅ Label */
+.plan-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #eef4ff;
+  color: #1e2b67;
+  margin-bottom: 15px;
+}
+
+/* ✅ Price */
+.price {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1e2b67;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: 500;
+  color: gray;
+}
+
+/* ✅ Features */
+.pricing-card-ui ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.pricing-card-ui ul li {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+/* ✅ Button */
+.pricing-btn {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  background: #f59e0b;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.pricing-btn:hover {
+  background: #d97706;
+}
+
+/* ✅ Middle Active Button */
+.active-btn {
+  background: #f59e0b;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .pricing-heading h2 {
+    font-size: 28px;
+  }
+}
+.pricing-contact {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #1e2b67;
 }

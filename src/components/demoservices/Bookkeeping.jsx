@@ -1,95 +1,180 @@
 import React from "react";
 import ConsultationSection from "./ConsultationSection";
-import Stepdesign from "../Services/Stepdesign";
-import { FaCheckCircle } from "react-icons/fa";
-import pageimg from "../../assets/Images/Services/innerpageserv.png";
+
+import PageBanner from "../PageBanner/PageBanner";
+import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
+
+import bookkeepingImg from "../../assets/Images/Services/accounting-removebg-preview.png";
+import cleanupImg from "../../assets/Images/Services/payroll.jpg";
+import taxImg from "../../assets/Images/Services/tax.png";
+
+import { FaBookAtlas, FaCalculator } from "react-icons/fa6";
 
 const Bookkeeping = () => {
   return (
     <>
-      <section className="team-detail-page">
+      {/* ✅ Banner */}
+      <PageBanner title="Bookkeeping Services" bgImage={bannerImg} />
+
+      {/* ✅ Services Section */}
+      <section className="service-detail-page">
         <div className="container">
-          {/* Header */}
-          <div
-            className="team-detail-header"
-            style={{
-              // backgroundImage: `url(${require("../../assets/Images/contactmain.jpg")})`,
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center bottom",
-              backgroundSize: "cover",
-            }}
-          >
-            <h1 className="mt-5">BookKeeping Services</h1>
-            <span>FINANCIAL &BOOKKEEPING SERVICES</span>
+          {/* ✅ Heading */}
 
-            <p className="services-intro mt-5">
-              We specialize in delivering precise and reliable accounting
-              services tailored to your specific financial needs. Our team of
-              experts ensures that all aspects of your accounting are handled
-              with the utmost accuracy and attention to detail, allowing you to
-              maintain financial clarity and compliance.
-            </p>
-          </div>
-          <section className="payroll-page">
-            <div className="payroll-hero">
-              {/* LEFT CONTENT */}
-              <div className="payroll-hero-content">
-                <h2>
-                  Outsourced Payroll Services That Are
-                  <span> Accurate, Compliant & Scalable</span>
-                </h2>
+          {/* ✅ Alternating Layout Wrapper */}
+          <div className="service-alt-wrapper">
+            {/* ✅ 1. Ongoing Bookkeeping */}
+            <div className="service-alt-row">
+              <div className="service-alt-content">
+                <div className="service-title">
+                  <FaBookAtlas className="service-icon" />
+                  <h3>Ongoing Bookkeeping</h3>
+                </div>
 
                 <p>
-                  Our payroll outsourcing services help businesses manage
-                  payroll accurately and compliantly without the administrative
-                  burden or compliance risk. Our experienced payroll
-                  professionals handle everything from employee onboarding to
-                  statutory filings.
+                  Continuous day-to-day bookkeeping support to keep your
+                  financial records accurate, updated, and audit-ready.
                 </p>
-
-                <p>
-                  Whether you operate in <strong>Australia, USA</strong> or
-                  across multiple regions, we deliver secure and scalable
-                  payroll solutions tailored to your business needs.
-                </p>
-
-                <ul className="hero-points">
-                  <li>
-                    <FaCheckCircle style={{ color: "#cc952b" }} /> End-to-end
-                    payroll outsourcing services
-                  </li>
-                  <li>
-                    <FaCheckCircle style={{ color: "#cc952b" }} /> Compliance
-                    with US, Australian & regional laws
-                  </li>
-                  <li>
-                    <FaCheckCircle style={{ color: "#cc952b" }} /> Experienced
-                    payroll specialists
-                  </li>
-                  <li>
-                    <FaCheckCircle style={{ color: "#cc952b" }} /> Seamless
-                    payroll & accounting integration
-                  </li>
-                  <li>
-                    <FaCheckCircle style={{ color: "#cc952b" }} /> Transparent
-                    pricing with predictable costs
-                  </li>
+                <ul>
+                  <li>Transaction posting & categorisation</li>
+                  <li>Bank, card & payment gateway reconciliations</li>
+                  <li>General ledger maintenance</li>
+                  <li>Monthly closing</li>
+                  <li>Profit & Loss and Balance Sheet</li>
                 </ul>
               </div>
 
-              {/* RIGHT VISUAL */}
-              <div className="payroll-hero-visual">
+              <div className="service-alt-img">
+                <img src={bookkeepingImg} alt="Ongoing Bookkeeping" />
+              </div>
+            </div>
+
+            {/* ✅ 2. Cleanup Bookkeeping */}
+            <div className="service-alt-row reverse">
+              <div className="service-alt-content">
+                <div className="service-title">
+                  <FaCalculator className="service-icon" />
+                  <h3>Cleanup Bookkeeping</h3>
+                </div>
+
+                <p>
+                  We identify and correct past bookkeeping errors to ensure your
+                  accounts are clean, organised, and compliant.
+                </p>
+                <ul>
+                  <li>Error identification & correction</li>
+                  <li>Fixing misclassified or duplicate entries</li>
+                  <li>Opening balance corrections</li>
+                  <li>Reconciliations of unreconciled accounts</li>
+                  <li>Clean financial statements</li>
+                </ul>
+              </div>
+
+              <div className="service-alt-img">
+                <img src={cleanupImg} alt="Cleanup Bookkeeping" />
+              </div>
+            </div>
+
+            {/* ✅ 3. Catch-Up Bookkeeping */}
+            <div className="service-alt-row">
+              <div className="service-alt-content">
+                <div className="service-title">
+                  <FaBookAtlas className="service-icon" />
+                  <h3>Catch-Up Bookkeeping</h3>
+                </div>
+
+                <p>
+                  Perfect for overdue books — we update and complete missing
+                  financial records for previous months or years.
+                </p>
+                <ul>
+                  <li>Posting of past-period transactions</li>
+                  <li>Multi-month / multi-year reconciliations</li>
+                  <li>Reconstruction of missing records</li>
+                  <li>Tax-ready financials for all pending periods</li>
+                </ul>
+              </div>
+
+              <div className="service-alt-img">
+                <img src={bookkeepingImg} alt="Catch-Up Bookkeeping" />
+              </div>
+            </div>
+
+            {/* ✅ 4. Reconciliations */}
+            <div className="service-alt-row reverse">
+              <div className="service-alt-content">
+                <div className="service-title">
+                  <FaCalculator className="service-icon" />
+                  <h3>Reconciliations</h3>
+                </div>
+
+                <p>
+                We match your bank, credit card, and payment records to eliminate discrepancies and maintain accurate balances.
+                </p>
+                <ul>
+                  <li>Bank & credit card reconciliations</li>
+                  <li>Merchant gateway matching</li>
+                  <li>Difference investigation & resolution</li>
+                </ul>
+              </div>
+
+              <div className="service-alt-img">
+                <img src={taxImg} alt="Reconciliations" />
+              </div>
+            </div>
+
+            {/* ✅ 5. AR & AP Support */}
+            <div className="service-alt-row">
+              <div className="service-alt-content">
+                <div className="service-title">
+                  <FaBookAtlas className="service-icon" />
+                  <h3>AR & AP Support</h3>
+                </div>
+
+                <p>
+                 Efficient management of customer invoices and vendor bills to track outstanding payments and cash flow.
+                </p>
+                <ul>
+                  <li>Customer invoice & vendor bill posting</li>
+                  <li>Outstanding balance tracking</li>
+                  <li>Aging reports</li>
+                </ul>
+              </div>
+
+              <div className="service-alt-img">
+                <img src={cleanupImg} alt="AR & AP Support" />
+              </div>
+            </div>
+
+            {/* ✅ 6. Chart of Accounts Optimization */}
+            <div className="service-alt-row reverse">
+              <div className="service-alt-content">
+                <div className="service-title">
+                  <FaCalculator className="service-icon" />
+                  <h3>Chart of Accounts Optimization</h3>
+                </div>
+
+                <p>
+                We structure and optimise your chart of accounts for clearer reporting, better tracking, and smarter financial decisions.
+                </p>
+                <ul>
+                  <li>Setup & restructuring</li>
+                  <li>Reporting-friendly account design</li>
+                </ul>
+              </div>
+
+              <div className="service-alt-img">
                 <img
-                  src={pageimg}
-                  alt="Payroll service illustration"
-                  className="service-hero-image"
+                  src={bookkeepingImg}
+                  alt="Chart of Accounts Optimization"
                 />
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </section>
-      <Stepdesign />
+
+      {/* ✅ Consultation Section */}
       <ConsultationSection />
     </>
   );

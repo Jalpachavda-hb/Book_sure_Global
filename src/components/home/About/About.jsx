@@ -98,21 +98,13 @@ export default function About() {
             </h1>
 
             <p className="text-secondary">
-              Booksure Global is a professional accounting outsourcing firm
-              delivering reliable bookkeeping, accounting, payroll and tax
-              support services to growing businesses. Our team includes
-              qualified Chartered Accountants and CPA Australia and other
-              qualified professionals with strong global tax and compliance
-              knowledge.
+        <strong>Booksure Global</strong>  is a professional accounting outsourcing firm delivering reliable bookkeeping, accounting, payroll and tax support services to growing businesses. Our team includes qualified Chartered Accountants and CPA Australia and other qualified professionals with strong global tax and compliance knowledge.
+
             </p>
 
             <p className="text-secondary">
-              With a process-driven approach and a strong focus on accuracy,
-              confidentiality and timely delivery, we help organisations
-              maintain clean financial records, produce reliable reports and
-              stay compliant with diverse regulatory frameworks. Our clients
-              rely on us to manage their numbers with precision, allowing them
-              to focus on building and scaling their business.
+             With a process-driven approach and a strong focus on accuracy, confidentiality and timely delivery, we help organisations maintain clean financial records, produce reliable reports and stay compliant with diverse regulatory frameworks. Our clients rely on us to manage their numbers with precision, allowing them to focus on building and scaling their business.
+
             </p>
 
             {/* === Stats Row === */}

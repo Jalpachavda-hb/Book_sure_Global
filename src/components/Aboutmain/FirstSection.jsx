@@ -39,7 +39,7 @@ const FirstSection = () => {
             <div className="experience-wrapper">
               {/* LEFT CARD */}
               <div className="experience-card">
-                <h2>25</h2>
+                <h2>11</h2>
                 <div className="exp-text">
                   <span>YEARS</span>
                   <span>EXPERIENCE</span>

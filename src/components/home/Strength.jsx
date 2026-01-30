@@ -198,9 +198,13 @@ const Strength = () => {
             </p>
 
             <ul className="why-list text-white">
-              <li>Medicare Advantage Plans</li>
-              <li>Analysis & Research</li>
-              <li>100% Money Growth</li>
+              <li>Quality-first delivery standards</li>
+              <li>Qualified CA & CPA professionals</li>
+              <li>Multi-level review process</li>
+              <li>Process-driven accuracy</li>
+              <li>Secure & confidential handling</li>
+               <li>Consistent, reliable outcomes
+</li>
             </ul>
           </div>
 

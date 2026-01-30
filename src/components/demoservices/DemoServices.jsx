@@ -4,6 +4,7 @@ import { FaCalculator } from "react-icons/fa";
 import { FaBookAtlas } from "react-icons/fa6";
 import ConsultationSection1 from "../demoservices/ConsultationSection1";
 import { useNavigate } from "react-router-dom";
+
 const DemoServices = () => {
   const servicesData = [
     {
@@ -66,6 +67,7 @@ const DemoServices = () => {
           </div>
         </div>
       </section>
+      
       <ConsultationSection1 />
     </>
   );

@@ -12,7 +12,7 @@ import logo from "../../assets/Images/Hero/logo.png";
 import "./navbar.css";
 import { useNavigate } from "react-router-dom";
 export default function Xyz() {
-   const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [mobileServiceOpen, setMobileServiceOpen] = useState(false);
@@ -62,9 +62,10 @@ export default function Xyz() {
             <Nav.Link as={NavLink} to="/about">
               About Us
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/services">
+            {/* <Nav.Link as={NavLink} to="/services">
               Services
-            </Nav.Link>
+            </Nav.Link> */}
+
             <NavDropdown
               className="custom-dropdown"
               show={aboutOpen}
@@ -74,25 +75,28 @@ export default function Xyz() {
                 <span
                   onClick={(e) => {
                     e.preventDefault(); // stop dropdown toggle
-                    navigate("/services1"); // redirect page
+                    navigate("/services"); // redirect page
                   }}
                   style={{ cursor: "pointer" }}
                 >
-                  Services 1
+                  Services 
                 </span>
               }
             >
+             
               <NavDropdown.Item
                 as={NavLink}
-                to="/services1/bookkeepingservices"
+                to="/services/bookkeepingservices"
               >
                 Bookkeeping Services
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services1/accountingservices">
+              <NavDropdown.Item as={NavLink} to="/services/accountingservices">
                 Accounting Services
               </NavDropdown.Item>
             </NavDropdown>
-
+ <Nav.Link as={NavLink} to="/pricing">
+                Pricing Plan
+              </Nav.Link>
             <Nav.Link as={NavLink} to="/careers">
               Careers
             </Nav.Link>
@@ -124,10 +128,11 @@ export default function Xyz() {
                 Career
               </Nav.Link>
 
-              <Nav.Link as={NavLink} to="/services" onClick={closeMenu}>
+              {/* <Nav.Link as={NavLink} to="/services" onClick={closeMenu}>
                 Services
-              </Nav.Link>
-               <div className="mobile-dropdown">
+              </Nav.Link> */}
+
+              <div className="mobile-dropdown">
                 <button
                   className="mobile-dropdown-btn"
                   onClick={() => setMobileServiceOpen(!mobileServiceOpen)}
@@ -135,20 +140,28 @@ export default function Xyz() {
                   Services
                   {mobileServiceOpen ? <FiMinus /> : <FiPlus />}
                 </button>
-
                 <div
                   className={`mobile-dropdown-menu ${
                     mobileServiceOpen ? "open" : ""
                   }`}
                 >
-                  <NavLink to="/services1/bookkeepingservices" onClick={closeMenu}>
+                  <NavLink
+                    to="/services/bookkeepingservices"
+                    onClick={closeMenu}
+                  >
                     Bookkeeping Services
                   </NavLink>
-                  <NavLink to="/services1/accountingservices" onClick={closeMenu}>
+                  <NavLink
+                    to="/services/accountingservices"
+                    onClick={closeMenu}
+                  >
                     Accounting Services
                   </NavLink>
-                </div> </div>
-
+                </div>{" "}
+              </div>
+              <Nav.Link as={NavLink} to="/pricing" onClick={closeMenu}>
+                Pricing Plan
+              </Nav.Link>
               <Nav.Link as={NavLink} to="/contact" onClick={closeMenu}>
                 Contact Us
               </Nav.Link>
@@ -174,21 +187,21 @@ export default function Xyz() {
 // import "./navbar.css";
 
 // export default function Xyz() {
-  // const [show, setShow] = useState(false);
-  // const [scrolled, setScrolled] = useState(false);
-  // const [aboutOpen, setAboutOpen] = useState(false);
-  // const [mobileServiceOpen, setMobileServiceOpen] = useState(false);
+// const [show, setShow] = useState(false);
+// const [scrolled, setScrolled] = useState(false);
+// const [aboutOpen, setAboutOpen] = useState(false);
+// const [mobileServiceOpen, setMobileServiceOpen] = useState(false);
 
-  // useEffect(() => {
-  //   const onScroll = () => setScrolled(window.scrollY > 80);
-  //   window.addEventListener("scroll", onScroll);
-  //   return () => window.removeEventListener("scroll", onScroll);
-  // }, []);
+// useEffect(() => {
+//   const onScroll = () => setScrolled(window.scrollY > 80);
+//   window.addEventListener("scroll", onScroll);
+//   return () => window.removeEventListener("scroll", onScroll);
+// }, []);
 
-  // const closeMenu = () => {
-  //   setShow(false);
-  //   setMobileServiceOpen(false);
-  // };
+// const closeMenu = () => {
+//   setShow(false);
+//   setMobileServiceOpen(false);
+// };
 
 //   return (
 //     <Navbar
@@ -267,27 +280,27 @@ export default function Xyz() {
 //               </Nav.Link>
 
 //               {/* MOBILE DROPDOWN */}
-              // <div className="mobile-dropdown">
-              //   <button
-              //     className="mobile-dropdown-btn"
-              //     onClick={() => setMobileServiceOpen(!mobileServiceOpen)}
-              //   >
-              //     Services
-              //     {mobileServiceOpen ? <FiMinus /> : <FiPlus />}
-              //   </button>
+// <div className="mobile-dropdown">
+//   <button
+//     className="mobile-dropdown-btn"
+//     onClick={() => setMobileServiceOpen(!mobileServiceOpen)}
+//   >
+//     Services
+//     {mobileServiceOpen ? <FiMinus /> : <FiPlus />}
+//   </button>
 
-              //   <div
-              //     className={`mobile-dropdown-menu ${
-              //       mobileServiceOpen ? "open" : ""
-              //     }`}
-              //   >
-              //     <NavLink to="/services/bookkeeping" onClick={closeMenu}>
-              //       Bookkeeping Services
-              //     </NavLink>
-              //     <NavLink to="/services/accounting" onClick={closeMenu}>
-              //       Accounting Services
-              //     </NavLink>
-              //   </div>
+//   <div
+//     className={`mobile-dropdown-menu ${
+//       mobileServiceOpen ? "open" : ""
+//     }`}
+//   >
+//     <NavLink to="/services/bookkeeping" onClick={closeMenu}>
+//       Bookkeeping Services
+//     </NavLink>
+//     <NavLink to="/services/accounting" onClick={closeMenu}>
+//       Accounting Services
+//     </NavLink>
+//   </div>
 //               </div>
 
 //               <Nav.Link as={NavLink} to="/careers" onClick={closeMenu}>
