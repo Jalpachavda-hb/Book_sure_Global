@@ -40,7 +40,7 @@ const GetInTouch = () => {
                 </div>
                 <div>
                   <h6>E-mail</h6>
-                  <p>info@gmail.com</p>
+                  <p>info@booksureglobal.com</p>
                 </div>
               </div>
             </div>

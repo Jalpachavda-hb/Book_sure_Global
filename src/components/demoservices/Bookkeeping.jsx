@@ -6,7 +6,7 @@ import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
 
 import bookkeepingImg from "../../assets/Images/Services/accounting-removebg-preview.png";
 import cleanupImg from "../../assets/Images/Services/payroll.jpg";
-import taxImg from "../../assets/Images/Services/tax.png";
+// import taxImg from "../../assets/Images/Services/tax.png";
 
 import { FaBookAtlas, FaCalculator } from "react-icons/fa6";
 
@@ -99,82 +99,10 @@ const Bookkeeping = () => {
                 <img src={bookkeepingImg} alt="Catch-Up Bookkeeping" />
               </div>
             </div>
-
-            {/* ✅ 4. Reconciliations */}
-            <div className="service-alt-row reverse">
-              <div className="service-alt-content">
-                <div className="service-title">
-                  <FaCalculator className="service-icon" />
-                  <h3>Reconciliations</h3>
-                </div>
-
-                <p>
-                We match your bank, credit card, and payment records to eliminate discrepancies and maintain accurate balances.
-                </p>
-                <ul>
-                  <li>Bank & credit card reconciliations</li>
-                  <li>Merchant gateway matching</li>
-                  <li>Difference investigation & resolution</li>
-                </ul>
-              </div>
-
-              <div className="service-alt-img">
-                <img src={taxImg} alt="Reconciliations" />
-              </div>
-            </div>
-
-            {/* ✅ 5. AR & AP Support */}
-            <div className="service-alt-row">
-              <div className="service-alt-content">
-                <div className="service-title">
-                  <FaBookAtlas className="service-icon" />
-                  <h3>AR & AP Support</h3>
-                </div>
-
-                <p>
-                 Efficient management of customer invoices and vendor bills to track outstanding payments and cash flow.
-                </p>
-                <ul>
-                  <li>Customer invoice & vendor bill posting</li>
-                  <li>Outstanding balance tracking</li>
-                  <li>Aging reports</li>
-                </ul>
-              </div>
-
-              <div className="service-alt-img">
-                <img src={cleanupImg} alt="AR & AP Support" />
-              </div>
-            </div>
-
-            {/* ✅ 6. Chart of Accounts Optimization */}
-            <div className="service-alt-row reverse">
-              <div className="service-alt-content">
-                <div className="service-title">
-                  <FaCalculator className="service-icon" />
-                  <h3>Chart of Accounts Optimization</h3>
-                </div>
-
-                <p>
-                We structure and optimise your chart of accounts for clearer reporting, better tracking, and smarter financial decisions.
-                </p>
-                <ul>
-                  <li>Setup & restructuring</li>
-                  <li>Reporting-friendly account design</li>
-                </ul>
-              </div>
-
-              <div className="service-alt-img">
-                <img
-                  src={bookkeepingImg}
-                  alt="Chart of Accounts Optimization"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* ✅ Consultation Section */}
       <ConsultationSection />
     </>
   );

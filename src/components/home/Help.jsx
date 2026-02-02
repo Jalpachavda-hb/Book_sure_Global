@@ -1,4 +1,4 @@
-// import "./Hero.css";
+import "./Hero.css";
 import bgImage from "../../assets/Images/bgabout.jpg";
 import service from "../../assets/Images/Aboutus/services_details_inner02.jpg";
 
@@ -14,7 +14,7 @@ const Help = () => {
       <div className="container">
         <div className="row align-items-center  ">
           <div className="hero-content-left  animated-content position-relative z-index text-white">
-            <h4 className="page-tital mt-1 ">How We Help </h4>
+            <h4 className="page-tital mt-1 ">The Problem We Solve</h4>
           </div>
         </div>
         <div className="hero-content-left  animated-content position-relative z-index text-white">
@@ -22,36 +22,33 @@ const Help = () => {
         </div>
         <div className="row  ">
           <div className="col-lg-6 col-md-12 col-12">
-            <div className="animated-down paraabout">
-              <p className="mt-4 contain-colur">
-                Streamlining Success for Your Business with Our Expert
-                Outsourcing Solutions
-              </p>
+          <div className="animated-down paraabout">
 
-              <p>
-                We partner with organizations to simplify complex operations,
-                reduce costs, and enhance efficiency through tailored Knowledge
-                Process Outsourcing (KPO) services.
-              </p>
 
-              <p>
-                Our solutions are designed to empower businesses with accurate
-                insights, reliable processes, and scalable support that adapts
-                to evolving industry demands.
-              </p>
+  <p>
+    Many businesses and CPA firms struggle with disorganized, inaccurate, and
+    non-compliant financial records due to limited time, high staffing costs,
+    and complex regulatory requirements across the USA, Australia, and the UAE.
+  </p>
 
-              <p>
-                With a strong foundation built on integrity, transparency, and
-                accountability, we foster long-term partnerships that drive
-                measurable growth and operational excellence.
-              </p>
+  <p>
+    Common issues include backlogged bookkeeping, reconciliation errors, poor
+    chart of accounts structure, payroll and tax recording mistakes, and books
+    that are not ready for audits or tax filings.
+  </p>
 
-              <p>
-                Backed by over <strong>25+ years of combined expertise</strong>{" "}
-                in financial management, accounting, taxation, and compliance,
-                our team delivers precision-driven results you can trust.
-              </p>
-            </div>
+  <p>
+    These challenges increase compliance risk, waste valuable time, and prevent
+    confident financial decision-making.
+  </p>
+
+  <p>
+    At <strong>Booksure Global</strong>, we ensure these problems are
+    systematically identified, corrected, and permanently resolved through our
+    compliance-driven processes.
+  </p>
+</div>
+
           </div>
           <div className="col-lg-6 col-md-12 col-12 img-fluid animated-down">
             <img src={service} alt="about-figma" className="about-phone" />

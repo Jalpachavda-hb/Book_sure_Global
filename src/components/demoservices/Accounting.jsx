@@ -8,9 +8,7 @@ import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
 import { FaCalculator } from "react-icons/fa";
 import { FaBookAtlas } from "react-icons/fa6";
 
-
 const Bookkeeping = () => {
-
   return (
     <>
       {/* ✅ Banner */}
@@ -28,12 +26,13 @@ const Bookkeeping = () => {
               <div className="service-alt-content">
                 <div className="service-title">
                   <FaCalculator className="service-icon" />
-                  <h3>Accounting Services</h3>
+                  <h3>Account Reconciliation</h3>
                 </div>
 
                 <p>
-                  We provide end-to-end accounting support to keep your
-                  financial records accurate, compliant, and report-ready.
+                  Matching bank, credit card, and other financial accounts with
+                  bookkeeping records to ensure correct balances and complete
+                  transactions.
                 </p>
 
                 <ul>
@@ -54,12 +53,13 @@ const Bookkeeping = () => {
               <div className="service-alt-content">
                 <div className="service-title">
                   <FaBookAtlas className="service-icon" />
-                  <h3>Payroll Processing Services</h3>
+                  <h3>Financial Statement Preparation</h3>
                 </div>
 
                 <p>
-                  We manage payroll processing smoothly and accurately while
-                  ensuring statutory and compliance requirements are met.
+                  Preparation of Profit & Loss Statements, Balance Sheets, and
+                  Cash Flow Reports to provide clear insights into business
+                  performance.
                 </p>
 
                 <ul>
@@ -80,12 +80,12 @@ const Bookkeeping = () => {
               <div className="service-alt-content">
                 <div className="service-title">
                   <FaCalculator className="service-icon" />
-                  <h3>Tax Support Services</h3>
+                  <h3>Month-End & Year-End Closing</h3>
                 </div>
 
                 <p>
-                  Tax-ready financial preparation aligned with multiple
-                  jurisdictions and regulatory environments.
+                  Review and finalization of accounts with adjustments to ensure
+                  accurate monthly and annual financial reporting.
                 </p>
 
                 <ul>
@@ -98,6 +98,30 @@ const Bookkeeping = () => {
 
               <div className="service-alt-img w-20 h-10">
                 <img src={Tax} alt="Tax Support Services" />
+              </div>
+            </div>
+            <div className="service-alt-row  reverse">
+              <div className="service-alt-content">
+                <div className="service-title">
+                  <FaBookAtlas className="service-icon" />
+                  <h3>Fixed Asset Accounting</h3>
+                </div>
+
+                <p>
+                  Tracking and depreciation of business assets to maintain
+                  accurate long-term financial records.
+                </p>
+
+                <ul>
+                  <li>Payroll calculation & processing</li>
+                  <li>Payslip preparation</li>
+                  <li>Payroll journal entries</li>
+                  <li>Statutory deduction tracking</li>
+                </ul>
+              </div>
+
+              <div className="service-alt-img">
+                <img src={payroll} alt="Payroll Processing" />
               </div>
             </div>
           </div>

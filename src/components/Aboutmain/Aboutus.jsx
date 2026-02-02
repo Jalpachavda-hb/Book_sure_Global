@@ -5,16 +5,16 @@ import FirstSection from "./FirstSection";
 import Cardsection from "./Cardsection";
 import Ourmission from "./Ourmission";
 import OurAssociate from "./OurAssociate";
+import ServicesSection from "../Services/Stepdesign";
 const Aboutus = () => {
   return (
     <>
       <PageBanner title="About Us" bgImage={bannerImg} />
       <FirstSection />
-      <Cardsection/>
-      <Ourmission/>
-            <OurAssociate/>
-            
-   
+      <Cardsection />
+      <ServicesSection/>
+      <Ourmission />
+      <OurAssociate />
     </>
   );
 };

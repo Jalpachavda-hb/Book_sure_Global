@@ -2,7 +2,7 @@ import PageBanner from "../PageBanner/PageBanner";
 import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
 import { FaCalculator } from "react-icons/fa";
 import { FaBookAtlas } from "react-icons/fa6";
-import ConsultationSection1 from "../demoservices/ConsultationSection1";
+import ConsultationSection from "../demoservices/ConsultationSection";
 import { useNavigate } from "react-router-dom";
 import "../Services/services.css";
 const DemoServices = () => {
@@ -13,7 +13,7 @@ const DemoServices = () => {
       icon: <FaBookAtlas />,
       title: "Bookkeeping Services",
       description:
-        "Accurate, organised and audit-ready books — every period, without stress.",
+        "We provide end-to-end bookkeeping solutions to maintain accurate, organized, and compliant financial records for your business.",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const DemoServices = () => {
       icon: <FaCalculator />,
       title: "Accounting Services",
       description:
-        "End-to-end accounting support to keep your financial records accurate and compliant.",
+        "We ensure financial accuracy and smooth closing processes through detailed accounting support and reporting.",
     },
   ];
   const navigate = useNavigate();
@@ -67,8 +67,8 @@ const DemoServices = () => {
           </div>
         </div>
       </section>
-      
-      <ConsultationSection1 />
+
+      <ConsultationSection />
     </>
   );
 };

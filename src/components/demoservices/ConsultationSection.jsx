@@ -6,15 +6,10 @@ const monthNames = [
   "July","August","September","October","November","December"
 ];
 
-// 👉 Example: dates blocked from ADMIN (API later)
-const blockedDatesFromAdmin = [
-  "2026-01-15",
-  "2026-01-18",
-  "2026-02-05",
-];
+// Blocked Dates Example
+const blockedDatesFromAdmin = ["2026-01-15", "2026-02-05"];
 
 const ConsultationSection = () => {
-  const [openCalendar, setOpenCalendar] = useState(false);
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState(null);
 
@@ -22,86 +17,87 @@ const ConsultationSection = () => {
   const month = currentDate.getMonth();
 
   const daysInMonth = new Date(year, month + 1, 0).getDate();
-  const firstDay = new Date(year, month, 1).getDay(); // 0 = Sunday
+  const firstDay = new Date(year, month, 1).getDay();
 
-  // ✅ Disable logic (PAST + SUNDAY + ADMIN BLOCK)
+  // ✅ Disable Past + Sundays + Blocked
   const isDisabled = (day) => {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
     const dateObj = new Date(year, month, day);
 
-    const formattedDate = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+    const formatted = `${year}-${String(month + 1).padStart(2, "0")}-${String(
+      day
+    ).padStart(2, "0")}`;
 
     return (
       dateObj < today ||
       dateObj.getDay() === 0 ||
-      blockedDatesFromAdmin.includes(formattedDate)
+      blockedDatesFromAdmin.includes(formatted)
     );
   };
 
   return (
-    <section className="consult-section">
-      {/* CTA CARD */}
-      <div className="consult-card">
-        <h2>Book Your Free Strategy Call</h2>
-        <p>
-          Talk with our experts and discover how we can streamline your business
-          operations with smart digital solutions.
-        </p>
+    <section className="consult-new">
+      <div className="consult-wrapper">
 
-        <button
-          className="consult-btn"
-          onClick={() => setOpenCalendar(!openCalendar)}
-        >
-          Book Free Consultation
-        </button>
-      </div>
+        {/* ✅ LEFT CONTENT */}
+        <div className="consult-left">
+          <h2>
+            Book a <span>Free Consultation</span>
+          </h2>
 
-      {/* CALENDAR */}
-      {openCalendar && (
-        <div className="calendar-wrapper">
-          <div className="calendar-card dark-calendar">
-            
+          <p>
+            Schedule your strategy call with our experts and get a personalized
+            roadmap to streamline your accounting & business operations.
+          </p>
+
+      
+          <button className="consult-main-btn">
+            Get Started Today →
+          </button>
+        </div>
+
+        {/* ✅ RIGHT CALENDAR CARD */}
+        <div className="consult-right">
+          <div className="calendar-modern">
+
             {/* HEADER */}
-            <div className="calendar-top">
-              <h3>Select a Date & Time</h3>
-            </div>
+            <h3>Select Your Date</h3>
 
             {/* MONTH NAV */}
-            <div className="calendar-nav">
+            <div className="cal-nav">
               <button
-                onClick={() =>
-                  setCurrentDate(new Date(year, month - 1, 1))
-                }
+                onClick={() => setCurrentDate(new Date(year, month - 1, 1))}
               >
                 ‹
               </button>
 
-              <span>{monthNames[month]} {year}</span>
+              <span>
+                {monthNames[month]} {year}
+              </span>
 
               <button
-                onClick={() =>
-                  setCurrentDate(new Date(year, month + 1, 1))
-                }
+                onClick={() => setCurrentDate(new Date(year, month + 1, 1))}
               >
                 ›
               </button>
             </div>
 
-            {/* WEEK DAYS */}
-            <div className="calendar-week">
-              {["MON","TUE","WED","THU","FRI","SAT","SUN"].map((d) => (
-                <span key={d}>{d}</span>
+            {/* DAYS */}
+            <div className="cal-grid">
+              {["M","T","W","T","F","S","S"].map((d) => (
+                <span key={d} className="cal-day-name">
+                  {d}
+                </span>
               ))}
-            </div>
 
-            {/* DAYS GRID */}
-            <div className="calendar-grid">
+              {/* Empty slots */}
               {[...Array(firstDay === 0 ? 6 : firstDay - 1)].map((_, i) => (
-                <span key={`empty-${i}`} />
+                <span key={i}></span>
               ))}
 
+              {/* Month days */}
               {[...Array(daysInMonth)].map((_, i) => {
                 const day = i + 1;
                 const disabled = isDisabled(day);
@@ -109,10 +105,10 @@ const ConsultationSection = () => {
                 return (
                   <button
                     key={day}
-                    className={`calendar-day ${
+                    disabled={disabled}
+                    className={`cal-date ${
                       selectedDate === day ? "active" : ""
                     }`}
-                    disabled={disabled}
                     onClick={() => setSelectedDate(day)}
                   >
                     {day}
@@ -121,14 +117,15 @@ const ConsultationSection = () => {
               })}
             </div>
 
-            {/* TIME SLOTS */}
+            {/* ✅ TIME SLOTS */}
             {selectedDate && (
-              <div className="time-section">
-                <h4>Available Time</h4>
-                <div className="time-slots">
-                  {["10:00 AM","12:00 PM","02:00 PM","04:00 PM"].map(
+              <div className="slot-box">
+                <h4>Available Time Slots</h4>
+
+                <div className="slots">
+                  {["10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"].map(
                     (time) => (
-                      <button key={time} className="time-btn">
+                      <button key={time} className="slot-btn">
                         {time}
                       </button>
                     )
@@ -138,7 +135,8 @@ const ConsultationSection = () => {
             )}
           </div>
         </div>
-      )}
+
+      </div>
     </section>
   );
 };

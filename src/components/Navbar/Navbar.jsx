@@ -62,9 +62,7 @@ export default function Xyz() {
             <Nav.Link as={NavLink} to="/about">
               About Us
             </Nav.Link>
-            {/* <Nav.Link as={NavLink} to="/services">
-              Services
-            </Nav.Link> */}
+        
 
             <NavDropdown
               className="custom-dropdown"
@@ -79,27 +77,26 @@ export default function Xyz() {
                   }}
                   style={{ cursor: "pointer" }}
                 >
-                  Services 
+                  Services
                 </span>
               }
             >
-             
-              <NavDropdown.Item
-                as={NavLink}
-                to="/services/bookkeepingservices"
-              >
+              <NavDropdown.Item as={NavLink} to="/services/bookkeepingservices">
                 Bookkeeping Services
               </NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/services/accountingservices">
                 Accounting Services
               </NavDropdown.Item>
             </NavDropdown>
- <Nav.Link as={NavLink} to="/pricing">
-                Pricing Plan
-              </Nav.Link>
-            <Nav.Link as={NavLink} to="/careers">
-              Careers
+            <Nav.Link as={NavLink} to="/pricing">
+              Pricing Plan
             </Nav.Link>
+            {/* <Nav.Link as={NavLink} to="/careers">
+              Careers
+            </Nav.Link> */}
+                <Nav.Link as={NavLink} to="/data">
+              Data Security
+            </Nav.Link> ``
             <Nav.Link as={NavLink} to="/contact">
               Contact Us
             </Nav.Link>
@@ -124,13 +121,13 @@ export default function Xyz() {
               <Nav.Link as={NavLink} to="/about" onClick={closeMenu}>
                 About Us
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/careers" onClick={closeMenu}>
+              {/* <Nav.Link as={NavLink} to="/careers" onClick={closeMenu}>
                 Career
-              </Nav.Link>
-
-              {/* <Nav.Link as={NavLink} to="/services" onClick={closeMenu}>
-                Services
               </Nav.Link> */}
+
+              <Nav.Link as={NavLink} to="/data" onClick={closeMenu}>
+            Data Security
+              </Nav.Link>
 
               <div className="mobile-dropdown">
                 <button

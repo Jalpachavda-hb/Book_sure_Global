@@ -14,7 +14,7 @@ import Bookkeeping from "./components/demoservices/Bookkeeping";
 import Accounting from "./components/demoservices/Accounting";
 import Team from "./components/Team/Team";
 import Pricing from "./components/Pricing/Pricing";
-// import Data from "./components/Data/Data";
+import Data from "./components/Data/Data";
 // import Contact from "./components/Contact/Contact";
 // import Careers from "./components/Contact/Careers";
 import Contact from "./components/Contactus/Contact";
@@ -42,7 +42,7 @@ function App() {
         {/* <Route path="/team/gallery" element={<Gallery />} /> */}
         {/* <Route path="/team/:slug" element={<Teamdetailpage />} /> */}
         <Route path="/pricing" element={<Pricing />} />
-        {/* <Route path="/data" element={<Data />} /> */}
+        <Route path="/data" element={<Data />} />
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/company/blog" element={<Blog />} /> */}
         {/* <Route path="/blog/blogdetail" element={<BlogDetail />} /> */}

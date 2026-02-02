@@ -1,9 +1,9 @@
 import {
   FaFacebookF,
-  FaTwitter,
+  // FaTwitter,
   FaInstagram,
   FaLinkedinIn,
-  FaYoutube,
+  // FaYoutube,
   FaMapMarkerAlt,
   FaEnvelope,
 } from "react-icons/fa";
@@ -19,9 +19,12 @@ const Footer = () => {
           <div className="col-lg-3 col-md-6">
             <h5 className="footer-title">About</h5>
             <p className="footer-text">
-              Integrity Data Services is a trusted outsourcing and offshore
-              staffing partner delivering expert accounting, taxation, payroll,
-              and corporate research solutions with integrity and excellence.
+              Booksure Global is a professional accounting outsourcing firm
+              delivering reliable bookkeeping, accounting, payroll and tax
+              support services to growing businesses. Our team includes
+              qualified Chartered Accountants and CPA Australia and other
+              qualified professionals with strong global tax and compliance
+              knowledge.
             </p>
 
             {/* SOCIAL ICONS */}
@@ -29,18 +32,20 @@ const Footer = () => {
               <a href="/">
                 <FaFacebookF />
               </a>
-              <a href="/">
-                <FaTwitter />
-              </a>
+
               <a href="/">
                 <FaInstagram />
               </a>
-              <a href="/">
+              <a
+                href="https://www.linkedin.com/company/booksureglobal/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedinIn />
               </a>
-              <a href="/">
+              {/* <a href="/">
                 <FaYoutube />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -60,9 +65,7 @@ const Footer = () => {
                   <li>
                     <a href="/services">Services</a>
                   </li>
-                  <li>
-                    <a href="/team">Team</a>
-                  </li>
+
                   <li>
                     <a href="/pricing">Pricing Plan</a>
                   </li>
@@ -80,10 +83,14 @@ const Footer = () => {
                 <h5 className="footer-title">RESOURCES</h5>
                 <ul className="footer-links">
                   <li>
-                    <a href="/team/gallery">Gallery</a>
+                    <a href="/services/bookkeepingservices">
+                      Bookkeeping Services
+                    </a>
                   </li>
                   <li>
-                    <a href="/blog">Blogs</a>
+                    <a href="/services/accountingservices">
+                      Accounting Services
+                    </a>
                   </li>
                   <li>
                     <a href="/careers">Career</a>
@@ -107,10 +114,17 @@ const Footer = () => {
                 Sheridan, Wyoming 82801
               </p>
             </div>
+            <div className="footer-contact">
+              <FaMapMarkerAlt />
+              <p>
+                1309 Coffeen Avenue STE 1200 <br />
+                Sheridan,Canada 82801
+              </p>
+            </div>
 
             <div className="footer-contact">
               <FaEnvelope />
-              <p>info@advanta-wise.com</p>
+              <p>info@booksureglobal.com</p>
             </div>
           </div>
         </div>
@@ -124,7 +138,7 @@ const Footer = () => {
         <div className="row align-items-center text-center text-md-start">
           <div className="col-md-6">
             <p className="mb-0 footer-copy">
-              © 2024 Advanta Wise | All Rights Reserved
+              © 2026 Book Sure Global | All Rights Reserved
             </p>
           </div>
           <div className="col-md-6 text-md-end">

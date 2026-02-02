@@ -161,63 +161,66 @@
 // export default Strength;
 
 import "./Hero.css";
-
 import img1 from "../../assets/Images/Hero/whychoseus.jpg";
-// import img2 from "../../assets/Images/Hero/img-about2.png";
 
 const Strength = () => {
   return (
-    <section
-      className="why-section"
-      style={{
-        // backgroundImage: `url(${bgImg})`,
-        backgroundColor: "#1e2330",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <section className="why-section">
       <div className="container">
         <div className="why-grid">
+          
           {/* LEFT CONTENT */}
           <div className="why-content">
-            {/* <span className="why-tag">WHY CHOOSE OUR SERVICE</span> */}
-            <div className="hero-content-left animated-content position-relative z-index text-white mb-4">
-              <h3 className="page-tital mt-1 ">Why Choose Us</h3>
-              <p className=" mb-5 text-white">“EXPERIENCE THE DIFFERENCE”</p>
-            </div>
-            <h2 className="text-white">
-              Preparing for your success <br />
-              provide best IT solutions.
+            <span className="why-tag">WHY CHOOSE US</span>
+            <h2>
+              Why Choose <span>Booksure Global</span>
             </h2>
-
-            <p className="why-desc text-white">
-              We have the technology and industry expertise to develop solutions
-              that can connect people and businesses across a variety of mobile
-              devices.
+            <p className="why-desc">
+              Experience reliable, compliant, and scalable accounting solutions
+              designed for growing businesses across the globe.
             </p>
 
-            <ul className="why-list text-white">
-              <li>Quality-first delivery standards</li>
-              <li>Qualified CA & CPA professionals</li>
-              <li>Multi-level review process</li>
-              <li>Process-driven accuracy</li>
-              <li>Secure & confidential handling</li>
-               <li>Consistent, reliable outcomes
-</li>
-            </ul>
-          </div>
-
-          {/* RIGHT IMAGES */}
-          <div className="why-visual">
-            {/* ANIMATED RING */}
-            <span className="yellow-ring"></span>
-
-            <div className="image-stack">
-              <img src={img1} alt="Why choose us" className="img-main" />
-              {/* <img src={img2} alt="Team work" className="img-float" /> */}
+            <div className="why-points">
+              {[
+                {
+                  title: "Compliance-Driven Approach",
+                  desc: "Country-specific accounting standards ensure audit-ready and fully compliant books."
+                },
+                {
+                  title: "Multi-Country Expertise",
+                  desc: "Serving USA, Australia & UAE with localized tax and reporting compliance."
+                },
+                {
+                  title: "Reliable Process Delivery",
+                  desc: "Structured workflows for timely reconciliations and smooth closings."
+                },
+                {
+                  title: "Certified Accounting Experts",
+                  desc: "Skilled professionals experienced with QuickBooks, Xero & cloud systems."
+                },
+                {
+                  title: "Accuracy & Transparency",
+                  desc: "Clear financial visibility with detailed reporting and reviews."
+                }
+              ].map((item, i) => (
+                <div className="why-card" key={i}>
+                  <span className="why-icon">✔</span>
+                  <div>
+                    <h5>{item.title}</h5>
+                    <p>{item.desc}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="why-visual">
+            <div className="image-glass">
+              <img src={img1} alt="Why Choose Us" />
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
