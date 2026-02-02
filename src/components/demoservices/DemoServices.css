@@ -227,9 +227,6 @@
   gap: 10px;
 }
 
-
-
-
 .consult-new {
   padding: 90px 20px;
   background: linear-gradient(to right, #0f172a, #020617);
@@ -418,5 +415,214 @@
 
   .consult-features {
     align-items: center;
+  }
+}
+
+/* ====================inner pages============ */
+.service-detail-page {
+  padding: 90px 20px;
+  background: #f9fbff;
+}
+
+/* ✅ Wrapper */
+.service-alt-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+/* ✅ Each Service Row */
+.service-alt-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ✅ Reverse Row */
+.service-alt-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ✅ Content Area */
+.service-alt-content {
+  flex: 1;
+}
+
+/* ✅ Title + Icon */
+.service-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.service-icon {
+  font-size: 34px;
+  color: #114a9f;
+}
+
+.service-title h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b2c5d;
+  margin: 0;
+}
+
+/* ✅ Description */
+.service-alt-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+/* ✅ List Style */
+.service-alt-content ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.service-alt-content ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ✅ Image Area */
+.service-alt-img {
+  flex: 1;
+  text-align: center;
+}
+
+.service-alt-img img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 18px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+/* ================================================= */
+/* ✅ RESPONSIVE BREAKPOINTS */
+/* ================================================= */
+
+/* ✅ Large Tablets */
+@media (max-width: 992px) {
+  .service-alt-row {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .service-alt-row.reverse {
+    flex-direction: column;
+  }
+
+  .service-title {
+    justify-content: center;
+  }
+
+  .service-alt-content ul {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  .service-alt-img img {
+    max-width: 480px;
+    margin-top: 25px;
+  }
+}
+
+/* ✅ Tablets + Mobile */
+@media (max-width: 768px) {
+  .service-detail-page {
+    padding: 70px 15px;
+  }
+
+  .service-alt-wrapper {
+    gap: 50px;
+  }
+
+  .service-title h3 {
+    font-size: 22px;
+  }
+
+  .service-icon {
+    font-size: 28px;
+  }
+
+  .service-alt-content p {
+    font-size: 14px;
+  }
+
+  .service-alt-content ul li {
+    font-size: 14px;
+  }
+
+  .service-alt-row {
+    padding: 25px;
+  }
+}
+
+/* ✅ Small Mobile Screens */
+@media (max-width: 480px) {
+  .service-title h3 {
+    font-size: 20px;
+  }
+
+  .service-alt-content p {
+    font-size: 13.5px;
+  }
+
+  .service-alt-content ul li {
+    font-size: 13.5px;
+  }
+
+  .service-alt-row {
+    padding: 20px;
+  }
+
+  .service-alt-img img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .service-alt-row,
+  .service-alt-row.reverse {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 992px) {
+  .service-alt-img {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 992px) {
+  .service-alt-row,
+  .service-alt-row.reverse {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .service-title {
+    justify-content: center;
+  }
+
+  .service-alt-img {
+    margin-top: 25px;
+  }
+
+  .service-alt-img img {
+    max-width: 480px;
+    width: 100%;
   }
 }

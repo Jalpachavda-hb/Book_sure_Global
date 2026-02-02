@@ -3,11 +3,10 @@ import ConsultationSection from "./ConsultationSection";
 
 import PageBanner from "../PageBanner/PageBanner";
 import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
-
 import bookkeepingImg from "../../assets/Images/Services/accounting-removebg-preview.png";
 import cleanupImg from "../../assets/Images/Services/payroll.jpg";
 // import taxImg from "../../assets/Images/Services/tax.png";
-
+import "./DemoServices.css";
 import { FaBookAtlas, FaCalculator } from "react-icons/fa6";
 
 const Bookkeeping = () => {
@@ -102,10 +101,10 @@ const Bookkeeping = () => {
           </div>
         </div>
       </section>
-
       <ConsultationSection />
     </>
   );
 };
 
 export default Bookkeeping;
+

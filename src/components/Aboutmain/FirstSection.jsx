@@ -88,8 +88,8 @@ const FirstSection = () => {
 
             {/* CONTACT BOX */}
             {/* <div className="d-flex align-items-center justify-content-between flex-wrap gap-4 contact-wrapper mt-4"> */}
-              {/* LEFT PROFILE */}
-              {/* <div className="d-flex align-items-center gap-3">
+            {/* LEFT PROFILE */}
+            {/* <div className="d-flex align-items-center gap-3">
                 <img
                   src={ceo}
                   alt="CEO"
@@ -106,8 +106,8 @@ const FirstSection = () => {
                 </div>
               </div> */}
 
-              {/* RIGHT HOTLINE */}
-              {/* <div className="d-flex align-items-center gap-3">
+            {/* RIGHT HOTLINE */}
+            {/* <div className="d-flex align-items-center gap-3">
                 <div className="phone-icon">
                   <FaPhoneVolume />
                 </div>
