@@ -184,3 +184,15 @@ export const getSubServiceBySlug = async (slug) => {
     return [];
   }
 };
+
+
+
+
+export const getActiveteam_member = async () => {
+  try {
+ const res = await apiClient.get(API_PATHS.TEAM.GETTEAMDATA);
+    return res.data;
+  } catch (error) {
+    return { success: false, data: [] };
+  }
+};

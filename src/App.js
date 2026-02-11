@@ -1,7 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import "./components/Media.css";
-
 import Layout from "./components/Layout";
 
 // Pages

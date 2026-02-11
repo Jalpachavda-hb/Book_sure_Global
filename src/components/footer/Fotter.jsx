@@ -134,8 +134,14 @@ const Footer = () => {
             <div className="footer-contact">
               <FaMapMarkerAlt />
               <p>
-                1309 Coffeen Avenue STE 1200 <br />
-                Sheridan, Wyoming 82801
+{/* 301 , Nobel Trade center , Opp B.D Rao Hall Bhuyangdev Cross Road , Ahmedabad - 380052 */}
+
+
+
+
+
+               301 , Nobel Trade center , Opp B.D Rao Hall Bhuyangdev Cross Road<br />
+                Ahmedabad - 380052
               </p>
             </div>
            

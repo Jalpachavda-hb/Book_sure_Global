@@ -58,5 +58,10 @@ export const API_PATHS = {
   SERVICES : {
   GETSERVICEBYSLUG: "/sub-services/by-slug",
     GETACTIVESERVICES : "services/active",
-  }
+  },
+
+TEAM : {
+  GETTEAMDATA : "team/getmembers"
+}
+
 };

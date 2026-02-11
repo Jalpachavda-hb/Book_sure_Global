@@ -111,8 +111,10 @@ export default function Xyz() {
             </Nav.Link> */}
             <Nav.Link as={NavLink} to="/data">
               Data Security
-            </Nav.Link>{" "}
-            ``
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/team">
+             Team
+            </Nav.Link>
             <Nav.Link as={NavLink} to="/contact">
               Contact Us
             </Nav.Link>
@@ -143,6 +145,9 @@ export default function Xyz() {
 
               <Nav.Link as={NavLink} to="/data" onClick={closeMenu}>
                 Data Security
+              </Nav.Link>
+                <Nav.Link as={NavLink} to="/team" onClick={closeMenu}>
+                Team
               </Nav.Link>
 
               <div className="mobile-dropdown">

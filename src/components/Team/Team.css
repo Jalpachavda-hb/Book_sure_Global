@@ -1,24 +1,20 @@
-.team-card-wrapper {
+/* .team-card-wrapper {
   position: relative;
   text-align: center;
   margin-bottom: 40px;
 }
 
-/* Image Container */
 .team-image-box {
   background: #e6f4fb;
   border-radius: 12px;
   padding: 20px;
 }
-
 .team-image-box img {
   width: 100%;
   height: 320px;
   object-fit: cover;
   border-radius: 8px;
 }
-
-/* Info Card */
 .team-info-box {
   background: #ffffff;
   border-radius: 12px;
@@ -30,7 +26,6 @@
   width: 85%;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
-
 .team-info-box h4 {
   font-size: 20px;
   font-weight: 700;
@@ -45,7 +40,7 @@
   margin-bottom: 12px;
 }
 
-/* Social Icons */
+
 .team-social {
   display: flex;
   justify-content: center;
@@ -62,10 +57,77 @@
   color: #cc952b;
 }
 
-/* Hover Effect */
+
 .team-card-wrapper:hover .team-info-box {
   transform: translateX(-50%) translateY(-5px);
+} */
+
+.team-card-new {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05);
+  transition: 0.4s ease;
+  border: 1px solid #f1f5f9;
+  height: 100%;
+  cursor: pointer;
 }
+
+.team-card-new:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+}
+
+/* Initial Circle */
+.initial-circle {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+    background: linear-gradient(90deg, #0b1c3a, #132d63, #0b1c3a);
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+
+.member-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.member-role {
+      font-size: 16px;
+    color: #CC952B;
+  font-weight: 500;
+}
+
+.divider {
+  width: 40px;
+  height: 3px;
+    background: linear-gradient(90deg, #0b1c3a, #132d63, #0b1c3a);
+  margin: 15px auto;
+  border-radius: 3px;
+}
+
+.member-qualification,
+.member-experience {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.member-description {
+  font-size: 14px;
+  color: #4b5563;
+  margin-top: 15px;
+}
+
 /* ===============================
    SHINE / WAVE HOVER ANIMATION
 ================================ */

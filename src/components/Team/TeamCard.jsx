@@ -27,23 +27,39 @@
 // }
 
 
-export default function TeamCard({
-  image,
-  name,
- qualification,
+import React from "react";
+import "./Team.css";
 
-  onClick,
-}) {
+const TeamCard = ({ name, role, qualification, experience, description, onClick }) => {
+
+  // Generate initials automatically
+  const initials = name
+    .split(" ")
+    .map(word => word[0])
+    .join("");
+
   return (
-    <div className="team-card-wrapper" onClick={onClick}>
-      <div className="team-image-box shine-animate">
-        <img src={image} alt={name} />
+    <div className="team-card-new" onClick={onClick}>
+      
+      <div className="initial-circle">
+        {initials}
       </div>
 
-      <div className="team-info-box">
-        <h4>{name}</h4>
-        <span className="team-role">{qualification}</span>
-      </div>
+      <h5 className="member-name">{name}</h5>
+      {/* <span className="member-role">{role}</span> */}
+        <p className="member-role">{qualification}</p>
+
+      <div className="divider"></div>
+
+    
+      <p className="member-experience">{experience}</p>
+
+      <p className="member-description">
+        {description}
+      </p>
+
     </div>
   );
-}
+};
+
+export default TeamCard;
