@@ -4,7 +4,7 @@ import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
 import FirstSection from "./FirstSection";
 import Cardsection from "./Cardsection";
 import Ourmission from "./Ourmission";
-import OurAssociate from "./OurAssociate";
+
 import ServicesSection from "../Services/Stepdesign";
 const Aboutus = () => {
   return (
@@ -14,7 +14,7 @@ const Aboutus = () => {
       <Cardsection />
       <ServicesSection/>
       <Ourmission />
-      <OurAssociate />
+   
     </>
   );
 };

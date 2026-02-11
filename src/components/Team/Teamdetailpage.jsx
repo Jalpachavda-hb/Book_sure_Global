@@ -1,62 +1,106 @@
+// import React from "react";
+// import { useParams } from "react-router-dom";
+// import { founders, teamMembers } from "./Team"; // only import named exports
+// import "./Team.css";
+
+// const TeamDetail = () => {
+//   const { slug } = useParams();
+
+//   // Combine both founders and team members into a single array
+//   const allMembers = [...founders, ...teamMembers];
+
+//   // Find clicked member
+//   const member = allMembers.find((item) => item.slug === slug);
+
+//   // Safety check
+//   if (!member) {
+//     return (
+//       <div className="container py-5 text-center">
+//         <h3>Team member not found</h3>
+//       </div>
+//     );
+//   }
+
+//   return (
+//     <section className="team-detail-page">
+//       <div className="container">
+//         {/* Header */}
+//         <div className="team-detail-header mt-3">
+//           <h1>{member.name}</h1>
+//           <span>{member.role}</span>
+//         </div>
+
+//         <div className="row mt-5">
+//           {/* Image */}
+//           <div className="col-lg-4">
+//             <div className="team-detail-img">
+//               <img src={member.image} alt={member.name} />
+//             </div>
+//           </div>
+
+//           {/* Content */}
+//           <div className="col-lg-8">
+//             <div className="team-detail-content">
+//               {member.details && member.details.trim() !== "" ? (
+//                 member.details
+//                   .split("\n")
+//                   .map(
+//                     (para, index) =>
+//                       para.trim() !== "" && <p key={index}>{para}</p>
+//                   )
+//               ) : (
+//                 <p>No details available.</p>
+//               )}
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default TeamDetail;
+
 import React from "react";
-import { useParams } from "react-router-dom";
-import { founders, teamMembers } from "./Team"; // only import named exports
 import "./Team.css";
 
-const TeamDetail = () => {
-  const { slug } = useParams();
-
-  // Combine both founders and team members into a single array
-  const allMembers = [...founders, ...teamMembers];
-
-  // Find clicked member
-  const member = allMembers.find((item) => item.slug === slug);
-
-  // Safety check
-  if (!member) {
-    return (
-      <div className="container py-5 text-center">
-        <h3>Team member not found</h3>
-      </div>
-    );
-  }
+export default function TeamModal({ member, onClose }) {
+  if (!member) return null;
 
   return (
-    <section className="team-detail-page">
-      <div className="container">
-        {/* Header */}
-        <div className="team-detail-header mt-3">
-          <h1>{member.name}</h1>
-          <span>{member.role}</span>
+    <div className="modal-overlay">
+      <div className="team-modal">
+        <button className="modal-close" onClick={onClose}>
+          ×
+        </button>
+
+        <div className="modal-left">
+          <img src={member.image} alt={member.name} />
         </div>
 
-        <div className="row mt-5">
-          {/* Image */}
-          <div className="col-lg-4">
-            <div className="team-detail-img">
-              <img src={member.image} alt={member.name} />
-            </div>
-          </div>
+        <div className="modal-right">
+          <h2>{member.name}</h2>
+          <h5>{member.role}</h5>
 
-          {/* Content */}
-          <div className="col-lg-8">
-            <div className="team-detail-content">
-              {member.details && member.details.trim() !== "" ? (
-                member.details
-                  .split("\n")
-                  .map(
-                    (para, index) =>
-                      para.trim() !== "" && <p key={index}>{para}</p>
-                  )
-              ) : (
-                <p>No details available.</p>
-              )}
-            </div>
-          </div>
+          {member.qualification && (
+            <p className="modal-qualification">
+              {member.qualification}
+            </p>
+          )}
+
+          {member.experience && (
+            <p className="modal-experience">
+              <strong>Experience:</strong> {member.experience}
+            </p>
+          )}
+
+          {member.description && (
+            <p className="modal-description">
+              {member.description}
+            </p>
+          )}
         </div>
       </div>
-    </section>
+    </div>
   );
-};
-
-export default TeamDetail;
+}

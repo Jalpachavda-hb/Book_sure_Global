@@ -1,14 +1,11 @@
 import {
-  FaFacebookF,
-  // FaTwitter,
-  FaInstagram,
+  FaWhatsapp,
   FaLinkedinIn,
-  // FaYoutube,
   FaMapMarkerAlt,
   FaEnvelope,
 } from "react-icons/fa";
 import "./fotter.css";
-
+import { CiMail } from "react-icons/ci";
 const Footer = () => {
   return (
     <footer className="footer-main text-light">
@@ -29,12 +26,39 @@ const Footer = () => {
 
             {/* SOCIAL ICONS */}
             <div className="footer-social mt-4">
-              <a href="/">
-                <FaFacebookF />
+              <a
+                href="https://wa.me/919313061960?text=Hello%20I%20want%20to%20know%20more%20about%20your%20services"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp />
               </a>
 
-              <a href="/">
-                <FaInstagram />
+              {/* <a href="/">
+                <CiMail />
+              </a> */}
+
+              {/* <a
+              href="mailto:info@booksureglobal.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <CiMail />
+              </a> */}
+
+              <a
+                href="mailto:jalpachavda1211@gmail.com"
+                onClick={(e) => {
+                  if (window.innerWidth > 768) {
+                    e.preventDefault();
+                    window.open(
+                      "https://mail.google.com/mail/?view=cm&fs=1&to=jalpachavda1211@gmail.com",
+                      "_blank",
+                    );
+                  }
+                }}
+              >
+                <CiMail />
               </a>
               <a
                 href="https://www.linkedin.com/company/booksureglobal/"
@@ -114,17 +138,25 @@ const Footer = () => {
                 Sheridan, Wyoming 82801
               </p>
             </div>
-            <div className="footer-contact">
-              <FaMapMarkerAlt />
-              <p>
-                1309 Coffeen Avenue STE 1200 <br />
-                Sheridan,Canada 82801
-              </p>
-            </div>
+           
 
             <div className="footer-contact">
               <FaEnvelope />
-              <p>info@booksureglobal.com</p>
+            <a
+                href="mailto:jalpachavda1211@gmail.com"
+                className="text-white border-none"
+                onClick={(e) => {
+                  if (window.innerWidth > 768) {
+                    e.preventDefault();
+                    window.open(
+                      "https://mail.google.com/mail/?view=cm&fs=1&to=jalpachavda1211@gmail.com",
+                      "_blank",
+                    );
+                  }
+                }}
+              >
+              info@booksureglobal.com
+              </a>
             </div>
           </div>
         </div>

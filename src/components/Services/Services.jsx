@@ -1,20 +1,3 @@
-// import React from "react";
-// import PageBanner from "../PageBanner/PageBanner";
-// import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
-// import Testimonial from "../../components/home/Testimonial";
-// import Servicedatasection from "./Servicedatasection";
-// const Services = () => {
-//   return (
-//     <div>
-//       <PageBanner title="Services" bgImage={bannerImg} />
-//       <Servicedatasection />
-//       <Testimonial />
-//     </div>
-//   );
-// };
-
-// export default Services;
-
 import { useState } from "react";
 import PageBanner from "../PageBanner/PageBanner";
 import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
@@ -23,7 +6,7 @@ import { FaCalculator } from "react-icons/fa";
 import { FaBookAtlas } from "react-icons/fa6";
 import "./services.css";
 import { Link } from "react-router-dom";
-
+import {getActiveServices} from "../../utils/Getdata";
 // import { useNavigate } from "react-router-dom";
 const servicesData = [
   {
@@ -85,10 +68,10 @@ const Services = () => {
 
   return (
     <>
-      <PageBanner title="Services" bgImage={bannerImg} />
+      {/* <PageBanner title="Services" bgImage={bannerImg} /> */}
 
       {/* ================= MAIN SERVICE TABS ================= */}
-      <section
+      {/* <section
         className="split-services-section"
         style={{
           backgroundImage: `url(${require("../../assets/Images/Services/about_shape02.png")})`,
@@ -99,13 +82,13 @@ const Services = () => {
       >
         <div className="split-overlay">
           <div className="container">
-            {/* HEADER */}
+          
             <div className=" mb-5 hero-content-left animated-content position-relative z-index text-white mb-4">
               <h3 className="page-tital mt-1">Our Services</h3>
               <p className="contain-colur">“What We Provide”</p>
             </div>
 
-            {/* SERVICES */}
+            
             <div className="split-services-grid mt-5">
               {servicesData.map((service, index) => (
                 <div
@@ -125,7 +108,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ================= DETAILS SECTION ================= */}
       <section className="service-details">

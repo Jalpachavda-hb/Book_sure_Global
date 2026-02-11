@@ -230,3 +230,202 @@
     height: 220px;
   }
 }
+.modal-right .h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a1f44 !important;
+  margin-bottom: 4px;
+}
+
+.team-info-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 22px;
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  transform: translateX(-50%);
+  width: 90%;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+}
+
+.team-info-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a1f44;
+  margin-bottom: 6px;
+}
+
+.team-role {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #cc952b;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.team-qualification {
+  font-size: 14px;
+  color: #293c8f;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.team-experience {
+  font-size: 13px;
+  color: #808080;
+  margin-bottom: 8px;
+}
+
+.team-description {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Better Hover Effect */
+.team-card-wrapper:hover .team-info-box {
+  transform: translateX(-50%) translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* model */
+/* ============================
+   OVERLAY
+============================ */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 40px;
+}
+
+/* ============================
+   MODAL BOX
+============================ */
+.team-modal {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px; /* 🔥 INNER SPACE ADDED */
+  display: flex;
+  gap: 40px; /* 🔥 SPACE BETWEEN IMAGE & CONTENT */
+  position: relative;
+  animation: modalFade 0.3s ease;
+}
+
+/* ============================
+   LEFT IMAGE SECTION
+============================ */
+.modal-image {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image img {
+  width: 100%;
+  max-height: 450px;
+  border-radius: 12px; /* 🔥 Rounded image */
+  object-fit: cover;
+}
+
+/* ============================
+   RIGHT CONTENT SECTION
+============================ */
+.modal-info {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-info h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e2a78;
+  margin-bottom: 8px;
+}
+
+.modal-info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #cc952b;
+  margin-bottom: 18px;
+}
+
+.modal-qualification {
+  font-weight: 600;
+  color: #293c8f;
+  margin-bottom: 12px;
+}
+
+.modal-experience {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 15px;
+}
+
+.modal-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ============================
+   CLOSE BUTTON
+============================ */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #555;
+  transition: 0.3s;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+/* ============================
+   ANIMATION
+============================ */
+@keyframes modalFade {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+@media (max-width: 768px) {
+  .team-modal {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .modal-image,
+  .modal-info {
+    width: 100%;
+  }
+
+  .modal-image img {
+    max-height: 300px;
+  }
+}

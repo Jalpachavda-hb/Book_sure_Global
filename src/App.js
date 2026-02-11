@@ -5,13 +5,12 @@ import "./components/Media.css";
 import Layout from "./components/Layout";
 
 // Pages
-// import Blog from "./components/Blogs/Blog";
+import Blog from "./components/Blogs/Blog";
 import Home from "./components/home/Home";
 import Aboutus from "./components/Aboutmain/Aboutus";
 // import Services from "./components/Services/Services";
 import DemoServices from "./components/demoservices/DemoServices";
-import Bookkeeping from "./components/demoservices/Bookkeeping";
-import Accounting from "./components/demoservices/Accounting";
+import SubServices from "./components/demoservices/SubServices";
 import Team from "./components/Team/Team";
 import Pricing from "./components/Pricing/Pricing";
 import Data from "./components/Data/Data";
@@ -36,15 +35,15 @@ function App() {
         {/* <Route path="/services/detail" element={<Servicesubpage />} /> */}
 
         <Route path="/services" element={<DemoServices />} />
-        <Route path="services/bookkeepingservices" element={<Bookkeeping />} />
-        <Route path="services/accountingservices" element={<Accounting />} />
+        <Route path="services/:slug" element={<SubServices />} />
+        {/* <Route path="services/:slug" element={<Accounting />} /> */}
         <Route path="/team" element={<Team />} />
         {/* <Route path="/team/gallery" element={<Gallery />} /> */}
         {/* <Route path="/team/:slug" element={<Teamdetailpage />} /> */}
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/data" element={<Data />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/company/blog" element={<Blog />} /> */}
+        <Route path="/company/blog" element={<Blog />} />
         {/* <Route path="/blog/blogdetail" element={<BlogDetail />} /> */}
         <Route path="/careers" element={<Careers />} />
       </Route>

@@ -11,50 +11,21 @@ const apiClient = axios.create({
 });
 
 export const API_PATHS = {
+  HOMEPAGE: {
+    GETHEROSECTION: "getHero",
+    GETHOMEABOUT: "getAbout",
+    GETHELPSECTION: "getHelp",
+    GETSOFTWARE: "getSoftwareActive",
+    GETWHYCHOOSEUS: "getwhychooseus",
+  },
   TESTIMONIAL: {
     GETTESTIMONIAL: "getTestimonials",
   },
-
-  WEBSETTING: {
-    GETWEBSETTING: "getwebdetail",
-  },
-  HOMEPAGE: {
-    GETHEROSECTION: "getHero",
-    GETABOUTSECTION: "getAbout",
-    GETHELPSECTION: "getHelp",
+  SOFTWARE: {
     GETSOFTWARE: "getSoftwareActive",
-    WHYCHOOSEUS: "getwhychooseus",
-  },
-  TEAM: {
-    GETGALLERY: "active",
-    GETTEAMMEMBER: "getmembers",
-    GETTEAMMEMBERBYSLUG: "member", //SLUG
-    GETTEAMSECTIONTITLE: "gettitle",
-    GETTEAMCTA: "team-cta",
-  },
-
-  SERVICES: {
-    GETACTIVESERVICES: "getActiveServices",
-    GETBYID: "getbyid", // id
-  },
-
-  PRICING: {
-    ADDINUIRY: "addinquiries",
-    GETACTIVEPRICING: "active",
-    GETTITLE: "gettitles",
-  },
-
-  CONTACTUS: {
-    GETCONTACTPAGEINFO: "contact/getContactPageInfo",
-    SUBMITCONTACT: "contactus/contact",
-    GETCONTACTFAQ: "/contact/getcontact-faq-section",
-    GETCONTACTFAQ: "contact-faqs/active",
   },
   DATASEQURITY: {
-    GETDATASEQURITY: "/api/datasqurity",
-  },
-  CARRER: {
-    POSTAPPLICATION: "career/addcareer-applications",
+    GETDATASEQURITY: "data/data-security",
   },
 
   ABOUTMAINPAGE: {
@@ -62,4 +33,30 @@ export const API_PATHS = {
     GETHIGHLIGHT: "aboutmain/highlights",
     GETOURASSOCIATE: "/aboutmain/hero-associate",
   },
+
+  PRICING: {
+    ADDINUIRY: "addinquiries",
+    GETACTIVEPRICING: "pricing/active",
+    GETTITLE: "gettitles",
+  },
+
+  CONTACTUS: {
+       GETCONTACTPAGEINFO: "contact/getContactPageInfo",
+
+    SUBMITCONTACT: "contactus/contact",
+    // GETCONTACTFAQ: "/contact/getcontact-faq-section",
+    GETCONTACTFAQ: "contact/contact-faqs/active",
+  },
+
+  CARRER: {
+    POSTAPPLICATION: "career/addcareer-applications",
+  },
+
+  WEBSETTING: {
+    GETWEBSETTING: "getwebdetail",
+  },
+  SERVICES : {
+  GETSERVICEBYSLUG: "/sub-services/by-slug",
+    GETACTIVESERVICES : "services/active",
+  }
 };

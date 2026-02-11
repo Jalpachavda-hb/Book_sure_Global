@@ -40,7 +40,7 @@ const InquiryForm = () => {
 
     if (Object.keys(newErrors).length === 0) {
       setSuccessMsg(
-        "Thank you! Our team will contact you as soon as possible."
+        "Thank you! Our team will contact you as soon as possible.",
       );
 
       // Reset form
@@ -74,7 +74,7 @@ const InquiryForm = () => {
           <form onSubmit={handleSubmit}>
             <div className="row g-3">
               {/* Plan */}
-              <div className="col-md-6">
+              {/* <div className="col-md-6">
                 <label className="form-label fw-semibold">
                   Select Plan Type
                 </label>
@@ -92,7 +92,7 @@ const InquiryForm = () => {
                 {errors.plan && (
                   <small className="text-danger">{errors.plan}</small>
                 )}
-              </div>
+              </div> */}
 
               {/* Name */}
               <div className="col-md-6">
@@ -126,7 +126,7 @@ const InquiryForm = () => {
               </div>
 
               {/* Email */}
-              <div className="col-md-6">
+              <div className="">
                 <label className="form-label fw-semibold">Email Address</label>
                 <input
                   type="email"
