@@ -37,7 +37,7 @@ export const API_PATHS = {
   },
 
   PRICING: {
-    ADDINUIRY: "addinquiries",
+    ADDINUIRY: "inq/addinquiries",
     GETACTIVEPRICING: "pricing/active",
     GETTITLE: "gettitles",
   },

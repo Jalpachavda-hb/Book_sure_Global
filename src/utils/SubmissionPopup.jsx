@@ -1,10 +1,17 @@
-import React from "react";
+
 import { FaCheck, FaTimes } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "./SubmissionPopup.css";
-
+import  { useEffect } from "react";
 const SubmissionPopup = ({ type, message, onClose }) => {
   const navigate = useNavigate();
+ useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
 
   return (
     <div className="popup-overlay">

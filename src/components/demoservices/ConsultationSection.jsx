@@ -4,7 +4,14 @@ import november from "../../assets/Images/monthimg/November.jpg";
 import december from "../../assets/Images/monthimg/december.jpg";
 import october from "../../assets/Images/monthimg/october.jpg";
 import June from "../../assets/Images/monthimg/june.jpg";
-
+import January from "../../assets/Images/monthimg/january.png";
+import February from "../../assets/Images/monthimg/February.png";
+import march from "../../assets/Images/monthimg/march.png";
+import April from "../../assets/Images/monthimg/April.png";
+import May from "../../assets/Images/monthimg/May.png";
+import July from "../../assets/Images/monthimg/july.png";
+import sept from "../../assets/Images/monthimg/sept.avif";
+import Aug from "../../assets/Images/monthimg/Augest.png";
 const monthNames = [
   "January",
   "February",
@@ -116,7 +123,7 @@ export default function ConsultationSection() {
   const [step, setStep] = useState(1);
   const [showTimeZone, setShowTimeZone] = useState(false);
   const [selectedZone, setSelectedZone] = useState(timeZones[0]);
-const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
 
@@ -124,15 +131,15 @@ const [showModal, setShowModal] = useState(false);
   const firstDay = new Date(year, month, 1).getDay();
 
   const monthImages = [
-    october, // January (temporary)
-    october, // February
-    october, // March
-    october, // April
-    october, // May
+    January, // January (temporary)
+    February, // February
+    march, // March
+    April, // April
+    May, // May
     June, // June
-    June, // July
-    June, // August
-    october, // September
+    July, // July
+    Aug, // August
+    sept, // September
     october, // October
     november, // November
     december, // December
