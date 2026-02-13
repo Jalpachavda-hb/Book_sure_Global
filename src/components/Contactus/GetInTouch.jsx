@@ -135,9 +135,9 @@
 import { useEffect, useState } from "react";
 import "./Contact.css";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import { GetContactPageInfo } from "../../utils/Getdata";
-
+import { BsWhatsapp } from "react-icons/bs";
 const GetInTouch = () => {
   const [data, setData] = useState(null);
 
@@ -203,7 +203,7 @@ return (
             {phones.length > 0 && (
               <div className="contact-info-card">
                 <div className="icon-box">
-                  <FaPhoneAlt />
+                <BsWhatsapp />
                 </div>
                 <div>
                   <h6>Phone</h6>

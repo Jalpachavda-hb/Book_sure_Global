@@ -113,7 +113,7 @@ export default function Xyz() {
               Data Security
             </Nav.Link>
             <Nav.Link as={NavLink} to="/team">
-             Team
+              Team
             </Nav.Link>
             <Nav.Link as={NavLink} to="/contact">
               Contact Us
@@ -146,7 +146,7 @@ export default function Xyz() {
               <Nav.Link as={NavLink} to="/data" onClick={closeMenu}>
                 Data Security
               </Nav.Link>
-                <Nav.Link as={NavLink} to="/team" onClick={closeMenu}>
+              <Nav.Link as={NavLink} to="/team" onClick={closeMenu}>
                 Team
               </Nav.Link>
 

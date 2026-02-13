@@ -2,19 +2,24 @@ import { useState } from "react";
 import "./Contact.css";
 import PageBanner from "../PageBanner/PageBanner";
 import bannerImg from "../../assets/Images/Aboutus/breadcrumb_bg.jpg";
+import { postcareer } from "../../utils/HandleSubmit";
+import SubmissionPopup from "../../utils/SubmissionPopup";
 const Careers = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     position: "",
     email: "",
-    dob: "",
     phone: "",
-    gender: "",
     resume: null,
   });
 
   const [errors, setErrors] = useState({});
-
+  const [loading, setLoading] = useState(false);
+  const [popup, setPopup] = useState({
+    show: false,
+    type: "",
+    message: "",
+  });
   const handleChange = (e) => {
     const { name, value, files } = e.target;
 
@@ -22,47 +27,93 @@ const Careers = () => {
       if (!/^\d*$/.test(value)) return;
     }
 
+    if (name === "resume") {
+      const file = files[0];
+
+      if (file && file.size > 2 * 1024 * 1024) {
+        setErrors((prev) => ({
+          ...prev,
+          resume: "Resume must be less than 2MB",
+        }));
+        return;
+      }
+    }
+
     setFormData({
       ...formData,
       [name]: files ? files[0] : value,
     });
+
+    // Remove error on change
+    setErrors((prev) => ({
+      ...prev,
+      [name]: "",
+    }));
   };
 
   const validate = () => {
     const newErrors = {};
 
-    if (!formData.fullName) newErrors.fullName = "Full name is required";
-    if (!formData.position) newErrors.position = "Position is required";
-    if (!formData.email) newErrors.email = "Email is required";
-    if (!formData.dob) newErrors.dob = "Date of birth is required";
-    if (!formData.gender) newErrors.gender = "Gender is required";
-    if (!formData.resume) newErrors.resume = "Resume is required";
+    if (!formData.fullName.trim()) newErrors.fullName = "Full name is required";
 
-    if (!/^\d{10}$/.test(formData.phone)) {
+    if (!formData.position.trim()) newErrors.position = "Position is required";
+
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email))
+      newErrors.email = "Invalid email address";
+
+    if (!/^\d{10}$/.test(formData.phone))
       newErrors.phone = "Phone number must be exactly 10 digits";
-    }
+
+    if (!formData.resume) newErrors.resume = "Resume is required";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!validate()) return;
 
-    console.log("Career Form Data:", formData);
-    alert("Application submitted successfully (Dummy)");
+    setLoading(true);
 
-    setFormData({
-      fullName: "",
-      position: "",
-      email: "",
-      dob: "",
-      phone: "",
-      gender: "",
-      resume: null,
-    });
+    try {
+      const res = await postcareer(formData);
+
+      if (res.success) {
+        setPopup({
+          show: true,
+          type: "success",
+          message:
+            "Thank you for your submission. We have received your information and will process it shortly.",
+        });
+
+        setFormData({
+          fullName: "",
+          position: "",
+          email: "",
+          phone: "",
+          resume: null,
+        });
+
+        setErrors({});
+      } else {
+        setPopup({
+          show: true,
+          type: "error",
+          message: res.message || "Something went wrong. Please try again.",
+        });
+      }
+    } catch (error) {
+      setPopup({
+        show: true,
+        type: "error",
+        message: "Something went wrong. Please try again.",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -71,9 +122,7 @@ const Careers = () => {
 
       <section className="career-page">
         <div className="container">
-          {/* HEADER */}
           <div className="career-header">
-            {/* <span className="career-badge">Careers</span> */}
             <h1>Join Our Growing Team</h1>
             <p>
               We are always looking for talented professionals to grow with us.
@@ -81,7 +130,6 @@ const Careers = () => {
             </p>
           </div>
 
-          {/* FORM CARD */}
           <div className="career-card">
             <h3>Apply Now</h3>
 
@@ -126,18 +174,6 @@ const Careers = () => {
                   {errors.email && <span>{errors.email}</span>}
                 </div>
 
-                {/* DOB */}
-                <div className="form-group">
-                  <label>Date of Birth</label>
-                  <input
-                    type="date"
-                    name="dob"
-                    value={formData.dob}
-                    onChange={handleChange}
-                  />
-                  {errors.dob && <span>{errors.dob}</span>}
-                </div>
-
                 {/* PHONE */}
                 <div className="form-group">
                   <label>Phone</label>
@@ -150,22 +186,6 @@ const Careers = () => {
                     placeholder="10 digit mobile number"
                   />
                   {errors.phone && <span>{errors.phone}</span>}
-                </div>
-
-                {/* GENDER */}
-                <div className="form-group">
-                  <label>Gender</label>
-                  <select
-                    name="gender"
-                    value={formData.gender}
-                    onChange={handleChange}
-                  >
-                    <option value="">Select Gender</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Other</option>
-                  </select>
-                  {errors.gender && <span>{errors.gender}</span>}
                 </div>
 
                 {/* RESUME */}
@@ -181,13 +201,20 @@ const Careers = () => {
                 </div>
               </div>
 
-              <button type="submit" className="career-btn">
-                Submit Application
+              <button type="submit" className="career-btn" disabled={loading}>
+                {loading ? "Submitting..." : "Submit Application"}
               </button>
             </form>
           </div>
         </div>
       </section>
+      {popup.show && (
+        <SubmissionPopup
+          type={popup.type}
+          message={popup.message}
+          onClose={() => setPopup({ show: false, type: "", message: "" })}
+        />
+      )}
     </>
   );
 };

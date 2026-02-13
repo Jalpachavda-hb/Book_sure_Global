@@ -109,8 +109,6 @@
 
 // export default SubServices;
 
-
-
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ConsultationSection from "./ConsultationSection";
@@ -120,7 +118,7 @@ import "./DemoServices.css";
 
 import { FaBookAtlas, FaCalculator } from "react-icons/fa6";
 import { ImOffice } from "react-icons/im";
-import { getSubServiceBySlug } from "../../utils/Getdata";
+import { getSubServiceBySlug, getActiveServices } from "../../utils/Getdata";
 
 /* ✅ ICONS (CYCLIC) */
 const ICONS = [FaBookAtlas, FaCalculator, ImOffice];
@@ -128,27 +126,45 @@ const ICONS = [FaBookAtlas, FaCalculator, ImOffice];
 const SubServices = () => {
   const { slug } = useParams();
   const [subServices, setSubServices] = useState([]);
+  const [serviceTitle, setServiceTitle] = useState("");
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    loadSubServices();
-  }, [slug]);
+useEffect(() => {
+  const loadData = async () => {
+    setLoading(true);
 
-  const loadSubServices = async () => {
-    const res = await getSubServiceBySlug(slug);
-    console.log("Sub Services API:", res);
+    const subRes = await getSubServiceBySlug(slug);
 
-    setSubServices(res.filter((x) => x.is_active === 1));
+    if (Array.isArray(subRes)) {
+      setSubServices(
+        subRes.filter((x) => Number(x.is_active) === 1)
+      );
+    }
+
+    const serviceRes = await getActiveServices();
+
+    if (Array.isArray(serviceRes)) {
+      const matched = serviceRes.find(
+        (s) => s.slug === slug
+      );
+
+      setServiceTitle(
+        matched?.service_name || "Services"
+      );
+    }
+
+    setLoading(false);
   };
 
-  // ✅ IF NO DATA → RENDER NOTHING
-  if (!subServices || subServices.length === 0) return null;
+  loadData();
+}, [slug]);
+
+  if (loading) return <div>Loading...</div>;
 
   return (
     <>
-      {/* ✅ Banner */}
-      <PageBanner title="Bookkeeping Services" bgImage={bannerImg} />
+      <PageBanner title={serviceTitle} bgImage={bannerImg}  />
 
-      {/* ✅ Services Section */}
       <section className="service-detail-page">
         <div className="container">
           <div className="service-alt-wrapper">
@@ -162,7 +178,6 @@ const SubServices = () => {
                     index % 2 !== 0 ? "reverse" : ""
                   }`}
                 >
-                  {/* CONTENT */}
                   <div className="service-alt-content">
                     <div className="service-title">
                       <Icon className="service-icon" />
@@ -171,7 +186,7 @@ const SubServices = () => {
 
                     <p>{item.description}</p>
 
-                    {item.points && item.points.length > 0 && (
+                    {item.points?.length > 0 && (
                       <ul>
                         {item.points.map((point, i) => (
                           <li key={i}>{point}</li>
@@ -180,7 +195,6 @@ const SubServices = () => {
                     )}
                   </div>
 
-                  {/* IMAGE */}
                   <div className="service-alt-img">
                     <img src={item.image} alt={item.title} />
                   </div>

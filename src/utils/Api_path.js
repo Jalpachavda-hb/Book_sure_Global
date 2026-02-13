@@ -1,14 +1,16 @@
-import axios from "axios";
-import { toast } from "react-toastify";
+// import axios from "axios";
+// import { toast } from "react-toastify";
 
-export const BASE_URL = "http://localhost:8000/api/";
+// export const BASE_URL = "https://booksureglobal.com/api";
+export const BASE_URL = "http://localhost:8000/api";
 
-const apiClient = axios.create({
-  baseURL: BASE_URL,
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
+
+// const apiClient = axios.create({
+//   baseURL: BASE_URL,
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+// });
 
 export const API_PATHS = {
   HOMEPAGE: {
